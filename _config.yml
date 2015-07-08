@@ -14,8 +14,8 @@ url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+name:            'Spencer Wilson'
+url:              https://twitter.com/mdo
 
 paginate:         5
 
