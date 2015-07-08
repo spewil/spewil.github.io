@@ -3,28 +3,22 @@ layout: page
 title: About
 ---
 
-<p class="message">
-HI THERE. I'M SPENCER 
-</p>
+## Who Am I?
 
-[@mdo](https://twitter.com/mdo).
+I'm Spencer. I built this personal webpage using Jekyll and Hyde served by GitHub.
 
-There are currently two themes built on Poole:
+I'm a master's student at the University of Cambridge reading for an MPhil in Engineering.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I recieved a B.S. in Mechanical Engineering from MIT in June 2015.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+I'm from Moultrie, GA where I attended Colquitt County High School.
 
-## Setup
+## What Do I Do?
 
-Some fun facts about the setup of this project include:
+- Photography! Check out the photography page for more info.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+- Build stuff-- check out the Gus The Bus page to see my car. I've worked on tons of other projects.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+- Read!
 
-Thanks for reading!
+- Do math!
