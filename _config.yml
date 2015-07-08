@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            spencer wilson
 #tagline:          ''
-description:      'The projects, readings, and notes of a "boy who just wants to learn".'
+description:      'a digital portfolio of projects and notes'
 url:              http://spewil.github.io
 baseurl:          /
 
