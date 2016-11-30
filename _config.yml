@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            writing 
+tagline:          ''
+description:      'a rough estimate'
+url:              https://spewil.github.io/
+baseurl:          /
+
+author:
+  name:           'Spencer Wilson'
+  url:            https://spewil.github.io/
+
+paginate:         5
+
+# Custom vars
+version:          0
+
+github:
+  repo:           https://github.com/spewil/
