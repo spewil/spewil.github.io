@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About
+title: about
 ---
 
 <p class="message">
-I'm not quite sure what I'm about, but I'm doing my best to figue that out. 
+I'm not quite sure what you were expecting 
 </p>
 
