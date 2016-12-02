@@ -13,18 +13,18 @@ body {
 	overflow: auto;
 }
 a {
-	color: #000000;
+	color: #430f4c;
 	text-decoration: none;
 }
 a:hover {
-	color: #470047;
+	color: #000000;
 }
 #header {
 	font-size: 28pt;
 	background-color:#F5FAFA;
 	width: 80%;
 	margin: 0 auto;
-	color: #000000;
+	color: #3f2501;
 
 }
 * html #body #content {
