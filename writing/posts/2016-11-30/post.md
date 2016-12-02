@@ -1,7 +1,3 @@
----
-layout: post
-title: Materialism as a Humanism
----
 
 Why? Magazine: A Meaningful Periodical
 
