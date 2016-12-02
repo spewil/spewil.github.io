@@ -1,38 +1,19 @@
----
-layout: default
-title: home
----
-<!-- 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<href=<!DOCTYPE html>
+<html lang="en-us">
 
-    {{ post.content }}
+  <body class="layout-reverse">
 
-  </div>
-  {% endfor %}
-</div>
+Hello World
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div> -->
+  <link href="{{ site.baseurl }}writing">writing</link>
+
+<!-- take out the content so only the header and sidebar remain 
+but this has to apply to page and post as well, as they inherit default...
+fix: add content containter to page and post setup files-->
+<!--     <div class="content container">
+      {{ content }}
+    </div> -->
+
+  </body>
+</html>
