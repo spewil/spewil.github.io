@@ -58,6 +58,10 @@ a:hover {
 	width: 50%;
 	image-resolution: 100dpi;
 }
+img.resize{
+    width: 50%; /* same as the img tag */
+    height: auto;
+}
 #footer {
 	background-color: #F5FAFA;
 	vertical-align: center;
