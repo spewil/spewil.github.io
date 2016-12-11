@@ -17,6 +17,7 @@
     /* try to extract h1 title and use as title for page
        if no h1, use name of file 
     */
+  
     try {
       document.title = document.querySelector('h1').textContent
     } catch (e) {

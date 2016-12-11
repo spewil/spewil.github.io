@@ -1,5 +1,4 @@
-
-#Why? Magazine: A Meaningful Periodical#
+#materialism as a humanism#
 
 ---
 
