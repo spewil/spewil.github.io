@@ -1,15 +1,16 @@
-#made or discovered?  
-##and other fundamental dualities  
+# made or discovered? #  
+## and other fundamental dualities ##    
 
 Royce writes of Nietzsche's übermensch  
 
->Whether you discuss the philosophy of Nietzsche or of mathematics,--whether the *Umwertang aller Werte* or the "class of all classes,"--whether Mr. Russell's "Contradiction" or the *übermensch* in question,...always the same general issue has sooner or later to be faced. You are involved in some phase of the problem about the nature of truth.< 
+> Whether you discuss the philosophy of Nietzsche or of mathematics,--whether the *Umwertang aller Werte* or the "class of all classes,"--whether Mr. Russell's "Contradiction" or the *übermensch* in question,...always the same general issue has sooner or later to be faced. You are involved in some phase of the problem about the nature of truth. 
 
-*the nature of truth*. i add to Mr. Royce's remark "of Nietzsche or of mathematics"-- or of literature or of poetry or of engineering or of art. every human being, in my mind, is working towards their own understanding of Truth. this, in effect, is our Truth. our story, our myth, our memory and our creation transcends physicality and embodies meaning. the difficulty becomes when the content (what a rubbish word, but fitting here) is vapid. like this very page. 
+*the nature of truth*.  
+i add to Mr. Royce's remark "of Nietzsche or of mathematics"-- or of literature or of poetry or of engineering or of art. every human being, in my mind, is working towards their own understanding of Truth. this, in effect, is our Truth. our story, our myth, our memory and our creation transcends physicality and embodies meaning. the difficulty becomes when the content (what a rubbish word, but fitting here) is vapid. like this very page. 
 
 Ratner-Rosenhagen summarizes Royce's thoughts in her own remark
 
->Thus, the individualistic strain in transatlantic instrumentalism viewed truth as something made, not found, and as relative to the individual.< 
+> Thus, the individualistic strain in transatlantic instrumentalism viewed truth as something made, not found, and as relative to the individual.  
 
 the debate becomes another duality-- Platonic vs Aristotelian-- "this tension between relativism and individualism," she writes. are these dualities themselves manufactured or naturally occurring, are they plastic or are they mineral? 
 

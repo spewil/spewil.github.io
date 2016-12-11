@@ -1,12 +1,12 @@
-#the poetics of work# 
+# the poetics of work # 
 
 imagine the following individuals, one at a time. what do they do every day? is it even fair to call the following words *individuals*? is that an ethical synecdoche (is it ever?)? 
 
-*garbage man 
-*middle school football coach 
-*train engineer 
-*high school history teacher 
-*dry cleaner 
+* garbage man   
+* middle school football coach   
+* train engineer   
+* high school history teacher  
+* dry cleaner  
 
 the idea is to take these mundane objects and abstract them into objects of philosophy-- map their intricacies to those of philosophic concepts such as morality, faith, determinism, ... , and meaning.   
 
