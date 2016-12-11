@@ -1,6 +1,6 @@
-#technologies of discpline# 
-##foucault for the internet age##
+#technologies of discpline  
+##foucault for the internet age  
 
-askesis --  self-discipline 
+askesis --  self-discipline  
 epimeleia heautou -- self-care
 

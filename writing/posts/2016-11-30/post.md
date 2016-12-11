@@ -1,4 +1,4 @@
-#materialism as a humanism#
+# materialism as a humanism
 
 ---
 
@@ -14,10 +14,12 @@ if the past predicts the future, we must believe in determinism. we can clearly 
 
 ---
 
->Albert Einstein said, “If the moon, in the act of completing its eternal way around the earth, were gifted with self-consciousness, it would be fully convinced that it was traveling its way of its own accord... So would a Being, endowed with higher insight and more perfect intelligence, watching man and his doings, smile about man’s illusion that he was acting according to his own free will”
+Albert Einstein said 
+>“If the moon, in the act of completing its eternal way around the earth, were gifted with self-consciousness, it would be fully convinced that it was traveling its way of its own accord... So would a Being, endowed with higher insight and more perfect intelligence, watching man and his doings, smile about man’s illusion that he was acting according to his own free will”
 
 
->Thomas Huxley stated, “The feeling we call volition is not the cause of the voluntary act, but simply the symbol in consciousness of the stage of the brain which is the immediate cause of the act. Like the steam whistle which signals but doesn’t cause the starting of the locomotive”
+Thomas Huxley stated, 
+>“The feeling we call volition is not the cause of the voluntary act, but simply the symbol in consciousness of the stage of the brain which is the immediate cause of the act. Like the steam whistle which signals but doesn’t cause the starting of the locomotive”
 
 those who hold so strongly onto religion and spirit have not seen the benevolence of the hammer. look only to the freedom imparted by its destructive effect: your shackles of choice are broken-- your spirit becomes your world. 
 
@@ -27,7 +29,7 @@ how can we jail a human being? how can we punish her? she is merely the instanti
 
 a diagramatic lineage  
 
-~
+~  
 lucretius —> spinoza —> nietzsche —> deleuze 
 ~
 
