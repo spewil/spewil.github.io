@@ -19,6 +19,7 @@
     $('.flexslider').flexslider({
           animation: "fade",  // slide or fade
           controlsContainer: ".flex-container" // the container that holds the flexslider
+          customDirectionNav: $(".custom-navigation a")
     });
   });
 </script>
@@ -44,8 +45,9 @@
 		
 	<div id="mainpic">
 <!-- Slider Container and Images -->
-<! <div style="padding:5px;">
+ <div style="padding:5px;">
 	<div class="flexslider">
+	  		<a href="#" class="flex-prev">Prev</a>
  		<ul class="slides">
 	 		<li><img src="IMG_4871.JPG" /></li>		
 	 		<li><img src="IMG_4873.JPG" /></li>		
@@ -53,13 +55,12 @@
 	 		<li><img src="IMG_4876.JPG" /></li>		
 	 		<li><img src="hexequaltess.png" /></li>		
 	 		<li><img src="hexring24.png" /></li>		
-	 		<li><img src="unitcell.png" /></li>		
+	 		<li><img src="unitcell.png" /></li>
+	 		<a href="#" class="flex-next">Next</a>		
 	 	</ul>
 	</div>
 	<div class="custom-navigation">
-  		<a href="#" class="flex-prev">Prev</a>
   	<!-- <div class="custom-controls-container"></div> -->
-  		<a href="#" class="flex-next">Next</a>
 	</div>
 </div>
 
