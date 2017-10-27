@@ -31,7 +31,7 @@ img.logo {
 /*  OLD SHIT  */
 /**************/
 
-a {
+/*a {
 	text-decoration: none;
 }
 
@@ -42,21 +42,19 @@ a:hover {
 	font-size: 28pt;
 	width: 80%;
 	margin: 0 auto;
+}
 
-}
-* html #body #content {
-	height: 100%;
-	overflow: scroll;
-}
- #content {
+#content {
 	width: 80%;
 	margin: 0 auto;
 }
+
 #intro {
 	font-size: 12pt;
 	text-align: center;
 	height: 70%;
 }
+
 #image {
 	width: 100%;
 	float: right;
@@ -73,10 +71,7 @@ a:hover {
 	width: 50%;
 	image-resolution: 100dpi;
 }
-img.resize{
-    width: 50%; /* same as the img tag */
-    height: auto;
-}
+
 #footer {
 	vertical-align: center;
 	text-align: center;
@@ -116,6 +111,7 @@ p.links {
 	text-align: center;
 	white-space: pre-line;
 }
+
 img.showoff {
 	width: 50%;
 	display: block;
@@ -125,26 +121,21 @@ img.showoff {
 	margin-top: 3%;
 	border-radius: 5px;
 }
+
 img.iphone{
 	height:500px;
 	margin: 0 auto;
 	display: table-cell;
 }
+
 #mainpic {
 float:right;
 width: 70%;
 padding-bottom: 10px;
 }
-#mainpic img{
-    border-radius: 7px;
-    margin-left: auto;
-    margin-right: auto;
-	display: table-cell;
-	width: 70%;
-	overflow: visible;
-}
+
 #mainnav {
 float:left;
 width:30%;
 height: 100%;
-}
+}*/
