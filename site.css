@@ -19,6 +19,14 @@ a {
 a:hover {
 	color: #000000;
 }
+
+#gif {
+
+	width = 50%
+	float: right;
+
+}
+
 #header {
 	font-size: 28pt;
 	background-color:#F5FAFA;

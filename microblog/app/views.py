@@ -3,13 +3,19 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
-@app.route('/reader')
 def index():
     user = {'nickname': 'Miguel'}  # fake user
-    return render_template('index.html',
+    posts = [  # fake array of posts
+        { 
+            'author': {'nickname': 'John'}, 
+            'body': 'Beautiful day in Portland!' 
+        },
+        { 
+            'author': {'nickname': 'Susan'}, 
+            'body': 'The Avengers movie was so cool!' 
+        }
+    ]
+    return render_template("index.html",
                            title='Home',
-                           user=user)
-def reader():
-	page = {'title': 'test sketch'}
-	return render_template('read.html',
-							page = page)
+                           user=user,
+                           posts=posts)
