@@ -6,19 +6,19 @@ body {
     width:100%;
     height:100%;
     margin:0px;
-    position:relative;
+    font-family: Arial;
 }
-div.shadow {
+
+div.main {
     position:relative;
-    max-width:45%;
+    max-width:50%;
     left:50%;
 }
-img.logo {
+
+img.hourglass {
     position:relative;
-    max-width:100%;
-    /*max-height:100%;*/
-    /*margin-top:-50%;*/
-    margin-left:-50%;
+    max-width:50%;
+    margin-left:-25%;
 }
 
 .stopwatch {
@@ -31,111 +31,55 @@ img.logo {
 /*  OLD SHIT  */
 /**************/
 
-/*a {
+a {
 	text-decoration: none;
+	color: #000000;
 }
 
 a:hover {
+	color: #d3d3d3;
 }
 
-#header {
-	font-size: 28pt;
-	width: 80%;
-	margin: 0 auto;
+.header {
+    position:relative;
+    max-width:50%;
+    left:50%;
+    display: inline-block;
+}
+
+img.spring {
+    position:relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width:100%;
+    margin-left:-50%;
 }
 
 #content {
-	width: 80%;
-	margin: 0 auto;
-}
-
-#intro {
-	font-size: 12pt;
-	text-align: center;
-	height: 70%;
-}
-
-#image {
 	width: 100%;
-	float: right;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	image-resolution: 10dpi;
-}
-#image img {
-	border-radius: 7px;
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 50%;
-	image-resolution: 100dpi;
+	text-align: center;
 }
 
-#footer {
-	vertical-align: center;
-	text-align: center;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	margin-bottom: 10px;
-	clear: both;
+#content li { 
+	text-decoration: none;
+	list-style: none;
+	font-size: 20pt;
 }
-#footer li {
+
+/* FOOTER */
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer li {
 	display:inline-block;
 	padding: 8px;
-}
-#footer li a {
 	list-style-type: none;
-	font-size: 10pt;
-	text-decoration: none;
-}
- .title {
-	font-size: 16pt;
-	margin-top: 2%;
-	margin-left: 3%;
-}
-p.subtitle {
-	font-size: 14;
-	font-weight: heavy;
-	text-align: center;
-	margin: 10px;
-}
-p.text {
-	text-align:center;
-	min-height: 100%;
-	margin: 20px;
-}
-p.links {
-	text-align: center;
-	white-space: pre-line;
 }
 
-img.showoff {
-	width: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 8px;
-	margin-top: 3%;
-	border-radius: 5px;
-}
-
-img.iphone{
-	height:500px;
-	margin: 0 auto;
-	display: table-cell;
-}
-
-#mainpic {
-float:right;
-width: 70%;
-padding-bottom: 10px;
-}
-
-#mainnav {
-float:left;
-width:30%;
-height: 100%;
-}*/

@@ -21,6 +21,7 @@ class Stopwatch {
     }
     
     calculate(timestamp) {
+
         var diff = timestamp - this.time;
         // Hundredths of a second are 100 ms
         this.times[2] += diff / 10;
