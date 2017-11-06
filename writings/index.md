@@ -1,4 +1,4 @@
-
+## test 
 
 the fourth amendment reads:
 
@@ -6,9 +6,9 @@ the fourth amendment reads:
 
 this statement requires a scrupulous definition of *probable*. will we need to quantify an upper bound on the variance of our parameters in order to enter someone's home?
 
-the time for algorithmic society has come, the time is now for reflection and adjustment, a relaxation period. we have to contend with the state of the art. how will communitites feel when they are targeted? how do we deal with historcism of datacentric tools? historicity is the kernel of data analysis, yet its flaw. the paradox of what will be, predicted by what was, consumed by stochasticity. if it worked we would all be rich. but, alas, we are free to choose how we live? why not change things? 
+the time for algorithmic society has come, the time is now for reflection and adjustment, a relaxation period. we have to contend with the state of the art. how will communities feel when they are targeted? how do we deal with historicism of data-centric tools? historicity is the kernel of data analysis, yet its flaw. the paradox of what will be, predicted by what was, consumed by stochasticity. if it worked we would all be rich. but, alas, we are free to choose how we live? why not change things? 
 
-if the past predicts the future, we must believe in determinism. we can clearly see that there is more to the narrative. the missing blank might be filled with stochasticity, or something termed "open-mindedness", however blasé. to construct a model is to construct a mind. if that mind can only see backwards, out destination is known and it is frightful. 
+if the past predicts the future, we must believe in determinism. we can clearly see that there is more to the narrative. the missing blank might be filled with stochasticity, or something termed "open-mindedness", however blase. to construct a model is to construct a mind. if that mind can only see backwards, out destination is known and it is frightful. 
 
 ---
 
