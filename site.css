@@ -59,6 +59,10 @@ a:hover {
 	color: #d3d3d3;
 }
 
+p {
+    padding: 40px;
+}
+
 .header {
     position:relative;
     max-width:50%;
@@ -121,8 +125,7 @@ img.about_img {
 	width: 100%;
 	text-align: center;
 	height: 30px;
-	padding-top: 20px;
-	padding-top: 10px;
+	padding-top: 40px;
 }
 
 .footer li {
