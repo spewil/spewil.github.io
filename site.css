@@ -89,7 +89,7 @@ img.spring {
 }
 
 .root-content li a {
-    font-size: 12pt;
+    font-size: 20pt;
 }
 
 /*  ~~~~~~~  */
@@ -104,14 +104,11 @@ img.spring {
 }
 
 .content li a {
-    font-size: 20pt;
-    font-style: italic;
-    text-decoration: none;
+    font-size: 12pt;
 }
 
 .content p {
 	width: 50%;
-	padding: 0px;
 	margin-left: 25%;
 }
 
