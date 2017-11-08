@@ -96,10 +96,11 @@ img.spring {
 
 .content {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 .content li { 
+    text-decoration: none;
 	list-style-type: none;
 }
 
@@ -110,7 +111,7 @@ img.spring {
 .content p {
 	width: 50%;
 	margin-left: 25%;
-    text-align: center;
+    padding: 0px;
 }
 
 .about {
