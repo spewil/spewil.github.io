@@ -78,9 +78,21 @@ img.spring {
     margin-left:-50%;
 }
 
-.root-content li a {
-    font-size: 20pt;
+.root-content {
+    width: 100%;
+    text-align: center;
 }
+
+.root-content li { 
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.root-content li a {
+    font-size: 12pt;
+}
+
+/*  ~~~~~~~  */
 
 .content {
 	width: 100%;
@@ -88,12 +100,13 @@ img.spring {
 }
 
 .content li { 
-	text-decoration: none;
 	list-style-type: none;
 }
 
 .content li a {
-    font-size: 10pt;
+    font-size: 20pt;
+    font-style: italic;
+    text-decoration: none;
 }
 
 .content p {
