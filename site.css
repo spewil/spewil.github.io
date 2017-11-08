@@ -19,7 +19,7 @@ body {
 	min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -50px; 
+    margin: 0 auto -30px; 
     /* the bottom margin is the negative 
     value of the footer's height */
 }
@@ -141,7 +141,6 @@ img.about_img {
 	width: 100%;
 	text-align: center;
 	height: 30px;
-	padding-top: 40px;
 }
 
 .footer li {
