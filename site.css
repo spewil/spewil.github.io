@@ -78,6 +78,10 @@ img.spring {
     margin-left:-50%;
 }
 
+.root-content li a {
+    font-size: 20pt;
+}
+
 .content {
 	width: 100%;
 	text-align: center;
@@ -89,7 +93,7 @@ img.spring {
 }
 
 .content li a {
-	font-size: 20pt;
+    font-size: 10pt;
 }
 
 .content p {
