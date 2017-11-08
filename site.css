@@ -96,7 +96,7 @@ img.spring {
 
 .content {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 }
 
 .content li { 
@@ -111,7 +111,7 @@ img.spring {
 .content p {
 	width: 50%;
 	margin-left: 25%;
-    padding: 0px;
+    padding: 0px
 }
 
 .about {
