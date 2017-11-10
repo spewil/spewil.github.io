@@ -19,7 +19,7 @@ body {
 	min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -30px; 
+    margin: 0 auto -60px; 
     /* the bottom margin is the negative 
     value of the footer's height */
 }
@@ -82,8 +82,8 @@ p {
 
 img.spring {
     position:relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     max-width:100%;
     margin-left:-50%;
 }
@@ -140,7 +140,7 @@ img.about_img {
 }
 
 .push {
-    height: 30px; /* .push must be the same height as .footer */
+    height: 60px; /* .push must be the same height as .footer */
 }
 
 /**********/
@@ -150,7 +150,8 @@ img.about_img {
 .footer {
 	width: 100%;
 	text-align: center;
-	height: 30px;
+	height: 60px;
+    padding: 0;
 }
 
 .footer li {
@@ -158,6 +159,7 @@ img.about_img {
 	padding-left: 8px;
     padding-right: 8px;
     padding-top: 30px;
+    padding-bottom: 0px;
 	list-style-type: none;
 	font-size: 10pt
 }
