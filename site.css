@@ -36,7 +36,7 @@ div.main {
     font-size: 14pt;
 }
 
-div.main-text{
+div.main-shift{
 
     position:relative;
     max-width:100%;
@@ -47,13 +47,14 @@ div.main-text{
 
 img.hourglass {
     position:relative;
-    max-width:70%;
-    margin-left:-35%;
+    max-width:60%;
+    margin-left:-30%;
 
 }
 
 .stopwatch {
 	font-family: Courier;
+    font-size: 10pt;
 }
 
 /**************/
