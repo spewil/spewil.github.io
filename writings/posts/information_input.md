@@ -1,4 +1,4 @@
-## philosophy in information input 
+## philosophy of information input 
 
 This thought came from a podcast (most likely WTF with Marc Maron) interview with [sofia coppola](http://www.wtfpod.com/podcast/episode-822-sofia-coppola). As she explained how poetry has the power of opening up her creativity, Marc explained how he just cant "get into" poetry. This comment from Marc is something I've heard many times, and have wondered about in the context of design and neuroscience as well. Is this a cultural/sociopolitical cause, that poetry is somehow selective? I think yes, but that explanation doesn't capture the whole picture.
 
