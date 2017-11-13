@@ -1,0 +1,9 @@
+## philosophy in information input 
+
+This thought came from a podcast (most likely WTF with Marc Maron) interview with [sofia coppola](http://www.wtfpod.com/podcast/episode-822-sofia-coppola). As she explained how poetry has the power of opening up her creativity, Marc explained how he just cant "get into" poetry. This comment from Marc is something I've heard many times, and have wondered about in the context of design and neuroscience as well. Is this a cultural/sociopolitical cause, that poetry is somehow selective? I think yes, but that explanation doesn't capture the whole picture.
+
+When having a weekly chat with my friend [Lawrence](http://www.lawrencebarrinerii.com/), he mentioned having trouble reading [a book](https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth) by Fanon. He said he got bogged down in the references to esoteric French post-structuralists. I said that I think he isn't alone in the difficulty of reading academic philosophy, and that maybe that's why it takes someone almost two decades to be considered an expert in one philosophical era or even a single thinker! 
+
+The advice is something I stole from Sofia. She tells Marc, "When you're at an art gallery, do you stop for ten minutes to see every painting? No. You wander through and if something catches your eye, you look at that one." I find this to be such a wonderful sentiment about how humans connect with art. It isn't a problem with *you* if something doesn't strike you, and it (probably) isn't to do with the content, either. Art is about connection between media and humans, about the uniqueness of the information transfer between human and content. 
+
+When you get stuck, move on. Don't beat yourself up. Let something strike you. You'll know it because you'll feel it. 
