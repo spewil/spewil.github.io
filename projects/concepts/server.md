@@ -1,4 +1,4 @@
-# plug-and-play server 
+## plug-and-play server 
 
 there is a lot of worry about who owns and uses our data-- for good reason. companies buy and sell our personal data, and this practice is quickly becoming a sort of technocratic supercapitalism. i believe that looking back, this will be as hard to understand as steel and newspaper monopolies of the early 20th century. 
 
