@@ -15,15 +15,19 @@
 
 		// since we can only get 20 posts at a time, we have to loop the ajax call with an offset 
 		// number of 20-length iterations is post number modulo 20 
-		var offset_num = Math.ceil(num_posts/20);
+		var offset_num = Math.floor(num_posts/20);
 		console.log(offset_num)
-		var post_offset = 0 
+		var post_offset;
+		for (let j=0; j<offset_num; j++) {
 
-		for (j=0; j<offset_num; j++) {
+			post_offset = 20*j
+
+			// console.log(post_offset)
 
 			$.ajax({
 			    url: "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC&limit=20&offset="+post_offset,
 			    dataType: 'jsonp',
+			    async: false,
 			    success: function(post){
 
 			    	// num_posts = post.response.blog.posts
@@ -32,7 +36,7 @@
 			    	var posts = post.response.posts
 
 			    	// add each post link 
-			    	for (i=0; i<posts.length; i++){
+			    	for (i=0; i<3; i++){
 
 					try {
 
@@ -41,6 +45,7 @@
 						var linkText = document.createTextNode(posts[i].slug);
 						a.appendChild(linkText);
 						a.href = posts[i].post_url;
+						a.target = "_new"
 						para.appendChild(a);
 				    	$("#links").append(para);	
 
@@ -55,8 +60,6 @@
 			    }
 			})
 
-			post_offset = 20*j
-			console.log(post_offset)
 		}
 
 	</script>
