@@ -11,56 +11,41 @@
 	<script type="text/javascript">
 
 
-		var num_posts = 115;
+function loadPosts () {
 
-		// since we can only get 20 posts at a time, we have to loop the ajax call with an offset 
-		// number of 20-length iterations is post number modulo 20 
-		var offset_num = Math.floor(num_posts/20);
-		console.log(offset_num)
-		var post_offset;
-		for (let j=0; j<offset_num; j++) {
+    var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+    var api = "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
+    var fetch_posts = function (offset) {
+        $.getJSON(api + key + "&limit=20&offset=" + offset ,function(data) {
+            $.each(data.response.posts, function(i, post) {
+		    	
+		    	var para = document.createElement('p');
+		    	var a = document.createElement('a');
+		    	
+		    	if (post.slug == '') {
+					var linkText = document.createTextNode(post.date);
+				}
+				else {
+					var linkText = document.createTextNode(post.slug);
+				}
+				
+				a.appendChild(linkText);
+				a.href = post.post_url;
+				a.target = "_new"
+				para.appendChild(a);
+		    	$("#links").append(para);	
+            });
 
-			post_offset = 20*j
+            if (data.response.posts.length == 20) {
+                fetch_posts(offset + 20);
+            }
+        });
+    };
+    
+    fetch_posts(0);
+}
 
-			// console.log(post_offset)
-
-			$.ajax({
-			    url: "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC&limit=20&offset="+post_offset,
-			    dataType: 'jsonp',
-			    async: false,
-			    success: function(post){
-
-			    	// num_posts = post.response.blog.posts
-
-			    	// get list of posts:
-			    	var posts = post.response.posts
-
-			    	// add each post link 
-			    	for (i=0; i<3; i++){
-
-					try {
-
-				    	var para = document.createElement('p');
-				    	var a = document.createElement('a');
-						var linkText = document.createTextNode(posts[i].slug);
-						a.appendChild(linkText);
-						a.href = posts[i].post_url;
-						a.target = "_new"
-						para.appendChild(a);
-				    	$("#links").append(para);	
-
-				    }
-					
-					catch(err) {
-					    console.log("post "+i+" is undefined")
-					}		
-
-					}
-					
-			    }
-			})
-
-		}
+loadPosts();
 
 	</script>
 
