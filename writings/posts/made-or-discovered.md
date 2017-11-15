@@ -1,7 +1,6 @@
 # made or discovered? #  
-## and other fundamental dualities ##    
 
-Royce writes of Nietzsche's übermensch  
+Royce writes of Nietzsche's übermensch: 
 
 > Whether you discuss the philosophy of Nietzsche or of mathematics,--whether the *Umwertang aller Werte* or the "class of all classes,"--whether Mr. Russell's "Contradiction" or the *übermensch* in question,...always the same general issue has sooner or later to be faced. You are involved in some phase of the problem about the nature of truth. 
 
