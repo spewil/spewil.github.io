@@ -6,6 +6,61 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>srw</title>
 	<link href="http://spewil.github.io/site.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+
+		var num_posts = 115;
+
+		// since we can only get 20 posts at a time, we have to loop the ajax call with an offset 
+		// number of 20-length iterations is post number modulo 20 
+		var offset_num = Math.ceil(num_posts/20);
+		console.log(offset_num)
+		var post_offset = 0 
+
+		for (j=0; j<offset_num; j++) {
+
+			$.ajax({
+			    url: "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC&limit=20&offset="+post_offset,
+			    dataType: 'jsonp',
+			    success: function(post){
+
+			    	// num_posts = post.response.blog.posts
+
+			    	// get list of posts:
+			    	var posts = post.response.posts
+
+			    	// add each post link 
+			    	for (i=0; i<posts.length; i++){
+
+					try {
+
+				    	var para = document.createElement('p');
+				    	var a = document.createElement('a');
+						var linkText = document.createTextNode(posts[i].slug);
+						a.appendChild(linkText);
+						a.href = posts[i].post_url;
+						para.appendChild(a);
+				    	$("#links").append(para);	
+
+				    }
+					
+					catch(err) {
+					    console.log("post "+i+" is undefined")
+					}		
+
+					}
+					
+			    }
+			})
+
+			post_offset = 20*j
+			console.log(post_offset)
+		}
+
+	</script>
+
 
 </head>
 
@@ -32,11 +87,17 @@
     	<br>
     	<br>
 
-    	<p> orford ness <a href="http://epicturious.tumblr.com/post/158927230758/orford-ness-suffolk-uk-pagoda" target="_new">one</a> <a href="http://epicturious.tumblr.com/post/158926857333/orford-ness-shingle-woodbridge-suffolk-uk" target="_new">two</a></p> 	
-    	<p> <a href="http://epicturious.tumblr.com/">amsterdam</a> </p>
-    	<p> <a href="http://epicturious.tumblr.com/">yerevan</a> </p>
-    	<p> <a href="http://epicturious.tumblr.com/">paris / carcassonne</a> </p>
-    	<p> <a href="http://epicturious.tumblr.com/">chithurst monastery</a> </p>
+    	<div id = "links">
+
+<!-- 	    	<p> orford ness <a href="http://epicturious.tumblr.com/post/158927230758/orford-ness-suffolk-uk-pagoda" target="_new">one</a> <a href="http://epicturious.tumblr.com/post/158926857333/orford-ness-shingle-woodbridge-suffolk-uk" target="_new">two</a></p> 	
+	    	<p> <a href="http://epicturious.tumblr.com/">amsterdam</a> </p>
+	    	<p> <a href="http://epicturious.tumblr.com/">yerevan</a> </p>
+	    	<p> <a href="http://epicturious.tumblr.com/">paris / carcassonne</a> </p>
+	    	<p> <a href="http://epicturious.tumblr.com/">chithurst monastery</a> </p>
+
+	    	<p> the farm <a href="http://epicturious.tumblr.com/post/106276804923">one</a> </p> -->
+
+	    </div>
 
     	<br>
     	<br>
@@ -75,4 +136,5 @@
 	</div>
 
 </body>
+
 </html>
