@@ -6,12 +6,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>srw</title>
     <link href="http://spewil.github.io/site.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	var images = document.getElementsByTagName('img'); 
-	var srcList = [];
-	for(var i = 0; i < images.length; i++) {
-	    srcList.push(images[i].src);
-	}
+	<script type="text/javascript">
+		
+	$.get("https://www.goodreads.com/book/isbn?format=xml&key=d9xonLKxHDCI5HF1mHjbQ&isbn=9781843589501", function(data, status){
+	    alert("Data: " + data + "\nStatus: " + status);
+	});
+
+	
+
+	</script>
 
 </head>
 
@@ -30,6 +35,10 @@
     <! CONTENT >
 
     <div class = "content">
+
+    	<div id="covers">
+    		
+    	</div>
 
     </div>
 
