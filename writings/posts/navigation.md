@@ -1,4 +1,6 @@
-# &larr; writings
+# &larr;
 
 [gimmick:theme](readable)
+
+[writing](../)
 
