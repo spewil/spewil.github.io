@@ -39,6 +39,8 @@ function loadPosts () {
             if (data.response.posts.length == 20) {
                 fetch_posts(offset + 20);
             }
+        }).fail(function(data){
+		    $("#links").append('data did not load! please refresh:)');	
         });
     };
     
