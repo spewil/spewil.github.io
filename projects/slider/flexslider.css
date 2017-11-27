@@ -54,8 +54,8 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 60%;
-  margin-left: 60%
+  width: 50%;
+  margin-left: 50%
   display: block;
 }
 .flexslider .slides:after {
@@ -78,6 +78,7 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * DEFAULT THEME
  * ====================================================================================================================*/
+
 .flexslider {
   margin: 0 0 60px;
   background: #FFF;
@@ -99,7 +100,7 @@ html[xmlns] .flexslider .slides {
   height: auto;
 }
 .flex-viewport {
-  max-height: 2000px;
+  max-height: 500px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;

@@ -25,3 +25,7 @@ meta:
 	lens grinding (metaphor for subjectivity-- thats what I think)
 
 
+finding the tiny microscope 
+
+coughing from cigarettes 
+
