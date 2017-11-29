@@ -1,6 +1,4 @@
 # foot-powered wah bass 
-
-<div style="text-align: center;">
 	
 the bass is the coolest instrument, hands down. 
 
@@ -18,7 +16,6 @@ combined with one of these:
 
 <img src="seesaw.jpg" width="400">
 
-</div>
 
 
 
