@@ -1,8 +1,10 @@
 # foot-powered wah bass 
 
+<div style="text-align: center;">
+	
 the bass is the coolest instrument, hands down. 
 
-<div style="text-align: center;"><img src="jaco.jpg" width="400"></div>
+<img src="jaco.jpg" width="400">
 
 but what about a bass you can play with your foot? some people have built things like this:
 
@@ -10,11 +12,13 @@ but what about a bass you can play with your foot? some people have built things
 
 except in this case, the body is consciously forming the percussion. I want something where the body is subconsciously instigated in the sound production. Imagine a whammy bar: 
 
-<div style="text-align: center;"><img src="whammy.jpg" width="400"></div>
+<img src="whammy.jpg" width="400">
 
 combined with one of these: 
 
-<div style="text-align: center;"><img src="seesaw.jpg" width="400"></div>
+<img src="seesaw.jpg" width="400">
+
+</div>
 
 
 
