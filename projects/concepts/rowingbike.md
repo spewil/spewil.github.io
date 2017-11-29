@@ -2,7 +2,7 @@
 
 I want to make one of these:
 
-<div style="text-align: center;"><img src="jaco.jpg" width="400"></div>
+<div style="text-align: center;"><img src="rowingbike.jpg" width="400"></div>
 
 'nuff said, really. 
 
