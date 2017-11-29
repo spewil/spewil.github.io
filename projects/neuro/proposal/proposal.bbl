@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{Gallese2003}
+Vittorio Gallese.
+\newblock {The roots of empathy: The shared manifold hypothesis and the neural
+  basis of intersubjectivity}.
+\newblock {\em Psychopathology}, 36(4):171--180, 2003.
+
+\bibitem{Gao2015}
+Peiran Gao and Surya Ganguli.
+\newblock {On simplicity and complexity in the brave new world of large-scale
+  neuroscience This review comes from a themed issue on Large-scale recording
+  technology}.
+\newblock {\em Curr. Opin. Neurobiol.}, 32:148--155, 2015.
+
+\bibitem{Gao2017}
+Peiran Gao, Eric Trautmann, Byron~M Yu, Gopal Santhanam, Stephen Ryu, Krishna
+  Shenoy, and Surya Ganguli.
+\newblock {A theory of multineuronal dimensionality, dynamics and measurement}.
+\newblock {\em bioRxiv}, jan 2017.
+
+\bibitem{Sadtler2014}
+Patrick~T. Sadtler, Kristin~M. Quick, Matthew~D. Golub, Steven~M. Chase,
+  Stephen~I. Ryu, Elizabeth~C. Tyler-Kabara, Byron~M. Yu, and Aaron~P. Batista.
+\newblock {Neural constraints on learning}.
+\newblock {\em Nature}, 512(7515):423--426, 2014.
+
+\bibitem{Schiff2012}
+Steven~J. Schiff.
+\newblock {\em {Neural Control Engineering: The Emerging Intersection Between
+  Control Theory and Neuroscience}}.
+\newblock MIT Press, Cambridge, 2012.
+
+\bibitem{Brockett2014}
+Roger Brockett.
+\newblock {The early days of geometric nonlinear control}.
+\newblock {\em Automatica}, 50:2203--2224, 2014.
+
+\bibitem{Tang2017}
+Evelyn Tang and Danielle~S. Bassett.
+\newblock {Control of Dynamics in Brain Networks}.
+\newblock {\em arXiv.org}, 2017.
+
+\bibitem{Zanudo2016}
+Jorge G.~T. Za{\~{n}}udo, Gang Yang, and R{\'{e}}ka Albert.
+\newblock {Structure-based control of complex networks with nonlinear
+  dynamics}.
+\newblock {\em Proc. Natl. Acad. Sci. U. S. A.}, 114(28):1--33, 2016.
+
+\bibitem{Orlandi2014}
+Javier~G. Orlandi, Olav Stetter, Jordi Soriano, Theo Geisel, and Demian
+  Battaglia.
+\newblock {Transfer entropy reconstruction and labeling of neuronal connections
+  from simulated calcium imaging}.
+\newblock {\em PLoS One}, 9(6), 2014.
+
+\bibitem{Gashler2008}
+Michael~S Gashler, Dan Ventura, and Tony Martinez.
+\newblock {Iterative Non-linear Dimensionality Reduction with Manifold
+  Sculpting}.
+\newblock {\em Adv. Neural Inf. Process. Syst. 20}, pages 513--520, 2008.
+
+\end{thebibliography}
