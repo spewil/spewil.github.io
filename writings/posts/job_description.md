@@ -5,7 +5,7 @@ Chet works in Arkansas pumping gas into pressed-steel jalopies
 &ensp; a trumpeter who lost his embouchure, lost his arms, lost supreme love
 
 build a cathedral alone in darkness, bathe in emptiness
-&ensp; learn the shadowÕs long history steeped in leaves of stone 
+&ensp; learn the shadow's long history steeped in leaves of stone 
 &ensp; watch bricks crumble under self weight alone
 
 build a greenhouse-- trap light, trap rain-- burn windÕs invitation 
