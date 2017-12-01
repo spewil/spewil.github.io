@@ -8,7 +8,7 @@ build a cathedral alone in darkness, bathe in emptiness
 &ensp; learn the shadow's long history steeped in leaves of stone 
 &ensp; watch bricks crumble under self weight alone
 
-build a greenhouse-- trap light, trap rain-- burn windÕs invitation 
+build a greenhouse-- trap light, trap rain-- burn wind's invitation 
 &ensp; let fire rage, let smoke pour from crucible eyes
 &ensp; watch the building crumble again 
 
