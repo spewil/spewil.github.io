@@ -1,6 +1,8 @@
 # spirals and curation 
 
+<div style="text-align: center;">
 <img src="https://78.media.tumblr.com/ab3363055463f10fae7e533a1fb7f72c/tumblr_ouh8ulQkkJ1r9tglmo3_r1_1280.jpg" width="600">
+</div>
 
 the first time I read *The Great Gatsby* was two years ago. it was one of those highschool books I happened to skip in favor of Faulkner, which, at the time, I thought was a good decision. now I realize I wasn't clever enough then to appreciate Faulkner. I was clever enough to understand the highest abstracted form of *Gatsby*, and I think I would have found something in him that I found instead in Robert Jordan in the cave in Spain. I read *Gatsby* aloud while I was at home, before I moved to England. 
 
