@@ -2,7 +2,7 @@
 
 <br>
 
-<span style="margin: 0 auto; max-width: 600; font-family: helvetica;">
+<span class = "post_text">
 
 Libraries fill me with a deep, existential dread. Finding a book that piques my interest is more than a happy accident, its a welcome salvation from nihilism. Finding that book isn't a random walk, its a feedback loop. It's curation, no? The brain receives signals from the books it sees, performs motor functions, reinforces its synaptic topology by choosing the book. How important is your personal curation? How much of your thought is this curation? 
 
