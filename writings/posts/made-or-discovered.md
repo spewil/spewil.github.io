@@ -1,4 +1,4 @@
-# made or discovered? #  
+# made or discovered?  
 
 Royce writes of Nietzsche's übermensch: 
 

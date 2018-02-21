@@ -1,6 +1,6 @@
 # generative reduction 
 
-David Lewis (one might associate him as the "Holes" guy: [here](https://philpapers.org/rec/LEWH)), according to his Princeton biographical sketch, was known as "a materialist and a reductionist, arguing that states of the mind are simply states of the brain, functionally conceived." While I would agree with this view, I find it bothersome that a connection between materialism and reductionism is nearly automatic. 
+David Lewis (one might remember him as the "Holes" guy: [here](https://philpapers.org/rec/LEWH)), according to his Princeton biographical sketch, was known as "a materialist and a reductionist, arguing that states of the mind are simply states of the brain, functionally conceived." While I would agree with this view, I find it bothersome that a connection between materialism and reductionism is nearly automatic. 
 
 When we think of reducing macroscopic phenomena to their constituent components, we conjure a simplification. "If only I could formalize the behaviors of the constituent components," we think, "I could understand how their interactions generate macroscopic phenomena." This is simplification, in my view, not reduction. 
 

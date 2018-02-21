@@ -26,5 +26,6 @@ four dimensional space-time worm. if we have any belief in darwinian evolution, 
 system description 
 local v gloval ==> micro v macro ==> overlaps=accidents ==> webs of causality 
 
-determinism is a humanism 
+determinism is a humanism, or invokes one, because to believe in a deterministic universe, you have to truly comprehend, or try, the unbelievable nature of humanity and its collective creations-- culture, writing, creativity. determinism is a faith in a scientific construction, but it is empirical. so by occam's razor it should, rationally, be the version of reality in which we believe. but this deduction doesnt leave us facing ourselves in a mirror that exposes our stupid, mechanistic selves. those selves being born from an astronomical number of interactions, we are each unique constellations of our cells, systems of systems of fantastically complex particles. The emergence of ourselves is as beautiful as the emergence of the universe itself, as we are each universes entire.  
 
+"Aha" moments vs. continuous discovery 
