@@ -14,7 +14,7 @@ layout: default
 			{%- for book in site.books -%}
 				<li>
 				<h3>
-				<a class="post-link" href="{{ book.url | relative_url }}">{{ book.title | escape }}
+				<a class="post-link" href="{{ book.url | prepend:site.baseurl | prepend:site.url }}">{{ book.title | escape }}
 				<span class="post-meta">[{{ book.author }}]</span>
 				</a>
 				</h3>

@@ -14,23 +14,32 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# main attributes 
 title: σκέψη
 email: spencer.wilson@ucl.ac.uk
-permalink: pretty
 description: >- # this means to ignore newlines until "baseurl:"
-#   there are so many books. i'll try to entertain a few. 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog"
 url: "http://spewil.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
 github_username: spewil
-# Build settings
+
+# build settings
 markdown: kramdown
 theme: minima
-# plugins:
-#   - jekyll-feed
+
+# collections
 collections:
   books:
     output: true  
+
+gems:
+  - jekyll-relative-links
+
+# jekyll-relative-links:
+#   enabled:     true
+#   collections: false
+
+permalink: /:categories/:title/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
