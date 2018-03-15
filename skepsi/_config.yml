@@ -29,7 +29,6 @@ theme: minima
 # plugins:
 #   - jekyll-feed
 collections:
-  permalink: pretty
   books:
     output: true  
     permalink: pretty
