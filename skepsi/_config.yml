@@ -19,7 +19,7 @@ email: spencer.wilson@ucl.ac.uk
 permalink: pretty
 description: >- # this means to ignore newlines until "baseurl:"
 #   there are so many books. i'll try to entertain a few. 
-baseurl: "/skepsi" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://spewil.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: spewil
