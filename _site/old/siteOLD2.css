@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+
+html {
+    width:100%;
+    height:100%;
+}
+body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    font-family: Arial;
+}
+
+/* wrapper for the footer placement */
+
+.wrapper {
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px; 
+    /* the bottom margin is the negative 
+    value of the footer's height */
+}
+
+/**************/
+/*  ENTRANCE  */
+/**************/
+
+div.main {
+    position:relative;
+    max-width:50%;
+    left:50%;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+div.main-text{
+
+    position:relative;
+    max-width:100%;
+    margin-left:-50%;
+    text-align: center;
+
+}
+
+img.hourglass {
+    position:relative;
+    max-width:50%;
+    margin-left:-25%;
+
+}
+
+.stopwatch {
+	font-family: Courier;
+}
+
+/**************/
+/*  CONTENT  */
+/**************/
+
+a {
+	/*text-decoration: none;*/
+	color: #000000;
+}
+
+a:hover {
+	color: #d3d3d3;
+}
+
+p {
+    padding: 40px;
+}
+
+.header {
+    position:relative;
+    max-width:50%;
+    left:50%;
+    display: inline-block;
+}
+
+img.spring {
+    position:relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width:100%;
+    margin-left:-50%;
+}
+
+.root-content {
+    width: 100%;
+    text-align: center;
+}
+
+.root-content li { 
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.root-content li a {
+    font-size: 20pt;
+}
+
+/*  ~~~~~~~  */
+
+.content {
+	width: 100%;
+	text-align: center;
+}
+
+.content li { 
+    text-decoration: none;
+	list-style-type: none;
+}
+
+.content li a {
+    font-size: 14pt;
+}
+
+.content p {
+	width: 50%;
+	margin-left: 25%;
+    padding: 0px
+}
+
+.about {
+    position:relative;
+    max-width:50%;
+    left:50%;
+    display: block;
+}
+
+img.about_img {
+    position:relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width:100%;
+    margin-left:-100%;
+}
+
+.push {
+    height: 60px; /* .push must be the same height as .footer */
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+.footer {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+    padding: 0;
+}
+
+.footer li {
+	display:inline-block;
+	padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+	list-style-type: none;
+	font-size: 10pt
+}
+

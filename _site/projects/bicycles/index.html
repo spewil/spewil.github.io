@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+
+	<link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>srw</title>
+	<link href="http://spewil.github.io/site.css" rel="stylesheet" type="text/css" />
+
+	<!-- Flexslider CSS and JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../slider/jquery.flexslider.js"></script>
+	<link href="../slider/flexslider.css" rel="stylesheet" type="text/css" />	
+
+</head>
+
+<!-- Load the flexslider -->
+<script type="text/javascript" charset="utf-8">
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+	    animation: "slide"
+	  });
+	});
+</script>
+
+<body>
+
+<div class = "wrapper">
+	
+	<! HEADER >
+
+	<div class = "header">
+		<a href="http://spewil.github.io/">
+			<img class="spring" src="http://spewil.github.io/spring.png">
+		</a>
+	</div>	
+		
+	<! CONTENT >
+
+    <div class = "content">
+
+
+		<!-- Writing -->
+
+		<br>
+		<br>
+		<p>one of my passions is bicycles: building them up, trading them, and riding them into the ground. here are a few examples of past and current projects.</p>
+		<br>
+		<br>
+		
+
+		<!-- Slider Container and Images -->
+		<div class="flexslider">
+	 		<ul class="slides">
+		 		<li><img src="photo/capo2.jpg" /></li>		
+		 		<li><img src="photo/nishiki.jpg" /></li>		
+		 		<li><img src="photo/surly.jpg" /></li>		
+		 	</ul>
+		 </div>
+
+		<!-- Run the slide show! -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$('.slideshow').cycle({
+		timeout:7000,
+		speed:2000,
+		fx:'fade'
+		});
+		});
+		</script>
+		
+	</div>
+
+<div class="push"></div>
+
+</div>
+
+	<! FOOTER >
+	
+	<div class = "footer">
+		<li><a href="http://spewil.github.io/resume.pdf" target = "_new" >resume</a></li>
+		<li><a href="mailto:spencer.wilson@ucl.ac.uk" target="_top">email</a></li>
+	</div>
+
+</body>
+</html>

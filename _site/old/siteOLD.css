@@ -1,0 +1,140 @@
+@charset"UTF-8";
+ * {
+	padding: 0px;
+	margin: 0px;
+}
+html {
+	height: 100%;
+}
+body {
+	background-color:#F5FAFA;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	padding-top: 20px;
+	overflow: auto;
+}
+a {
+	color: #2a7a0b;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+}
+#header {
+	font-size: 28pt;
+	background-color:#F5FAFA;
+	width: 80%;
+	margin: 0 auto;
+	color: #3f2501;
+
+}
+* html #body #content {
+	height: 100%;
+	overflow: scroll;
+}
+ #content {
+	background-color:#F5FAFA;
+	width: 80%;
+	margin: 0 auto;
+}
+#intro {
+	font-size: 12pt;
+	color: #174543;
+	text-align: center;
+	height: 70%;
+}
+#image {
+	width: 100%;
+	float: right;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	image-resolution: 10dpi;
+}
+#image img {
+	border-radius: 7px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 50%;
+	image-resolution: 100dpi;
+}
+img.resize{
+    width: 50%; /* same as the img tag */
+    height: auto;
+}
+#footer {
+	background-color: #F5FAFA;
+	vertical-align: center;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 10px;
+	clear: both;
+}
+#footer li {
+	display:inline-block;
+	padding: 8px;
+}
+#footer li a {
+	list-style-type: none;
+	font-size: 10pt;
+	text-decoration: none;
+	color: #474747;
+}
+ .title {
+	font-size: 16pt;
+	color:#474747;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+p.subtitle {
+	font-size: 14;
+	font-weight: heavy;
+	color: #474747;
+	text-align: center;
+	margin: 10px;
+}
+p.text {
+	color: #474747;
+	text-align:center;
+	min-height: 100%;
+	margin: 20px;
+}
+p.links {
+	text-align: center;
+	white-space: pre-line;
+}
+img.showoff {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-top: 3%;
+	border-radius: 5px;
+}
+img.iphone{
+	height:500px;
+	margin: 0 auto;
+	display: table-cell;
+}
+#mainpic {
+float:right;
+width: 70%;
+padding-bottom: 10px;
+}
+#mainpic img{
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+	display: table-cell;
+	width: 70%;
+	overflow: visible;
+}
+#mainnav {
+float:left;
+width:30%;
+height: 100%;
+}
