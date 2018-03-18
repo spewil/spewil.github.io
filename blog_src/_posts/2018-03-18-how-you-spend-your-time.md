@@ -5,9 +5,6 @@ date:   2018-03-18
 categories: weeklies
 ---
 
-halfway through march. it snowed again. 
-
-
 two aeon pieces that seem related: an incredible short doc about a horologist (which reminds me of [this](https://www.youtube.com/watch?v=c08i_9gumJs) clip of Arvo Pärt), and a take on Martin Buber's [*I and Thou*](https://en.wikipedia.org/wiki/I_and_Thou). how can *things* be loved? is there ever a time, so to speak, to break Buber's commandment? 
 
 [chaos and precision in all things](https://aeon.co/videos/finding-chaos-and-precision-in-all-things-a-philosophy-of-watchmaking)
