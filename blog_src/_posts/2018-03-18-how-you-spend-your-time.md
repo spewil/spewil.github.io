@@ -17,7 +17,7 @@ two aeon pieces that seem related: an incredible short doc about a horologist (w
 
 speaking of things-- a story of buildings and strength
 
-[roma agrawal's *Built*]https://www.theguardian.com/artanddesign/2018/feb/11/roma-agrawal-structural-engineers-are-unsung-heroes-interview-shard
+[roma agrawal's *Built*](https://www.theguardian.com/artanddesign/2018/feb/11/roma-agrawal-structural-engineers-are-unsung-heroes-interview-shard)
 
 
 the OJ trial is still overwhelming 
