@@ -1,17 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-03-15T18:28:09+00:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">first post</title><link href="http://spewil.github.io/blog/weeklies/first-post/" rel="alternate" type="text/html" title="first post" /><published>2018-03-15T12:20:00+00:00</published><updated>2018-03-15T12:20:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/first-post</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/first-post/">&lt;!-- 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
- --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-03-18T19:19:49+00:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">how you spend your time</title><link href="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/" rel="alternate" type="text/html" title="how you spend your time" /><published>2018-03-18T00:00:00+00:00</published><updated>2018-03-18T00:00:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/how-you-spend-your-time</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/">&lt;p&gt;halfway through march. it snowed again.&lt;/p&gt;
 
-&lt;p&gt;this is my first post. how is it already halfway through march?&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">a really super duper long post title</title><link href="http://spewil.github.io/blog/weeklies/long-post/" rel="alternate" type="text/html" title="a really super duper long post title" /><published>2018-03-15T00:00:00+00:00</published><updated>2018-03-15T00:00:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/long-post</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/long-post/">&lt;!-- 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
- --&gt;
+&lt;p&gt;two aeon pieces that seem related: an incredible short doc about a horologist (which reminds me of &lt;a href=&quot;https://www.youtube.com/watch?v=c08i_9gumJs&quot;&gt;this&lt;/a&gt; clip of Arvo Pärt), and a take on Martin Buber’s &lt;a href=&quot;https://en.wikipedia.org/wiki/I_and_Thou&quot;&gt;&lt;em&gt;I and Thou&lt;/em&gt;&lt;/a&gt;. how can &lt;em&gt;things&lt;/em&gt; be loved? is there ever a time, so to speak, to break Buber’s commandment?&lt;/p&gt;
 
-&lt;p&gt;this is my first post. how is it already halfway through march?&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://aeon.co/videos/finding-chaos-and-precision-in-all-things-a-philosophy-of-watchmaking&quot;&gt;chaos and precision in all things&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://aeon.co/essays/all-real-living-is-meeting-the-sacred-love-of-martin-buber&quot;&gt;the sacred love of martin buber&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;speaking of things– a story of buildings and strength&lt;/p&gt;
+
+&lt;p&gt;[roma agrawal’s &lt;em&gt;Built&lt;/em&gt;]https://www.theguardian.com/artanddesign/2018/feb/11/roma-agrawal-structural-engineers-are-unsung-heroes-interview-shard&lt;/p&gt;
+
+&lt;p&gt;the OJ trial is still overwhelming&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.newyorker.com/magazine/1994/07/25/an-incendiary-defense&quot;&gt;jeffrey toobin’s 1994 &lt;em&gt;An Incendiary Defense&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;what better story than a steamship full of refugee Soviet philosophers?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Philosophers%27_ships&quot;&gt;philosopher’s ships&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;there’s an inexplicable, visual beauty in the geometry and topology of music&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@lucas_gonze/coltrane-pitch-diagrams-e25b7d9f5093&quot;&gt;coltrane’s pitch diagrams&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;the relationship between wartime and technology never ceases to astound and frighten me&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/&quot;&gt;as we may think, 1945&lt;/a&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Vannevar_Bush&quot;&gt;vannevar bush&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;brushes, paints and the marks of self. bacon’s digestion/regurgitation of subjectivity&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MgrO5za0lSY&quot;&gt;a brush with violence&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;wonderful essay from Ramachandran about the self&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.edge.org/conversation/self-awareness-the-last-frontier&quot;&gt;self: the last frontier&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">halfway through march. it snowed again.</summary></entry></feed>
