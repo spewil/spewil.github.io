@@ -46,7 +46,7 @@ speaking of oscillations, [a crazy story of a bug](https://en.wikipedia.org/wiki
 
 <br><br>
 
-i read harry frankfurt's little book on bullshit a few years ago, but after hearing about james ladyman, i enjoyed his [frankfurt-inspired take on pseudoscience](https://www.youtube.com/watch?v=32ZaTKa2IRg) (warning: hour-long lecture)
+i read [harry frankfurt's little book on bullshit](https://en.wikipedia.org/wiki/On_Bullshit) a few years ago, but after hearing about james ladyman, i enjoyed his [frankfurt-inspired take on pseudoscience](https://www.youtube.com/watch?v=32ZaTKa2IRg) (warning: hour-long lecture)
 
 my take aways: 
 
