@@ -31,7 +31,7 @@ collections:
   books:
     output: true  
 
-gems:
+plugins:
   - jekyll-relative-links
 
 # jekyll-relative-links:

@@ -5,40 +5,47 @@ author: HD
 date:   2018-03-17
 ---
 
-Trilogy is composed of *The Walls Do Not Fall*, *Tribute to the Angels*, and *Flowering of the Rod*.
+*Trilogy* is a poetic triptych written in 1944 by Hilda Doolittle, AKA HD.
 
-The first section how a single human psyche deals with a world at war, the second immanence and the self, once you let yourself be a creature, forget yourself (not unlike balyani) recurrence, transcendence, resurrection,  reflection/refraction
+The first section, *The Walls Do Not Fall*, deal with how a single human psyche tries to grasp a world at war. The second section, *Tribute to the Angels*, deals with the relationship between immanence and the self; once you let yourself be a creature, HD says, you can forget yourself (not unlike [balyani](http://spewil.github.io/blog/books/know-yourself/)). The third section, *The Flowering of the Rod*, encompasses recurrence, transcendence, resurrection, reflection/refraction through the story of Kaspar and Mary Magdalene. 
 
-## Introduction
+### Introduction
 
 > Each poet, like their precursors Milton, Whitman, and Baudelaire, has composed a personal Bible; Trilogy is HD’s multi-layered sacred text. 
 
+
 > The differences between people— especially their religious differences— ignite war. Trilogy shows that differences are also similarities or affinities that, with enlightenment, can ignite love rather than war, creation rather than destruction— and resurrection out of Apocalypse. Love, which brings difference together in harmony, is the answer: “only love is holy.” Jesus Christ is the divine embodiment of love; so too and with equal importance is the woman god: Isis, Astarte, Aphrodite, Venus, Mary, The Lady. 
+
 
 > “[Freud] had dared to say that the dream came from an unexplored depth in man’s consciousness and that this unexplored depth ran like a great stream or ocean underground, and the vast depth of that ocean was the same vast depth that today, as in Joseph’s day, overflowing in man’s small consciousness, produced inspiration, madness, creative idea , or the dregs of the dreariest symptoms of mental unrest and disease. He had dared to day that it was the same ocean of universal consciousness, and even if not stated in so many words, he had dared to imply that this consciousness proclaimed that all men one; all nations and races met in the universal world of the dream; and he had dared to say that the dream symbol could be interpreted; its language, its imagery were common to the whole race, not only of the living but of those ten-thousand years dead. The picture-writing, the hieroglyph of the dream, was the common property of the whole race; in the dream, man, as at the beginning of time, spoke a universal language, and man, meeting in the universal understanding of the unconscious or the subconscious, would forgo barriers of time and space, and man, understanding man, would save mankind.” Tribute to Freud 
 
-The dream is as Emerson, her philosophical soul-mate, puts it: “a temple whose walls are covered with emblems, pictures and commandments of the Deity.” 
 
-HD has a vision of writing on the wall, not unlike that of Belshazzar 
+> The dream is as Emerson, her philosophical soul-mate, puts it: “a temple whose walls are covered with emblems, pictures and commandments of the Deity.” 
 
-Freud reads HD’s vision as “megalomania…a hidden desire to ‘found a new religion’…’a dangerous symptom.’” HD responds that regardless of the label, “symptom or inspiration, the writing continues to write itself or be written.”
 
-Isn’t Freud founding a new religion as well…? 
+> HD has a vision of writing on the wall, not unlike that of Belshazzar... 
 
-Poets speak a universal language that is the hope of humanity. 
 
-Sophia, the female Holy Spirit of Gnosticism 
+> Freud reads HD’s vision as “megalomania…a hidden desire to ‘found a new religion’…’a dangerous symptom.’” HD responds that regardless of the label, “symptom or inspiration, the writing continues to write itself or be written.”
 
-Gnostic is an ancient religious complex stemming from Judaism, among other things— Greeks. 
+Is Freud not founding a new religion as well?
 
-The burned-out apple tree, a recurring motif in Trilogy, is “now burgeoning / with flowers.” 
-Connect this to Deleuze’s interpretation through Spinoza of the Fall— that the apple represents Knowledge of Good and Evil, as opposed to good and bad. This sets up the difference between the two dichotomies. Perhaps the knowledge of self, of higher abstraction, of culture, of all symbolic options— this is the curse, so to speak. 
 
-Trilogy is not a closed text, written for itself, but one that opens up the Book of Life, and shows the reader the blank pages on which he or she can write “the new.” 
+> Poets speak a universal language that is the hope of humanity. 
 
-~
+Gnostic is an ancient religious complex stemming from Judaism, among other things— Greeks. Sophia (Greek for wisdom) is the female Holy Spirit of Gnosticism. HD weaves christian, judaic, greek, gnostic, and pagan mythology into an unardguably human myth. 
 
-The Walls Do Not Fall 
+
+>The burned-out apple tree, a recurring motif in Trilogy, is “now burgeoning / with flowers.” 
+
+How can we connect this to Deleuze’s interpretation through Spinoza of the Fall? that the apple represents Knowledge of Good and Evil, as opposed to good and bad. This sets up the difference between the two dichotomies. Perhaps the knowledge of self, of higher abstraction, of culture, of all symbolic options— this is the curse, so to speak. 
+
+
+> Trilogy is not a closed text, written for itself, but one that opens up the Book of Life, and shows the reader the blank pages on which he or she can write “the new.” 
+
+
+
+### The Walls Do Not Fall 
 
 [1] 
 
@@ -50,6 +57,7 @@ so, through our desolation,
 thoughts stir, inspiration stalks us
 through gloom 
 
+
 [6]
 
 In me (the worm) clearly
@@ -57,8 +65,8 @@ is no righteousness, but this—
 
 persistence; 
 
-*Spinoza’s conatus here? Great metaphor of a worm’s persistence and life towards rebirth 
-*Jane Bennet evokes the worm in Vibrant Matter 
+*Spinoza’s conatus can be invoked here; the great metaphor of a worm’s persistence and life towards rebirth. Jane Bennett evokes the very same worm in **Vibrant Matter***. 
+
 
 [8] 
 
@@ -67,15 +75,18 @@ but if you do not even understand what words say,
 how can you expect to pass judgement 
 on what words conceal? 
 
+
 [9]
 
 irony is bitter truth
 wrapped up in a little joke. 
 
+
 [10]
 
 remember, O sword,
 you are the younger brother, the latter-born 
+
 
 [11]
 
@@ -85,9 +96,10 @@ their begetter
 Dream,
 Vision. 
 
-[14] !!!
 
-*the shell of the Self 
+**[14]** 
+
+the shell of the Self 
 
 dragging the forlorn 
 husk of self after us, 
@@ -105,8 +117,6 @@ awkwardly, we drag this stale
 old will, old volition, old habit
 
 about with us 
-
-…
 
 O, do not look up 
 into the air, 
@@ -126,11 +136,13 @@ we have not crawled so very far
 up our individual grass-blade
 toward our individual star. 
 
+
 [20]
 
 in a simple dream-equation 
 
 the most profound philosophy 
+
 
 [22]
 
@@ -138,6 +150,7 @@ pale as the worm in the grass,
 yet I am a spark 
 
 struck by your hoof from a rock
+
 
 [30]
 
@@ -148,6 +161,7 @@ sterile logic, trivial reason
 
 oneness lost, madness
 
+
 [31]
 
 with too many contradictory emotions, 
@@ -156,17 +170,17 @@ search for a finite definition
 of the infinite, stumbling toward 
 vague cosmic expression
 
-…
-
 jottings of psychic numerical equations, 
 runes, superstitions, evasions
 
 oneness lost, madness. 
 
+
 [35]
 
 be ye wise
 as asps, scorpions, as serpents 
+
 
 [38]
 
@@ -212,12 +226,11 @@ differ from those of every other leaf
 in the forest, as every snow-flake
 has its particular star, coral or prism shape. 
 
+
 [43]
 
 still the walls do not fall 
 I do not know why
-
-…
 
 we are voyagers, discoverers 
 of the not-known,
@@ -228,22 +241,18 @@ we have no map;
 possibly we will reach haven, 
 heaven. 
 
-~~~
 
-Tribute to the Angels 
+
+### Tribute to the Angels 
 
 Hermes people 
 his metal quicksilver 
 thieves and poets 
 
-~
-
 mer, mere, mère mater, Maia, Mary, 
 
 Star of the Sea,
 Mother. 
-
-~
 
 I do not want to name it,
 I want to watch its faint
@@ -260,7 +269,6 @@ till I shrink,
 dematerialize
 and am drawn into it. 
 
-~
 
 [34]
 
@@ -270,13 +278,10 @@ with a feather
 who weighed the souls
 of the dead. 
 
-~
 
 [35] - [36]
 
 she carried a book
-
-…
 
 this is the new Eve who comes 
 
@@ -285,6 +290,7 @@ what she lost the race
 
 given over to sin, to death;
 she bring the Book of Life, obviously. 
+
 
 [38]
 
@@ -303,6 +309,7 @@ in a colored window;
 she is Psyche, the butterfly,
 out of the cocoon. 
 
+
 [39]
 
 her book is our book; written
@@ -314,9 +321,8 @@ a tale of a jar or jars,
 the same— different— the same attributes,
 different yet the same as before. 
 
-~~~
 
-The Flowering of the Rod 
+### The Flowering of the Rod 
 
 [3]
 
@@ -325,6 +331,7 @@ whether the others follow or not?
 
 I don’t think so— he is so happy to be off—
 he knows where he is going; 
+
 
 [5]
 
@@ -374,9 +381,11 @@ but in certain ecstasy,
 for theirs is the hunger 
 for Paradise. 
 
+
 [6]
 
 many waters can not quench love’s fire
+
 
 [9]
 
@@ -395,10 +404,12 @@ deny me, do not recognize me,
 shun me; for this reality
 is infectious—ecstasy. 
 
+
 [28]
 
 Kaspar heard
 an echo of an echo in a shell 
+
 
 [31]
 
@@ -407,6 +418,7 @@ the whole scope and plan
 
 of our and his civilization on this,
 his and our earth, before Adam.
+
 
 [40]
 

@@ -1,36 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-03-18T19:19:49+00:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">how you spend your time</title><link href="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/" rel="alternate" type="text/html" title="how you spend your time" /><published>2018-03-18T00:00:00+00:00</published><updated>2018-03-18T00:00:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/how-you-spend-your-time</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/">&lt;p&gt;halfway through march. it snowed again.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-03-25T14:46:30+01:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">deep result: everything oscillates</title><link href="http://spewil.github.io/blog/weeklies/oscillations/" rel="alternate" type="text/html" title="deep result: everything oscillates" /><published>2018-03-25T00:00:00+00:00</published><updated>2018-03-25T00:00:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/oscillations</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/oscillations/">&lt;p&gt;start with a great &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_mathematical_jargon#deep&quot;&gt;wiki list of mathematical jargon&lt;/a&gt;, where we find the concept of a “deep result” is explained. a deep result is one which requires “deeper” knowledge, certain latent structures, to prove.&lt;/p&gt;
 
-&lt;p&gt;two aeon pieces that seem related: an incredible short doc about a horologist (which reminds me of &lt;a href=&quot;https://www.youtube.com/watch?v=c08i_9gumJs&quot;&gt;this&lt;/a&gt; clip of Arvo Pärt), and a take on Martin Buber’s &lt;a href=&quot;https://en.wikipedia.org/wiki/I_and_Thou&quot;&gt;&lt;em&gt;I and Thou&lt;/em&gt;&lt;/a&gt;. how can &lt;em&gt;things&lt;/em&gt; be loved? is there ever a time, so to speak, to break Buber’s commandment?&lt;/p&gt;
+&lt;p&gt;an example of a deep result is the infinite number of primes, which led me to a prime plot&lt;/p&gt;
+
+&lt;div align=&quot;center&quot; style=&quot; height: 200px; overflow: hidden&quot;&gt;
+	&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Primes_-_distribution_-_up_to_19_primorial.png/800px-Primes_-_distribution_-_up_to_19_primorial.png&quot; alt=&quot;Drawing&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;which looks shockingly similar to a spike raster plot of neurons&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+	&lt;img src=&quot;http://actionpotential.com/wordpress/wp-content/uploads/2015/09/polychronization01.png&quot; style=&quot;width: 600px;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;looking at control systems, I found a reference to an older feedback controller than &lt;a href=&quot;https://en.wikipedia.org/wiki/Centrifugal_governor&quot;&gt;Maxwell’s steam engine&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Cornelis_Drebbel#Works&quot;&gt;Cornelius Hebbel’s&lt;/a&gt; temperature-regulating oven for chicken egg incubation. i then found an &lt;strong&gt;even&lt;/strong&gt; older version by the greek &lt;a href=&quot;https://en.wikipedia.org/wiki/Water_clock#Greco-Roman_world&quot;&gt;&lt;em&gt;clepsydra&lt;/em&gt;&lt;/a&gt; which means “water-thief”. feedback is used to correct the fact that a fuller pot will outflow from its bottom faster than a less full pot, due to the higher pressure at the outlet. the greeks even had alarms consisting of gongs attached to water clocks. bonkers. say thanks to poor &lt;a href=&quot;https://en.wikipedia.org/wiki/Ctesibius&quot;&gt;ctesibus&lt;/a&gt; for these wonderful inventions.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;attending a royal society meeting on (computation by natural systems)[https://royalsociety.org/science-events-and-lectures/2018/03/natural-systems/], i was struck by an offhand comment at lunch (accompanied by a characteristic grin) by professor nick monk: “&lt;strong&gt;everything oscillates&lt;/strong&gt;”.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;thinking about how the animal controls itself (weaning myself off of thinking about how to control the animal), a series of works by muraven and baumeister:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://psycnet.apa.org/buy/1998-01923-011&quot;&gt;1998&lt;/a&gt; 
+&lt;a href=&quot;http://psycnet.apa.org/buy/1998-00299-017&quot;&gt;1998&lt;/a&gt; 
+&lt;a href=&quot;https://search.proquest.com/docview/199849497?pq-origsite=gscholar&quot;&gt;1999&lt;/a&gt; 
+&lt;a href=&quot;http://psycnet.apa.org/record/2000-03444-003&quot;&gt;2000&lt;/a&gt;
+&lt;a href=&quot;http://journals.sagepub.com/doi/abs/10.1111/j.1467-8721.2007.00534.x&quot;&gt;2007&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;which all make the claim that cognitive regulation is a muscle that can be strengthened with deliberate effort. looking for normative results, i found a paper laboring towards a mechanistic understanding at this deliberate practice, a personal trainer for your mind-muscle, so to speak. the take-home from all of this work is inhibition; self-control or “executive function”, focused in the prefrontal cortex, is almost entirely negative feedback– inhibition is central to control. it’s what you &lt;em&gt;don’t&lt;/em&gt; respond to that matters: attention is ignoring everything you deem unimportant. who decides what’s important?&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;speaking of oscillations, &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Thing_(listening_device)&quot;&gt;a crazy story of a bug&lt;/a&gt; in the US ambassador’s office in Moscow in the 40s&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;i read harry frankfurt’s little book on bullshit a few years ago, but after hearing about james ladyman, i enjoyed his &lt;a href=&quot;https://www.youtube.com/watch?v=32ZaTKa2IRg&quot;&gt;frankfurt-inspired take on pseudoscience&lt;/a&gt; (warning: hour-long lecture)&lt;/p&gt;
+
+&lt;p&gt;my take aways:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;the ideal science should be self-correcting and aware of dogmatism and hubris (how much we know). appeals to epistemic authorities are necessary and relevant both politically and socially. scientific orthodoxy is the best way we have to generate facts and serve as such an authority. pseudoscience is not inherently non-science, fraud science, nor bad science. these non-science sciences must be properly defined for science-science to be held to task.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://brembs.net/learning/drosophila/foxp/&quot;&gt;a paper&lt;/a&gt; on operant conditioning vs language acquisition in the fly model… chomsky would not be amused. my take home is that this gene has something to do with different learning conditions, but the implications of “self-learning” and “world-learning” are interesting. that is, how is learning reinforced in light of “i did something” vs “my context was different”? perhaps they are one in the same. unclear.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://computergraphics.stackexchange.com/questions/5085/light-intensity-of-an-rgb-value&quot;&gt;color is really complex, both physically and biologically&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;a friend of mine just published &lt;a href=&quot;https://press.princeton.edu/titles/11108.html&quot;&gt;a spicy book about curves&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">start with a great wiki list of mathematical jargon, where we find the concept of a “deep result” is explained. a deep result is one which requires “deeper” knowledge, certain latent structures, to prove.</summary></entry><entry><title type="html">how you spend your time</title><link href="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/" rel="alternate" type="text/html" title="how you spend your time" /><published>2018-03-18T00:00:00+00:00</published><updated>2018-03-18T00:00:00+00:00</updated><id>http://spewil.github.io/blog/weeklies/how-you-spend-your-time</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/how-you-spend-your-time/">&lt;p&gt;two aeon pieces that seem related: an incredible short doc about a horologist (which reminds me of &lt;a href=&quot;https://www.youtube.com/watch?v=c08i_9gumJs&quot;&gt;this&lt;/a&gt; clip of Arvo Pärt), and a take on Martin Buber’s &lt;a href=&quot;https://en.wikipedia.org/wiki/I_and_Thou&quot;&gt;&lt;em&gt;I and Thou&lt;/em&gt;&lt;/a&gt;. how can &lt;em&gt;things&lt;/em&gt; be loved? is there ever a time, so to speak, to break Buber’s commandment?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://aeon.co/videos/finding-chaos-and-precision-in-all-things-a-philosophy-of-watchmaking&quot;&gt;chaos and precision in all things&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://aeon.co/essays/all-real-living-is-meeting-the-sacred-love-of-martin-buber&quot;&gt;the sacred love of martin buber&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;speaking of things– a story of buildings and strength&lt;/p&gt;
 
-&lt;p&gt;[roma agrawal’s &lt;em&gt;Built&lt;/em&gt;]https://www.theguardian.com/artanddesign/2018/feb/11/roma-agrawal-structural-engineers-are-unsung-heroes-interview-shard&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.theguardian.com/artanddesign/2018/feb/11/roma-agrawal-structural-engineers-are-unsung-heroes-interview-shard&quot;&gt;roma agrawal’s &lt;em&gt;Built&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;the OJ trial is still overwhelming&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.newyorker.com/magazine/1994/07/25/an-incendiary-defense&quot;&gt;jeffrey toobin’s 1994 &lt;em&gt;An Incendiary Defense&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;what better story than a steamship full of refugee Soviet philosophers?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Philosophers%27_ships&quot;&gt;philosopher’s ships&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;there’s an inexplicable, visual beauty in the geometry and topology of music&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@lucas_gonze/coltrane-pitch-diagrams-e25b7d9f5093&quot;&gt;coltrane’s pitch diagrams&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;the relationship between wartime and technology never ceases to astound and frighten me&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/&quot;&gt;as we may think, 1945&lt;/a&gt;
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Vannevar_Bush&quot;&gt;vannevar bush&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;brushes, paints and the marks of self. bacon’s digestion/regurgitation of subjectivity&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MgrO5za0lSY&quot;&gt;a brush with violence&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;wonderful essay from Ramachandran about the self&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.edge.org/conversation/self-awareness-the-last-frontier&quot;&gt;self: the last frontier&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">halfway through march. it snowed again.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.edge.org/conversation/self-awareness-the-last-frontier&quot;&gt;self: the last frontier&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">two aeon pieces that seem related: an incredible short doc about a horologist (which reminds me of this clip of Arvo Pärt), and a take on Martin Buber’s I and Thou. how can things be loved? is there ever a time, so to speak, to break Buber’s commandment?</summary></entry></feed>
