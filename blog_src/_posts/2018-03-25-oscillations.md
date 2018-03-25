@@ -64,3 +64,9 @@ my take aways:
 
 a friend of mine just published [a spicy book about curves](https://press.princeton.edu/titles/11108.html) 
 
+<br><br>
+
+last but not least, a quote from lady gaga:
+
+>you have to go to the broken place in your heart to write songs, like open heart surgery-- it's invasive. 
+
