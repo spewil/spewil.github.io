@@ -26,7 +26,7 @@ looking at control systems, I found a reference to an older feedback controller 
 
 <br><br>
 
-attending a royal society meeting on (computation by natural systems)[https://royalsociety.org/science-events-and-lectures/2018/03/natural-systems/], i was struck by an offhand comment at lunch (accompanied by a characteristic grin) by professor nick monk: "**everything oscillates**". 
+attending a royal society meeting on [computation by natural systems](https://royalsociety.org/science-events-and-lectures/2018/03/natural-systems/), i was struck by an offhand comment at lunch (accompanied by a characteristic grin) by professor nick monk: "**everything oscillates**". 
 
 <br><br>
 
