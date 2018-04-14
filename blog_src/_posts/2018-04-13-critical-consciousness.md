@@ -9,6 +9,10 @@ i went for [a walk in holland](https://walkofwisdom.org/2018/onze-eerste-pelgrim
 
 <br><br>
 
+[the mind-expanding ideas of andy clark](https://www.newyorker.com/magazine/2018/04/02/the-mind-expanding-ideas-of-andy-clark) -- are we all 'cyborgs'?
+
+<br><br>
+
 you can buy [your very own blue plaque](http://www.blueplaque.com/) to put outside your flat and be famous. 
 
 <br><br>
