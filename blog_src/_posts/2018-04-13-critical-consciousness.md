@@ -9,7 +9,7 @@ i went for [a walk in holland](https://walkofwisdom.org/2018/onze-eerste-pelgrim
 
 <br><br>
 
-[the mind-expanding ideas of andy clark](https://www.newyorker.com/magazine/2018/04/02/the-mind-expanding-ideas-of-andy-clark) -- are we all 'cyborgs'?
+[the mind-expanding ideas of andy clark](https://www.newyorker.com/magazine/2018/04/02/the-mind-expanding-ideas-of-andy-clark) -- connecting brains to environments, technology, and other brains
 
 <br><br>
 
