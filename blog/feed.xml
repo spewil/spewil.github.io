@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-04-22T13:16:34+01:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">…and all that.</title><link href="http://spewil.github.io/blog/weeklies/and-all-that/" rel="alternate" type="text/html" title="...and all that." /><published>2018-04-22T00:00:00+01:00</published><updated>2018-04-22T00:00:00+01:00</updated><id>http://spewil.github.io/blog/weeklies/and-all-that</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/and-all-that/">&lt;p&gt;kendrick lamar wins &lt;a href=&quot;https://www.npr.org/sections/therecord/2018/04/16/602948758/kendrick-lamars-damn-wins-historic-pulitzer-prize-in-music&quot;&gt;the pulitzer for music&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://spewil.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://spewil.github.io/blog/" rel="alternate" type="text/html" /><updated>2018-04-29T18:14:08+01:00</updated><id>http://spewil.github.io/blog/</id><title type="html">σκέψη</title><subtitle></subtitle><entry><title type="html">social hope</title><link href="http://spewil.github.io/blog/weeklies/social-hope/" rel="alternate" type="text/html" title="social hope" /><published>2018-04-29T00:00:00+01:00</published><updated>2018-04-29T00:00:00+01:00</updated><id>http://spewil.github.io/blog/weeklies/social-hope</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/social-hope/">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Richard_Rorty&quot;&gt;Philosopher Richard Rorty&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rorty tied this brand of philosophy to the notion of “social hope”; he believed that without the representationalist accounts, and without metaphors between the mind and the world, human society would behave more peacefully. He also emphasized the reasons why the interpretation of culture as conversation, constitutes the crucial concept of a “postphilosophical” culture determined to abandon representationalist accounts of traditional epistemology, incorporating American pragmatist naturalism that considers the natural sciences as an advance towards liberalism.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://money.stackexchange.com/questions/94671/why-isnt-everybody-rich&quot;&gt;why isn’t everybody rich?&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Understand that you cannot duplicate your parent’s household immediately. It took them 20-30 years to get there. You are just starting out.&lt;/li&gt;
+    &lt;li&gt;Get out and stay out of consumer debt (this includes student loans and car payments)&lt;/li&gt;
+    &lt;li&gt;Then start investing some money in low-cost mutual funds.&lt;/li&gt;
+    &lt;li&gt;Save an emergency fund (3-6 months)&lt;/li&gt;
+    &lt;li&gt;Buy a modest home (15-year mortgage 10-20% down)&lt;/li&gt;
+    &lt;li&gt;With any extra income: give some, spend some, and invest a lot.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2018/04/21/opinion/sunday/the-real-cost-of-cheap-shirts.html&quot;&gt;nothing is cheap&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;if I want to buy something, which is often, I always put it on my list. After some time, I can decide if that thing will improve the quality of my life, and it is within my means to buy it. ‘within my means’ is a budgeting problem that’s in a process of constant revision. the important point here is that nothing is cheap– as with all relative transactions, what you include in your system of transaction matters. that’s not to argue naively for a zero-sum economic game, but perhaps there is some ethical conservation law…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;i needed to extract text from a PDF file without indexed text.&lt;/p&gt;
+
+&lt;p&gt;I ended up finding a local solution using &lt;code class=&quot;highlighter-rouge&quot;&gt;imagemagick&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tesseract&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install tesseract, imagemagick&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;things didn’t work so i tried&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;brew install gs&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which work. then taking the &lt;code class=&quot;highlighter-rouge&quot;&gt;input.pdf&lt;/code&gt; file i &lt;code class=&quot;highlighter-rouge&quot;&gt;converted&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;imagemagick&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ convert -density 300 input.pdf -depth 8 -strip -background white -alpha off image_file.tiff&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where these &lt;code class=&quot;highlighter-rouge&quot;&gt;convert&lt;/code&gt; settings took a bit of trial and error. this tiff was &lt;code class=&quot;highlighter-rouge&quot;&gt;470MB&lt;/code&gt; for 53 pages of large text. using &lt;code class=&quot;highlighter-rouge&quot;&gt;tesseract&lt;/code&gt;, i made &lt;code class=&quot;highlighter-rouge&quot;&gt;output.txt&lt;/code&gt; with&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ tesseract -l eng image_file.tif output&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theatlantic.com/magazine/archive/2018/05/reinventing-america/556856/?single_page=true&quot;&gt;some optimism about America from the Atlantic&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What we learned from traveling was not that the hardest American challenges of this era are illusory. They’re very real, and divisions about national politics are intense. So we made a point of never asking, early on, “How’s Obama doing?,” or later, “Do you trust Hillary?” and “What about Trump?” The answers to questions like those won’t take you beyond what you’ve already heard ad nauseam on TV.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Instead we asked people about their own lives and their own communities.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;very Freire.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Rainmaker1973/status/988711358358261762&quot;&gt;cool pics from a comet&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;This is what a view on a comet looks like, among dust, stars and cosmic ray hits, as captured by &lt;a href=&quot;https://twitter.com/ESA_Rosetta?ref_src=twsrc%5Etfw&quot;&gt;@ESA_Rosetta&lt;/a&gt; on June 1, 2016 and processed by &lt;a href=&quot;https://twitter.com/landru79?ref_src=twsrc%5Etfw&quot;&gt;@landru79&lt;/a&gt; from these raw data: &lt;a href=&quot;https://t.co/h3BV6Z2V71&quot;&gt;https://t.co/h3BV6Z2V71&lt;/a&gt; &lt;a href=&quot;https://t.co/w1Yv4OwIo1&quot;&gt;pic.twitter.com/w1Yv4OwIo1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Massimo (@Rainmaker1973) &lt;a href=&quot;https://twitter.com/Rainmaker1973/status/988711358358261762?ref_src=twsrc%5Etfw&quot;&gt;April 24, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.paulgraham.com/vb.html&quot;&gt;life is too short for bullshit&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Arguments of the form “Life is too short for x” have great force. It’s not just a figure of speech to say that life is too short for something. It’s not just a synonym for annoying. If you find yourself thinking that life is too short for something, you should try to eliminate it if you can.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;bullshit does have a distinctive character. There’s something fake about it. It’s the junk food of experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cultivate a habit of impatience about the things you most want to do.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The “flow” that imaginative people love so much has a darker cousin that prevents you from pausing to savor life amid the daily slurry of errands and alarms.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Relentlessly prune bullshit, don’t wait to do things that matter, and savor the time you have. That’s what you do when life is short.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theguardian.com/uk-news/2017/nov/25/chinas-bike-share-graveyard-a-monument-to-industrys-arrogance&quot;&gt;when capitalism kills good things like bicycles&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.guim.co.uk/img/media/c217fdc4f8ce3df1ae171ccfcda6e0e8007676dc/64_0_2666_1600/master/2666.jpg?w=860&amp;amp;q=20&amp;amp;auto=format&amp;amp;usm=12&amp;amp;fit=max&amp;amp;dpr=2&amp;amp;s=05635ef64c53e356925e8fb3b87d92c1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2018/04/14/nyregion/david-buckel-dead-fire.html&quot;&gt;Buckel’s self-immolation&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Privilege, he said, was derived from the suffering of others.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Many who drive their own lives to help others often realize that they do not change what causes the need for their help,” Mr. Buckel wrote, adding that donating to organizations was not enough.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By 11 a.m., the authorities had removed Mr. Buckel’s body, leaving a blackened patch and a circular indentation around which parks officials placed two orange cones.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The grim scene stood in stark contrast to the rest of the park, which brimmed with activity. Several youth baseball games continued nearby and participants in PurpleStride, a walk dedicated to ending pancreatic cancer, strode along the bike path with runners and joggers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Robert_Sapolsky&quot;&gt;Finding your baboons?&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In 1978, Sapolsky received his B.A. in biological anthropology summa cum laude from Harvard University.[8] He then went to Kenya to study the social behaviors of baboons in the wild; after which he returned to New York; studying at Rockefeller University, where he received his Ph.D. in neuroendocrinology working in the lab of endocrinologist Bruce McEwen.
+Following Sapolsky’s initial year-and-a-half field study in Africa, he returned every summer for another twenty-five years to observe the same group of baboons, from the late 70s to the early 90s. He spent 8 to 10 hours a day for approximately four months each year recording the behaviors of these primates.[9]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;i have this idea of &lt;em&gt;raw material&lt;/em&gt;. often (continental) philosophers use literature, poetry, and film as currency in arguments. language is borrowed from art as material to build rhetoric, to color examples. in the same way, scientists have raw material, they have experiences documenting the social habits of baboons, they have data from microscopes and sensors. we all have raw material in the way of experience. choosing experiences, making choices that lead to transformations in the world lead to changes in experience. what i am working to do is reflect on these experiences, use them as &lt;em&gt;raw material&lt;/em&gt; to craft new experiences.&lt;/p&gt;
+
+&lt;p&gt;reflect on your baboons.&lt;/p&gt;</content><author><name></name></author><summary type="html">Philosopher Richard Rorty</summary></entry><entry><title type="html">…and all that.</title><link href="http://spewil.github.io/blog/weeklies/and-all-that/" rel="alternate" type="text/html" title="...and all that." /><published>2018-04-22T00:00:00+01:00</published><updated>2018-04-22T00:00:00+01:00</updated><id>http://spewil.github.io/blog/weeklies/and-all-that</id><content type="html" xml:base="http://spewil.github.io/blog/weeklies/and-all-that/">&lt;p&gt;kendrick lamar wins &lt;a href=&quot;https://www.npr.org/sections/therecord/2018/04/16/602948758/kendrick-lamars-damn-wins-historic-pulitzer-prize-in-music&quot;&gt;the pulitzer for music&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.vox-cdn.com/thumbor/OFS1F_aktwo8tfoN3L1JiO_0kPI=/0x0:1000x1000/1200x800/filters:focal(416x29:576x189)/cdn.vox-cdn.com/uploads/chorus_image/image/59411025/ada232f9f870cf829171fa8990916aa9.1000x1000x1.0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
