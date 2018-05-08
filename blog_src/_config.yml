@@ -27,18 +27,27 @@ markdown: kramdown
 theme: minima
 
 # collections
+# collections are for non-date centric things 
 collections:
   books:
-    output: true  
+    output: true
 
 plugins:
   - jekyll-relative-links
+  - jekyll-feed
 
 # jekyll-relative-links:
 #   enabled:     true
 #   collections: false
 
 permalink: /:categories/:title/
+
+# comments with isso
+isso:
+  data_isso: /isso/
+  script_src: /isso/js/embed.min.js
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

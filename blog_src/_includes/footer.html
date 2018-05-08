@@ -3,6 +3,15 @@
 
   <div class="wrapper">
 
+    {% if page.path contains '_posts' %}
+      {% raw %}
+      {% if site.isso.script_src %}
+        <script data-isso="{{site.isso.data_isso}}" src="{{site.isso.script_src}}"></script>
+        <section id="isso-thread"></section>
+      {% endif %}
+      {% endraw %}
+    {% endif %}
+
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
 
@@ -12,19 +21,19 @@
 
       <div class="footer-col footer-col-2">
 
-          <form 
-              style="border:none; padding:0px; text-align:center;" 
-              action="https://tinyletter.com/spewil" 
-              method="post" 
-              target="popupwindow" 
-              onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      {% if page.path contains 'about' %}
+      {% else %}
+            <form 
+                style="border:none; padding:0px; text-align:center;" 
+                action="https://tinyletter.com/spewil" 
+                method="post" 
+                target="popupwindow" 
+                onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
 
-              <!-- <p><label for="tlemail">Enter your email address</label></p> -->
-              <p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
-              <input type="hidden" value="1" name="embed"/><input type="submit" value="subscribe" />
-              <!-- <p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p> -->
-          </form>
-
+                <p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
+                <input type="hidden" value="1" name="embed"/><input type="submit" value="subscribe" />
+            </form>
+      {% endif %}   
       </div>
 
       <div class="footer-col footer-col-3">

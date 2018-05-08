@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-this is a blog for weeklyish updates and thoughts on books with quotes. 
+this is a blog for weeklyish thoughts on neuroscience, philosophy, and writing. subscribe via email for monthlyish updates. subscribe via RSS for more frequent commits. 
 
 <br><br>
 
