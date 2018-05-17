@@ -35,6 +35,8 @@ Awesome old bicycles:
 
 [A mesmerizing watch movement](https://www.hodinkee.com/articles/the-mb-and-f-legacy-machine-perpetual-calendar)
 
+![](https://hodinkee.imgix.net/uploads/content_image/105b797c8174bc8b915c1fca924b268b?ixlib=rails-1.1.0&auto=format&ch=Width%2CDPR%2CSave-Data&fit=crop&fm=jpg&q=55&usm=12&w=820&dpr=2&s=753ec87e79c8fb684bcb8a67f4d98924)
+
 <br><br>
 
 [Tardigrades](https://en.wikipedia.org/wiki/Tardigrade), AKA water bears, are virtually indestructible little creatures. I'm really curious about their brains. 
