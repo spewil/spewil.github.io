@@ -9,8 +9,8 @@ layout: default
   {%- if site.posts.size > 0 -%}
   <ul class="post-list">
 
+    <h1>neuro</h1>
       {%- for post in site.categories.neuro -%}
-      <h1>neuro</h1>
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
@@ -25,9 +25,8 @@ layout: default
       </li>
       {%- endfor -%}
 
-
-  {%- for post in site.categories.philosophy -%}
-      <h1>philosophy</h1>
+    <h1>philosophy</h1>
+      {%- for post in site.categories.philosophy -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
