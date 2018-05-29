@@ -3,6 +3,7 @@ layout: post
 title:  "dynamics and function"
 date:   2018-05-15
 categories: neuro
+published: False
 ---
 
 my dream is to apply neural organizational principles to understanding how people/groups organize
