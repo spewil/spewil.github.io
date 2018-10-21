@@ -1,0 +1,55 @@
+/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+body {
+  background: url('../cells.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.subscribe #email{
+	position: absolute;
+	margin: auto;
+	height: 100px;
+	width: 300px !important;
+	top: -250px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+
+	border: 2px solid white;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-size: 36px !important;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.subscribe #button{
+	position: absolute;
+	margin: auto;
+	height: 100px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 36px !important;
+    cursor: pointer;
+}
