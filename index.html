@@ -1,81 +1,68 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<head>
+  <head>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110100463-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	  gtag('config', 'UA-110100463-1');
-	</script>
+    <title>spencer wilson</title>
+    <link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon"/>
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/full.css" rel="stylesheet">
+  </head>
 
-	<link rel="shortcut icon" href="http://spewil.github.io/info.ico" type="image/x-icon"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>srw</title>
-	<link href="./site.css" rel="stylesheet" type="text/css" />
+  <body>
 
-</head>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">spencer wilson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://spewil.github.io/about/">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://spewil.github.io/pictures/" target="_blank">pictures↗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading" target="_blank">bookshelf↗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/spewil/" target="_blank">github↗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:spencer.wilson@ucl.ac.uk" target="_blank">email me↗</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body onload="javascript:stopwatch.start()">
+    <!-- Page Content -->
+    <div class = subscribe>
+      <form 
+        action="https://tinyletter.com/spewil" 
+        method="post" 
+        target="popupwindow" 
+        onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <p>
+          <input type="text" name="email" placeholder="your email here" id="email"/>
+        </p>
+        <input type="hidden" value="1" name="embed"/>
+        <input type="submit" value="subscribe" id="button"/>
+      </form>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<div class = "wrapper">
-	
-	<! HEADER >
+  </body>
 
-	<div class = "header">
-		<a href = "http://spewil.github.io/">
-			<img class="spring" src="http://spewil.github.io/spring.png">
-		</a>
-	</div>	
-		
-	<! CONTENT >
-
-    <div class = "root-content">
-
-    	<br>
-    	<br>
-    	
-		<li><a href = "http://spewil.github.io/about">about</a></li>	
-
-		<li><a href = "http://spewil.github.io/projects">projects</a></li>
-
-		<li><a href = "http://spewil.github.io/writings">writings</a></li>
-				
-		<li><a href = "http://spewil.github.io/pictures">adventures</a></li>
-				
-		<li><a href="http://spewil.github.io/resume.pdf" target = "_new" >resume</a></li>
-				
-	</div>
-
-<div class="main">
-
-	<a href="http://spewil.github.io/root/"><img class="hourglass" src="./hour-glass.gif"></a>
-
-	<div class="main-shift">
-
-		<br>
-
-		<div class="stopwatch">	</div>
-
-	</div>
-
-</div>
-
-<script src="./stopwatch.js"></script>
-
-<div class="push"></div>
-	
-</div>
-
-	<! FOOTER >
-	
-	<div class = "footer">
-		<li><a href="mailto:spencer.wilson@ucl.ac.uk" target="_top">email</a></li>
-		<li><a href="./meta.html" target="_top">meta</a></li>
-	</div>
-
-</body>
 </html>

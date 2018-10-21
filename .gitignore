@@ -1,9 +1,2 @@
-/root
 /old
-basic_page.html
-basic_project.html
-/stopwatch
-.ai
-./writings/old
-./writings/progress
-/projects/business_card/ai/
+.DS_Store

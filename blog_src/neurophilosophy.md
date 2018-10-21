@@ -1,4 +1,0 @@
----
-layout: neurophilosophy
-title: neurophilosophy
----
