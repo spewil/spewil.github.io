@@ -18,24 +18,26 @@ body {
 
 .subscribe{
 	height: 100%;
+	font-size: calc(12px + 1vw);
 }
+
+
 
 .subscribe #email{
 	position: absolute;
 	margin: auto;
-	height: 100px;
-	width: 300px !important;
-	top: -250px;
+	height: 8%;
+	width: 25%;
+	min-width: 200px;
+	top: -150px;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
-
 	border: 2px solid white;
     border-radius: 12px;
     background-color: white;
     color: black;
-    font-size: 36px !important;
     cursor: pointer;
     text-align: center; 
 }
@@ -43,19 +45,19 @@ body {
 .subscribe #button{
 	position: absolute;
 	margin: auto;
-	height: 100px;
-	width: 200px;
+	height: 7%;
+	width: 15%;
+	min-width: 100px;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	margin: auto;
-
     border: 2px solid white;
     border-radius: 10px;
     background-color: white;
     color: black;
-    font-size: 36px !important;
     cursor: pointer;
+
 }
 
