@@ -3,27 +3,83 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
  */
-
+/*
 body {
   background: url('../cells.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
+}*/
+/*
 .bg-dark {
     background-color: #000000 !important;
 }
+*/
+/*
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}*/
 
-.subscribe{
+html,
+body,
+div{
+    margin: 5px;
+    padding: 5px;
+    background: #000000;
+    color: white;
+    /*text-color: 'white';*/
+	font-family: "Times", serif;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.header{
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.main{
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.footer{
+}
+
+
+/*.subscribe{
 	height: 100%;
 	font-size: calc(12px + 1vw);
 }
 
+*/
 
-
-.subscribe #email{
+/*.subscribe #email{
 	position: absolute;
 	margin: auto;
 	height: 8%;
@@ -39,10 +95,10 @@ body {
     background-color: white;
     color: black;
     cursor: pointer;
-    text-align: center; 
+    text-align: center;
 }
-
-.subscribe #button{
+*/
+./*subscribe #button{
 	position: absolute;
 	margin: auto;
 	height: 7%;
@@ -59,5 +115,5 @@ body {
     color: black;
     cursor: pointer;
 
-}
+}*/
 
