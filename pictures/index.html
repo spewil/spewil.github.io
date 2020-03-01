@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>srw</title>
-	<link href="http://spewil.github.io/site.css" rel="stylesheet" type="text/css" />
+	<link href="http://spewil.github.io/css/full.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -18,58 +18,71 @@ function loadPosts () {
     var fetch_posts = function (offset) {
         $.getJSON(api + key + "&limit=20&offset=" + offset ,function(data) {
             $.each(data.response.posts, function(i, post) {
-		    	
-		    	var para = document.createElement('p');
+
 		    	var a = document.createElement('a');
-		    	
+
 		    	if (post.slug == '') {
 					var linkText = document.createTextNode(post.date);
 				}
 				else {
 					var linkText = document.createTextNode(post.slug);
 				}
-				
+
 				a.appendChild(linkText);
 				a.href = post.post_url;
 				a.target = "_blank"
-				para.appendChild(a);
-		    	$("#links").append(para);	
+		    	$("#links").append(a);
+		    	$("#links").append("<br>");
             });
 
             if (data.response.posts.length == 20) {
                 fetch_posts(offset + 20);
             }
         }).fail(function(data){
-		    $("#links").append('data did not load! please refresh:)');	
+		    $("#links").append('data did not load! please refresh:)');
         });
     };
-    
+
     fetch_posts(0);
 }
 
 loadPosts();
 
 	</script>
-
-
 </head>
 
 <body>
 
-<div class = "wrapper">
-	
-	<! HEADER >
-
 	<div class = "header">
-		<a href="http://spewil.github.io/">
-			<img class="spring" src="http://spewil.github.io/spring.png">
-		</a>
-	</div>	
-		
+		<div class="wrap">
+            <h2><a href="#">spencer wilson</a></h2>
+            <h3><a href="mailto:spencer.wilson@ucl.ac.uk" target="_blank">email me↗</a></h3>
+            <h3>newsletter:</h3>
+            <form
+            action="https://tinyletter.com/spewil"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <p>
+            <input type="text" name="email" placeholder="your email here" id="email"/>
+            </p>
+            <input type="hidden" value="1" name="embed"/>
+            <input type="submit" value="subscribe" id="button"/>
+            </form>
+            <br>
+            <br>
+      </div><!--.wrap-->
+	</div>
+
 	<! CONTENT >
 
-    <div class = "content">
-
+    <div class = "main">
+		<div class="wrap">
+    	<div style="align-items: center;">
+		<a href="http://spewil.github.io/">
+			<img class="spring" src="http://spewil.github.io/spring.png" style="filter: invert(100%);">
+		</a>
+    	</div>
     	<br>
 
     	<p>"I want a History of Looking. For the Photograph is the advent of myself as other: a cunning dissociation of consciousness from identity." <br> (Barthes, Camera Lucida)</p>
@@ -88,11 +101,11 @@ loadPosts();
 
 		<p> i typically use a <a href="https://www.amazon.com/dp/B0096W1P5W/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8oAAAAAAG-dVYAAAAAWgF2pw" target="_blank">35mm</a> </p>
 
-		<p> or the <a href="https://www.amazon.com/dp/B005IHAIKM/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8qAAAAAAG-dVYAAAAAWgF2pw" target="_blank">55-210mm</a> </p> 
+		<p> or the <a href="https://www.amazon.com/dp/B005IHAIKM/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8qAAAAAAG-dVYAAAAAWgF2pw" target="_blank">55-210mm</a> </p>
 
 		<p> for editing, i use <a href="./imageadjust.sh" target="_blank">a tiny shell script</a> that invokes <a href="https://inkscape.org/en/release/0.92.2/mac-os-x/homebrew/dl/" target="_blank">inkscape's CLI</a></p>
 
-		<p>check out more pictures <a href = "http://www.epicturious.tumblr.com" target="_blank">here</a>&#9829;.</p> 
+		<p>check out more pictures <a href = "http://www.epicturious.tumblr.com" target="_blank">here</a>&#9829;.</p>
 
 		<p>you may spend a while scrolling...</p>
 
@@ -105,16 +118,14 @@ loadPosts();
 		<br>
 
 	</div>
+	</div>
 
-<div class="push"></div>
 
 </div>
 
 	<! FOOTER >
-	
+
 	<div class = "footer">
-		<li><a href="http://spewil.github.io/resume.pdf" target = "_blank" >resume</a></li>
-		<li><a href="mailto:spencer.wilson@ucl.ac.uk" target="_top">email</a></li>
 	</div>
 
 </body>

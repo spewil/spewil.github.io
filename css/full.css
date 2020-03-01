@@ -26,12 +26,11 @@ body {
 html,
 body,
 div{
-    margin: 5px;
-    padding: 5px;
-    background: #000000;
+    margin: 0;
+    padding: 0;
+    background: #262626;
     color: white;
-    /*text-color: 'white';*/
-	font-family: "Times", serif;
+    font-family: "Times", serif;
 }
 
 a:link {
@@ -57,63 +56,16 @@ a:active {
 }
 
 .wrap{
-    max-width: 1200px;
+    max-width: 750px;
     margin: 0 auto;
     padding: 1em;
 }
 
 .main{
-    max-width: 650px;
+    max-width: 750px;
     margin: 0 auto;
     text-align: right;
 }
 
 .footer{
 }
-
-
-/*.subscribe{
-	height: 100%;
-	font-size: calc(12px + 1vw);
-}
-
-*/
-
-/*.subscribe #email{
-	position: absolute;
-	margin: auto;
-	height: 8%;
-	width: 25%;
-	min-width: 200px;
-	top: -150px;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	border: 2px solid white;
-    border-radius: 12px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    text-align: center;
-}
-*/
-./*subscribe #button{
-	position: absolute;
-	margin: auto;
-	height: 7%;
-	width: 15%;
-	min-width: 100px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-
-}*/
-
