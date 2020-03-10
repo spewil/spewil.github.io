@@ -53,18 +53,18 @@ a:active {
 }
 
 .header{
+  text-align: right;
 }
 
 .wrap{
     max-width: 750px;
     margin: 0 auto;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .main{
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: right;
+    text-align: left;
 }
 
 .footer{
