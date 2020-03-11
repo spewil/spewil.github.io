@@ -26,8 +26,8 @@ Electromyography is the detection of changes in chemical potential using electro
 
 A key paper is `Valero-Cuevas 2009` which recording EMG from the seven muscles driving the finger in a force-feedback task. The authors found support for the "minimum intervention principle" [@Valero-Cuevas2009].
 
-## A cat 
+## A cat
 
-![](cat.jpg)
+![this is a cat](cat.jpg)
 
 ## Bibliography
