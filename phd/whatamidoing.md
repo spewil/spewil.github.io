@@ -5,5 +5,8 @@ This is an experiment in creating an open kind of thesis. We'll work together us
 
 # What am I Doing?
 
-I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and Behavior. I'm setting up an experiment that will take organizing principles of movement, of sensorimotor control and learning
+I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and Behavior. I'm setting up an experiment that will take organizing principles of movement, of sensorimotor control and learning [@smithRealtimeSimultaneousProportional2014]
 
+Here's a cat: 
+
+![](cat.jpg)
