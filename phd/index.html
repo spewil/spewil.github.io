@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
     <style>
+        .wrap{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        .content{
+            max-width: 650px;
+            margin: 0 auto;
+        }
         body {
             font-family: sans-serif;
         }
@@ -18,15 +26,33 @@
             font-size: inherit;
         }
     </style>
+    <script src="https://hypothes.is/embed.js" async></script>
 </head>
 <body>
-<div class="container">
-<h1>What is this?</h1>
-<p>This is an experiment in creating an open kind of thesis. We&rsquo;ll work together using <a href="http://annotatorjs.org/">Annotator</a> to annotate this living document, for which we&rsquo;ll track changes using <a href="www.github.com/spewil">git</a>. In less than two years, this page will represent the culminated collective effort of a few people to better understand the organizing principles of human motor learning. </p>
-<h1>What am I Doing?</h1>
-<p>I&rsquo;m working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and Behavior. I&rsquo;m setting up an experiment that will take organizing principles of movement, of sensorimotor control and learning</p>
-<p>Here&rsquo;s a cat: </p>
-<p><img alt="" src="cat.jpg"></p>
+<div class="wrap">
+<div class="content">
+<h2 id="what-am-i-looking-at">What am I looking at?</h2>
+<p>This is an experiment in creating an open kind of thesis. I would like to work together using the nonprofit <a href="https://web.hypothes.is/">Hypothes.is</a> toolkit to annotate this living document, for which we’ll track changes using <a href="www.github.com/spewil/">git</a>. In less than two years, this page will represent the culminated collective effort of a few people to better understand the organizing principles of human motor learning.</p>
+<p>To start adding comments to this page, just highlight some text and type away. Note that you will have to a <a href="https://web.hypothes.is/">Hypothes.is</a> account, but it only takes a second.</p>
+<h2 id="what-am-i-doing">What am I doing?</h2>
+<p>I’m working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and Behavior in London. I’m setting up an experiment that I hope will test hypotheses about the organizing principles of sensorimotor control and learning. I’m setting up a task where I record from participants muscles in their arm using <code>electromyography</code>. Subjects’ arms and hands are fixed in a brace, but as they send signals from their brain down to their spinal cords and ultimately to their muscles, my electrodes will sense this change in electrical potential and relay this change to the computer, which will update what is shown on the screen. The object of this game is for the participant to learn which muscle activations correspond to which changes in the visual scene. You can think about this as a video game you’re playing directly with your muscles.</p>
+<p>Why would I want to do this? Because we know suprisingly little about how this process unfolds in the brain. So little, in fact, that we haven’t quite figured out what the brain is actually doing. We know that it is involved in these muscle contractions, but what sort of strategy do you use to explore this space of possible mappings between what you experience when you move and what you expect to see and feel as a result? This is the question I hope to make headway on.</p>
+<p>To do this, I’ll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions.</p>
+<h2 id="what-are-muscles">What are muscles?</h2>
+<p>Muscles are collections of fibers that contract when chemical gradients are produced at the neuromuscular junction by action potentials emanating from neurons in the ventral horn of the spinal cord.</p>
+<h3 id="what-is-electromyography">What is electromyography?</h3>
+<p>Electromyography is the detection of changes in chemical potential using electrodes. In my setup, we use a total 64 monopolar surface electrodes and monopolar needle electrodes to record chemical potentials from muscles in the forearm and hand.</p>
+<h2 id="what-is-our-understanding-of-how-humans-control-their-bodies">What is our understanding of how humans control their bodies?</h2>
+<h3 id="optimal-control-theory">Optimal control theory</h3>
+<p>A key paper is <code>Valero-Cuevas 2009</code> which recording EMG from the seven muscles driving the finger in a force-feedback task. The authors found support for the “minimum intervention principle” <span class="citation" data-cites="Valero-Cuevas2009">(Valero-Cuevas, Venkadesan, and Todorov 2009)</span>.</p>
+<h2 class="unnumbered" id="bibliography">Bibliography</h2>
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
+<div id="ref-Valero-Cuevas2009">
+<p>Valero-Cuevas, Francisco J., Madhusudhan Venkadesan, and Emanuel Todorov. 2009. “Structured Variability of Muscle Activations Supports the Minimal Intervention Principle of Motor Control.” <em>Journal of Neurophysiology</em> 102 (1): 59–68. <a href="https://doi.org/10.1152/jn.90324.2008">https://doi.org/10.1152/jn.90324.2008</a>.</p>
+</div>
+</div>
+
+</div>
 </div>
 </body>
 </html>
