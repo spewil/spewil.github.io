@@ -69,7 +69,7 @@ def main(args=None):
     # extensions = ['extra', 'smarty']
     # html = markdown.markdown(md, extensions=extensions, output_format='html5')
     # make bib file an optional argument!
-    pdoc_args = ['--bibliography=bibliography.bib']
+    pdoc_args = ['--bibliography=bibliography.bib', '--csl=nature.csl']
     filters = ['pandoc-citeproc']
     html = pypandoc.convert_file(args.mdfile.name,
                                  'html',
