@@ -10,24 +10,11 @@ TEMPLATE = """<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="../css/full.css">
-    <style>
-        code, pre { 
-            font-family: monospace;
-        }
-        h1 code,
-        h2 code,
-        h3 code,
-        h4 code,
-        h5 code,
-        h6 code {
-            font-size: inherit;
-        }
-    </style>
     <script src="https://hypothes.is/embed.js" async></script>
 </head>
 <body>
 <div class="wrap">
-<div class="content">
+<div class="main">
 {{content}}
 </div>
 </div>
