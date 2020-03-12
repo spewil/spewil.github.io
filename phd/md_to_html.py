@@ -9,20 +9,9 @@ import jinja2
 TEMPLATE = """<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="../css/full.css">
     <style>
-        .wrap{
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-        .content{
-            max-width: 650px;
-            margin: 0 auto;
-        }
-        body {
-            font-family: sans-serif;
-        }
-        code, pre {
+        code, pre { 
             font-family: monospace;
         }
         h1 code,

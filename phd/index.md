@@ -1,3 +1,12 @@
+- [What am I looking at?](#what-am-i-looking-at)
+- [What am I doing?](#what-am-i-doing)
+- [What are muscles?](#what-are-muscles)
+  - [What is electromyography?](#what-is-electromyography)
+- [What is our understanding of how humans control their bodies?](#what-is-our-understanding-of-how-humans-control-their-bodies)
+  - [Optimal control theory](#optimal-control-theory)
+- [A cat](#a-cat)
+- [Bibliography](#bibliography)
+
 ## What am I looking at?
 
 This is an experiment in creating an open kind of thesis. I would like to work together using the nonprofit <a href="https://web.hypothes.is/">Hypothes.is</a> toolkit to annotate this living document, for which we'll track changes using [git](www.github.com/spewil/). In less than two years, this page will represent the culminated collective effort of a few people to better understand the organizing principles of human motor learning.
