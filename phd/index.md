@@ -2,6 +2,7 @@
 - [Navigation](#navigation)
   - [What am I looking at?](#what-am-i-looking-at)
   - [What am I doing?](#what-am-i-doing)
+  - [Timeline](#timeline)
   - [What are muscles?](#what-are-muscles)
     - [What is electromyography?](#what-is-electromyography)
   - [What is our understanding of how humans control their bodies?](#what-is-our-understanding-of-how-humans-control-their-bodies)
@@ -22,6 +23,34 @@ I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and B
 Why would I want to do this? Because we know suprisingly little about how this process unfolds in the brain. So little, in fact, that we haven't quite figured out what the brain is actually doing. We know that it is involved in these muscle contractions, but what sort of strategy do you use to explore this space of possible mappings between what you experience when you move and what you expect to see and feel as a result? This is the question I hope to make headway on. 
 
 To do this, I'll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions. 
+
+## Timeline
+
+First year exploration
+![mouse wheel experiment]
+![ctrl-labs internship]
+![]
+Initial objectives and skills
+13 months
+Project proposal with literature search, list of thesis committee members
+Three-month review
+15 months
+Final draft of project proposal, incorporating comments from thesis committee
+Six-month review
+18 months
+Slides from second-year Data Club presentation
+Upgrade
+24 months
+Upgrade report
+24-month review
+36 months
+Written plan for last year, including dates for finishing experiments, data analysis, thesis writing, examination entry submission, thesis submission
+30-month review
+42 months
+List of thesis chapter headings, examination entry deadline
+Prior to thesis submission
+48 months
+Planned date for viva, confirmation that thesis committee members can attend
 
 ## What are muscles?
 
