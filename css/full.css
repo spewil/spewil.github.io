@@ -3,9 +3,9 @@ body,
 div{
     margin: 0;
     padding: 0;
-    background: #1c1c1c;
+    background: #f4efed;
     line-height: 120%;
-    color: #DCDCDC;
+    color: black;
     font-family: sans-serif;
 }
 
@@ -23,12 +23,12 @@ h6 code {
 }
 
 a:link {
-  color: white;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-  color: gray;
+  color: purple;
 }
 
 /* mouse over link */
@@ -38,7 +38,13 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: white;
+  color: purple;
+}
+
+img{
+  width: 50%;
+  display:block;
+  margin:auto;
 }
 
 .header{
