@@ -8,6 +8,7 @@ from pathlib import Path
 
 TEMPLATE = """<!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
 <head>
     <link rel="stylesheet" href="../css/full.css">
     <script src="https://hypothes.is/embed.js" async></script>
@@ -38,15 +39,16 @@ def parse_args(args=None):
 
 def main(args=None):
     args = parse_args(args)
-    pdoc_args = ['--bibliography=bibliography.bib', '--csl=nature.csl']
+    pdoc_args = [
+        '--bibliography=bibliography.bib', '--csl=nature.csl', '--mathml'
+    ]
     filters = ['pandoc-citeproc']
     for mdfile in args.in_files:
-        html = pypandoc.convert_file(
-            mdfile.name,
-            'html',
-            format='md',
-            extra_args=pdoc_args,
-            filters=filters)
+        html = pypandoc.convert_file(mdfile.name,
+                                     'html5',
+                                     format='md',
+                                     extra_args=pdoc_args,
+                                     filters=filters)
         doc = jinja2.Template(TEMPLATE).render(content=html)
         with open(Path(mdfile.name).stem + '.html', 'w') as outfile:
             outfile.write(doc)

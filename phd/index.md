@@ -79,7 +79,8 @@ A key paper is `Valero-Cuevas 2009` which recording EMG from the seven muscles d
 
 ## Unsupervised Feature Extraction
 
-We want to determine a redundant control space from data taken during natural activity. The difficulty with this is that such a natural activity manifold may display spatial (channel-wise) correlations that are possibly physiologically separable. Thus, there are two aims which must be addressed separately:
+We want to determine a redundant control space from data taken during natural activity. The difficulty with this is that such a natural activity manifold may display spatial (channel-wise) correlations that are possibly physiologically separable. Thus, there are two aims   which must be addressed separately:
+
 1. Expore subjects' ability to decorrelate descending output to the muscles which have been shown to be correlated in a natural activity dataset.
     - Such a structured exploration might provide support for the hypothesis that "synergies" are flexible correlations between muscles driven by task demands rather than (or in addition to) physiological structure. This needs to be done incredibly carefully to escape criticism of hard-wired synergy enthusiasts.
     - See *de Rugy 2012* for a critique of OFC and hard-wired synergies
@@ -105,7 +106,7 @@ $$
 \begin{align}
 X &= W\cdot{H} \\
 W^{-1}\cdot{X} &= {H} \\
-W^{T}\cdot{X} &= {H} \\
+W^{T}\cdot{X} &= {H}
 \end{align}
 $$
 
@@ -122,27 +123,26 @@ This way, forget about orthonormality and solve for an encoder and decoder direc
 Each row of $D$ might be called a **spatial filter**, a linear combination of electrode activities into a surrogate, hopefully more intuitive space.
 
 In general to find such a basis we must :
+
 - Extract "natural activity manifold" from freeform data
 - Use features of this natural subspace to derive control mapping
-    - Linear iid features:
-        - PCA
-        - dPCA
-        - NMF
-        - ICA
-    - Linear time-dependent features:
-        - SSA
-        - LDS model / PGM
-    - Nonlinear
-        - autoencoders
-        - networks
+  - Linear iid features:
+    - PCA
+    - dPCA
+    - NMF
+    - ICA
+  - Linear time-dependent features:
+    - SSA
+    - LDS model / PGM
+  - Nonlinear
+    - autoencoders
+    - networks
 
 The behaviors present in our calibration dataset are crucial, as they determine the spatial correlations used to generate the mapping. If only complex, multi-muscle movements are present in the calibration, it will be impossible to decode subtle movements involving few muscles. Additionally, because extraction is unsupervised, it will be impossible to know how to alter the control basis directions (if we wish to do so) such that they involve single muscles or the smallest sets of muscles.
 
 Ultimately, we want to find reproducible features in our data that are due to muscle coordination alone, rather than volitional movements. We want the lowest level covariance that reflects physiology rather than a task-level behavioral description (see *Todorov, Ghahramani 2005* and *Ingram, Wolpert 2009*). The idea is that if we collect data from enough tasks, we can extract the common modes of muscle activity. This is true only if we are sampling uniformly from the space of tasks. Otherwise one task, and therefore one coordination pattern, will be overrepresented.
 
 # Experiment
-
-
 
 # Modeling
 

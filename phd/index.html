@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
 <head>
     <link rel="stylesheet" href="../css/full.css">
     <script src="https://hypothes.is/embed.js" async></script>
@@ -82,25 +83,66 @@
 <h2 id="optimal-control-theory">Optimal Control Theory</h2>
 <p>A key paper is <code>Valero-Cuevas 2009</code> which recording EMG from the seven muscles driving the finger in a force-feedback task. The authors found support for the “minimum intervention principle”.<span class="citation" data-cites="Valero-Cuevas2009"><sup>1</sup></span></p>
 <h2 id="unsupervised-feature-extraction">Unsupervised Feature Extraction</h2>
-<p>We want to determine a redundant control space from data taken during natural activity. The difficulty with this is that such a natural activity manifold may display spatial (channel-wise) correlations that are possibly physiologically separable. Thus, there are two aims which must be addressed separately: 1. Expore subjects’ ability to decorrelate descending output to the muscles which have been shown to be correlated in a natural activity dataset. - Such a structured exploration might provide support for the hypothesis that “synergies” are flexible correlations between muscles driven by task demands rather than (or in addition to) physiological structure. This needs to be done incredibly carefully to escape criticism of hard-wired synergy enthusiasts. - See <em>de Rugy 2012</em> for a critique of OFC and hard-wired synergies 2. Use common correlated outputs to develop a family of BMI-type learning tasks as a proxy for a “novel skill”, then track motor planning of this new skill to compare with motor planning algorithms. - We might be able to get #1 for free by going after this goal if we’re careful in the setup - This is arguably a more impactful focus as it connects low-level motor hierarchy data (EMG) to high-level planning with a normative hypothesis.</p>
-<p>Electrode data from a single trial of a single session is held in a data matrix <span class="math inline"><em>X</em></span> (n_electrodes, n_samples), and we wish to find a latent weight matrix <span class="math inline"><em>W</em></span> (n_electrodes, n_components) which reconstructs <span class="math inline"><em>X</em></span> by projecting latent trajectories <span class="math inline"><em>H</em></span> (n_components, n_samples) into electrode space:</p>
-<p><br /><span class="math display"><em>X</em> = <em>W</em> ⋅ <em>H</em></span><br /></p>
-<p><span class="math inline"><em>H</em></span> is the activity of the latent processes, and <span class="math inline"><em>W</em></span> is there mixing matrix. The columns of <span class="math inline"><em>W</em></span> are the principal vectors spanning the latent subspace in electrode space. If we have new samples, we can project these new points onto this subspace:</p>
-<p><br /><span class="math display"><em>h</em><sub><em>n</em><em>e</em><em>w</em></sub> = <em>W</em><sup><em>T</em></sup> ⋅ <em>w</em><sub><em>n</em><em>e</em><em>w</em></sub></span><br /></p>
-<p>To justify this decomposition, we have to make some assumptions about the nature of the EMG signal, namely that the signal is linear instantaneous (each EMG sample can be instantly mapped to control space). The other assumption is that the basis <span class="math inline"><em>W</em></span> should be orthonormal, that the columns of <span class="math inline"><em>W</em></span> are orthogonal with unity norm. This ensures that the left inverse <span class="math inline"><em>W</em><sup> − 1</sup></span> is equal to the transpose <span class="math inline"><em>W</em><sup><em>T</em></sup></span> such that:</p>
-<p><br /><span class="math display">$$
+<p>We want to determine a redundant control space from data taken during natural activity. The difficulty with this is that such a natural activity manifold may display spatial (channel-wise) correlations that are possibly physiologically separable. Thus, there are two aims which must be addressed separately:</p>
+<ol type="1">
+<li>Expore subjects’ ability to decorrelate descending output to the muscles which have been shown to be correlated in a natural activity dataset.
+<ul>
+<li>Such a structured exploration might provide support for the hypothesis that “synergies” are flexible correlations between muscles driven by task demands rather than (or in addition to) physiological structure. This needs to be done incredibly carefully to escape criticism of hard-wired synergy enthusiasts.</li>
+<li>See <em>de Rugy 2012</em> for a critique of OFC and hard-wired synergies</li>
+</ul></li>
+<li>Use common correlated outputs to develop a family of BMI-type learning tasks as a proxy for a “novel skill”, then track motor planning of this new skill to compare with motor planning algorithms.
+<ul>
+<li>We might be able to get #1 for free by going after this goal if we’re careful in the setup</li>
+<li>This is arguably a more impactful focus as it connects low-level motor hierarchy data (EMG) to high-level planning with a normative hypothesis.</li>
+</ul></li>
+</ol>
+<p>Electrode data from a single trial of a single session is held in a data matrix <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> (n_electrodes, n_samples), and we wish to find a latent weight matrix <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> (n_electrodes, n_components) which reconstructs <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> by projecting latent trajectories <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> (n_components, n_samples) into electrode space:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>W</mi><mo>⋅</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">
+X = W\cdot{H}
+</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> is the activity of the latent processes, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> is there mixing matrix. The columns of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> are the principal vectors spanning the latent subspace in electrode space. If we have new samples, we can project these new points onto this subspace:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub><mo>=</mo><msup><mi>W</mi><mi>T</mi></msup><mo>⋅</mo><msub><mi>w</mi><mrow><mi>n</mi><mi>e</mi><mi>w</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+h_{new} = W^T\cdot{w_{new}}
+</annotation></semantics></math></p>
+<p>To justify this decomposition, we have to make some assumptions about the nature of the EMG signal, namely that the signal is linear instantaneous (each EMG sample can be instantly mapped to control space). The other assumption is that the basis <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> should be orthonormal, that the columns of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> are orthogonal with unity norm. This ensures that the left inverse <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">W^{-1}</annotation></semantics></math> is equal to the transpose <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>T</mi></msup><annotation encoding="application/x-tex">W^T</annotation></semantics></math> such that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right"><mi>X</mi></mtd><mtd columnalign="left"><mo>=</mo><mi>W</mi><mo>⋅</mo><mi>H</mi></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>W</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⋅</mo><mi>X</mi></mtd><mtd columnalign="left"><mo>=</mo><mi>H</mi></mtd></mtr><mtr><mtd columnalign="right"><msup><mi>W</mi><mi>T</mi></msup><mo>⋅</mo><mi>X</mi></mtd><mtd columnalign="left"><mo>=</mo><mi>H</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
 \begin{align}
 X &amp;= W\cdot{H} \\
 W^{-1}\cdot{X} &amp;= {H} \\
-W^{T}\cdot{X} &amp;= {H} \\
+W^{T}\cdot{X} &amp;= {H}
 \end{align}
-$$</span><br /></p>
-<p>See <em>Muceli 2014</em> for use of the Moore-Penrose pseudoinverse in place of the transpose when the columns of <span class="math inline"><em>W</em></span> do not form an orthonormal basis. This would be the case for NMF. Is there a factorization that produces nonnegative, orthogonal coordinates? Or is the pseudoinverse okay? I will need to test this.</p>
-<p>Stated in an information theoretic way, we want to minimize the reconstruction loss <span class="math inline">ℒ</span> for our derived encoder-decoder pair (<span class="math inline"><em>E</em></span>,<span class="math inline"><em>D</em></span>). We’re decoding high dimensional activity into its latent dimensions, and encoding back into the high dimensional space. :</p>
-<p><br /><span class="math display">min<sub><em>E</em>, <em>D</em></sub>ℒ[<em>X</em>−<em>E</em><em>D</em><em>X</em>]</span><br /></p>
-<p>This way, forget about orthonormality and solve for an encoder and decoder directly. That is, <span class="math inline"><em>E</em> ≠ <em>D</em></span> is perfectly acceptable.</p>
-<p>Each row of <span class="math inline"><em>D</em></span> might be called a <strong>spatial filter</strong>, a linear combination of electrode activities into a surrogate, hopefully more intuitive space.</p>
-<p>In general to find such a basis we must : - Extract “natural activity manifold” from freeform data - Use features of this natural subspace to derive control mapping - Linear iid features: - PCA - dPCA - NMF - ICA - Linear time-dependent features: - SSA - LDS model / PGM - Nonlinear - autoencoders - networks</p>
+</annotation></semantics></math></p>
+<p>See <em>Muceli 2014</em> for use of the Moore-Penrose pseudoinverse in place of the transpose when the columns of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> do not form an orthonormal basis. This would be the case for NMF. Is there a factorization that produces nonnegative, orthogonal coordinates? Or is the pseudoinverse okay? I will need to test this.</p>
+<p>Stated in an information theoretic way, we want to minimize the reconstruction loss <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle mathvariant="script"><mi>ℒ</mi></mstyle><annotation encoding="application/x-tex">\mathcal{L}</annotation></semantics></math> for our derived encoder-decoder pair (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>,<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>). We’re decoding high dimensional activity into its latent dimensions, and encoding back into the high dimensional space. :</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>min</mo><mrow><mi>E</mi><mo>,</mo><mi>D</mi></mrow></munder><mrow><mstyle mathvariant="script"><mi>ℒ</mi></mstyle><mrow><mo stretchy="true" form="prefix">[</mo><mi>X</mi><mo>−</mo><mi>E</mi><mi>D</mi><mi>X</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">
+\min_{E,D}{\mathcal{L}\left[X - EDX\right]}
+</annotation></semantics></math></p>
+<p>This way, forget about orthonormality and solve for an encoder and decoder directly. That is, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>≠</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">E\neq{D}</annotation></semantics></math> is perfectly acceptable.</p>
+<p>Each row of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math> might be called a <strong>spatial filter</strong>, a linear combination of electrode activities into a surrogate, hopefully more intuitive space.</p>
+<p>In general to find such a basis we must :</p>
+<ul>
+<li>Extract “natural activity manifold” from freeform data</li>
+<li>Use features of this natural subspace to derive control mapping
+<ul>
+<li>Linear iid features:
+<ul>
+<li>PCA</li>
+<li>dPCA</li>
+<li>NMF</li>
+<li>ICA</li>
+</ul></li>
+<li>Linear time-dependent features:
+<ul>
+<li>SSA</li>
+<li>LDS model / PGM</li>
+</ul></li>
+<li>Nonlinear
+<ul>
+<li>autoencoders</li>
+<li>networks</li>
+</ul></li>
+</ul></li>
+</ul>
 <p>The behaviors present in our calibration dataset are crucial, as they determine the spatial correlations used to generate the mapping. If only complex, multi-muscle movements are present in the calibration, it will be impossible to decode subtle movements involving few muscles. Additionally, because extraction is unsupervised, it will be impossible to know how to alter the control basis directions (if we wish to do so) such that they involve single muscles or the smallest sets of muscles.</p>
 <p>Ultimately, we want to find reproducible features in our data that are due to muscle coordination alone, rather than volitional movements. We want the lowest level covariance that reflects physiology rather than a task-level behavioral description (see <em>Todorov, Ghahramani 2005</em> and <em>Ingram, Wolpert 2009</em>). The idea is that if we collect data from enough tasks, we can extract the common modes of muscle activity. This is true only if we are sampling uniformly from the space of tasks. Otherwise one task, and therefore one coordination pattern, will be overrepresented.</p>
 <h1 id="experiment">Experiment</h1>
