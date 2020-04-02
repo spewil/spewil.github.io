@@ -1,5 +1,3 @@
-# Navigation
-- [Navigation](#navigation)
 - [Meta](#meta)
   - [Where are you?](#where-are-you)
   - [What am I doing?](#what-am-i-doing)
