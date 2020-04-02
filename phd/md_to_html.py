@@ -4,7 +4,7 @@ import argparse
 import sys
 import pypandoc
 import jinja2
-# import markdown
+from pathlib import Path
 
 TEMPLATE = """<!DOCTYPE html>
 <html>
@@ -26,34 +26,30 @@ TEMPLATE = """<!DOCTYPE html>
 def parse_args(args=None):
     d = 'Make a complete, styled HTML document from a Markdown file.'
     parser = argparse.ArgumentParser(description=d)
-    parser.add_argument('mdfile',
-                        type=argparse.FileType('r'),
-                        nargs='?',
-                        default=sys.stdin,
-                        help='File to convert. Defaults to stdin.')
-    parser.add_argument('-o',
-                        '--out',
-                        type=argparse.FileType('w'),
-                        default=sys.stdout,
-                        help='Output file name. Defaults to stdout.')
+    parser.add_argument(
+        '-i',
+        '--in_files',
+        nargs='+',  # one or more
+        type=argparse.FileType('r'),
+        default=sys.stdin,
+        help='File(s) to convert. Defaults to stdin.')
     return parser.parse_args(args)
 
 
 def main(args=None):
     args = parse_args(args)
-    # md = args.mdfile.read()
-    # extensions = ['extra', 'smarty']
-    # html = markdown.markdown(md, extensions=extensions, output_format='html5')
-    # make bib file an optional argument!
     pdoc_args = ['--bibliography=bibliography.bib', '--csl=nature.csl']
     filters = ['pandoc-citeproc']
-    html = pypandoc.convert_file(args.mdfile.name,
-                                 'html',
-                                 format='md',
-                                 extra_args=pdoc_args,
-                                 filters=filters)
-    doc = jinja2.Template(TEMPLATE).render(content=html)
-    args.out.write(doc)
+    for mdfile in args.in_files:
+        html = pypandoc.convert_file(
+            mdfile.name,
+            'html',
+            format='md',
+            extra_args=pdoc_args,
+            filters=filters)
+        doc = jinja2.Template(TEMPLATE).render(content=html)
+        with open(Path(mdfile.name).stem + '.html', 'w') as outfile:
+            outfile.write(doc)
 
 
 if __name__ == '__main__':
