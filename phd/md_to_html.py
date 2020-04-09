@@ -6,22 +6,9 @@ import pypandoc
 import jinja2
 from pathlib import Path
 
-TEMPLATE = """<!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<head>
-    <link rel="stylesheet" href="../css/full.css">
-    <script src="https://hypothes.is/embed.js" async></script>
-</head>
-<body>
-<div class="wrap">
-<div class="main">
-{{content}}
-</div>
-</div>
-</body>
-</html>
-"""
+file_loader = jinja2.FileSystemLoader('.')
+env = jinja2.Environment(loader=file_loader)
+template = env.get_template('base.html')
 
 
 def parse_args(args=None):
@@ -44,13 +31,16 @@ def main(args=None):
     ]
     filters = ['pandoc-citeproc']
     for mdfile in args.in_files:
-        html = pypandoc.convert_file(mdfile.name,
-                                     'html5',
-                                     format='md',
-                                     extra_args=pdoc_args,
-                                     filters=filters)
-        doc = jinja2.Template(TEMPLATE).render(content=html)
-        with open(Path(mdfile.name).stem + '.html', 'w') as outfile:
+        input_path = Path(mdfile.name)
+        output_path = input_path.parent / Path(input_path.stem + ".html")
+        html = pypandoc.convert_file(
+            mdfile.name,
+            'html5',
+            format='md',
+            extra_args=pdoc_args,
+            filters=filters)
+        doc = template.render(content=html)
+        with open(output_path, 'w') as outfile:
             outfile.write(doc)
 
 

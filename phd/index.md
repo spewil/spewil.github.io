@@ -1,7 +1,3 @@
-- [Meta](#meta)
-  - [Where are you?](#where-are-you)
-  - [What am I doing?](#what-am-i-doing)
-  - [PhD Timeline](#phd-timeline)
 - [Purpose](#purpose)
 - [Background](#background)
   - [What are muscles?](#what-are-muscles)
@@ -13,8 +9,6 @@
 - [Experiment](#experiment)
 - [Modeling](#modeling)
   - [Bibliography](#bibliography)
-
-# Meta
 
 ## Where are you?
 
@@ -30,8 +24,8 @@ I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and B
 
 - Year 1 (October 2018 - October 2019)
   - coursework (October 2018 - March 2019)
-  - <a href="mouse_ball.html" target="_blank">mouse wheel task in Mrsic-Flogel Lab</a> (Jan 2019 - March 2019)
-  - <a href="ctrl-labs.html" target="_blank">ctrl-labs rotation in NYC</a> (April 2019 - June 2019)
+  - <a href="rotations/mouse_ball.html" target="_blank">mouse wheel task in Mrsic-Flogel Lab</a> (Jan 2019 - March 2019)
+  - <a href="rotations/ctrl-labs.html" target="_blank">ctrl-labs rotation in NYC</a> (April 2019 - June 2019)
   - <a href="https://www.sainsburywellcome.org/web/groups/murray-lab" target="_blank">MurrayLab rotation</a> (July 2019 - August 2019)
   - <a href="https://github.com/swcphd/greyboxes" target="_blank">Organize SWC PhD Bootcamp</a> (September 2019)
 
@@ -52,7 +46,7 @@ I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and B
 
 # Purpose
 
-We know suprisingly little about how this process unfolds in the brain. So little, in fact, that we haven't quite figured out what the brain is actually doing. We know that it is involved in these muscle contractions, but what sort of strategy do you use to explore this space of possible mappings between what you experience when you move and what you expect to see and feel as a result? This is the question I hope to make headway on.
+We know surprisingly little about how this process unfolds in the brain. So little, in fact, that we haven't quite figured out what the brain is actually doing. We know that it is involved in these muscle contractions, but what sort of strategy do you use to explore this space of possible mappings between what you experience when you move and what you expect to see and feel as a result? This is the question I hope to make headway on.
 
 To do this, I'll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions.
 
