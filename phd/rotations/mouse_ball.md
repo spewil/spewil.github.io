@@ -8,4 +8,4 @@ The image sensor in an old-school logitech mouse. [Here's](https://electronics.s
 
 Here's a gif of the type of dexterous behavior I was looking for mice to elicit:
 
- <img src="/phd/images/mouseball.gif" loop = "-1" alt="Mouse working ball">
+<img src="/phd/images/mouseball.gif" loop = "-1" alt="Mouse working ball">

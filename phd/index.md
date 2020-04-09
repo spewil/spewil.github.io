@@ -24,8 +24,8 @@ I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and B
 
 - Year 1 (October 2018 - October 2019)
   - coursework (October 2018 - March 2019)
-  - <a href="rotations/mouse_ball.html" target="_blank">mouse wheel task in Mrsic-Flogel Lab</a> (Jan 2019 - March 2019)
-  - <a href="rotations/ctrl-labs.html" target="_blank">ctrl-labs rotation in NYC</a> (April 2019 - June 2019)
+  - <a href="/phd/rotations/mouse_ball.html" target="_blank">mouse wheel task in Mrsic-Flogel Lab</a> (Jan 2019 - March 2019)
+  - <a href="/phd/rotations/ctrl-labs.html" target="_blank">ctrl-labs rotation in NYC</a> (April 2019 - June 2019)
   - <a href="https://www.sainsburywellcome.org/web/groups/murray-lab" target="_blank">MurrayLab rotation</a> (July 2019 - August 2019)
   - <a href="https://github.com/swcphd/greyboxes" target="_blank">Organize SWC PhD Bootcamp</a> (September 2019)
 
