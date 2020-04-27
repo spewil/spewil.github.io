@@ -1,5 +1,15 @@
 html,
 body,
+
+h1{
+  padding-top: 50px;
+  font-size: 60pt;
+}
+
+h2{
+  padding-top: 25px
+}
+
 div{
     margin: 0;
     padding: 0;
@@ -9,7 +19,7 @@ div{
     font-family: sans-serif;
 }
 
-code, pre { 
+code, pre {
   font-family: monospace;
 }
 
