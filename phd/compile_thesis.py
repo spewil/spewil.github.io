@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# to compile from command line:
+# mdmerge -o thesis.md outline.md; p3 compile_thesis.py
+
 import pypandoc
 import jinja2
 from pathlib import Path

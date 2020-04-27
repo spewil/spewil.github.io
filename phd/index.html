@@ -55,8 +55,7 @@
 <p>Muscles are collections of fibers that contract when chemical gradients are produced at the neuromuscular junction by action potentials emanating from neurons in the ventral horn of the spinal cord.</p>
 <h2 id="what-is-electromyography">What is electromyography?</h2>
 <p>Electromyography is the detection of changes in chemical potential using electrodes. In my setup, we use a total 64 monopolar surface electrodes and monopolar needle electrodes to record chemical potentials from muscles in the forearm and hand.</p>
-<h2 id="what-is-our-understanding-of-how-humans-control-their-bodies">What is our understanding of how humans control their bodies?</h2>
-<h1 id="theory">Theory</h1>
+<h2 id="what-is-our-current-understanding-of-how-humans-control-their-bodies">What is our current understanding of how humans control their bodies?</h2>
 <h2 id="task-formalization">Task Formalization</h2>
 <p>In this task, the subject’s first goal is to interact through an unknown visuomotor mapping and internalize this model. The second problem is to use this model to solve a control problem.</p>
 <ol type="1">
@@ -296,8 +295,6 @@ W^{T}\cdot{X} &amp;= {H}
 </ul>
 <p>The behaviors present in our calibration dataset are crucial, as they determine the spatial correlations used to generate the mapping. If only complex, multi-muscle movements are present in the calibration, it will be impossible to decode subtle movements involving few muscles. Additionally, because extraction is unsupervised, it will be impossible to know how to alter the control basis directions (if we wish to do so) such that they involve single muscles or the smallest sets of muscles.</p>
 <p>Ultimately, we want to find reproducible features in our data that are due to muscle coordination alone, rather than volitional movements. We want the lowest level covariance that reflects physiology rather than a task-level behavioral description (see <em>Todorov, Ghahramani 2005</em> and <em>Ingram, Wolpert 2009</em>). The idea is that if we collect data from enough tasks, we can extract the common modes of muscle activity. This is true only if we are sampling uniformly from the space of tasks. Otherwise one task, and therefore one coordination pattern, will be overrepresented.</p>
-<h1 id="experiment">Experiment</h1>
-<h1 id="modeling">Modeling</h1>
 <h2 class="unnumbered" id="bibliography">Bibliography</h2>
 <div id="refs" class="references" role="doc-bibliography">
 <div id="ref-McNamee2019">
