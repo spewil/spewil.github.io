@@ -118,6 +118,7 @@ The noise covariance due to the observation Q is unchanged, but the new noise co
 
 #### Questions
 
+- In a behavioral experiment, how can you disentangle system identification/estimation and control? Is suboptimality due to one or the other?
 - How does the observation mapping relate to the latent state covariance? The task state covariance?
 - How do we formalize this into a probabilistic graphical model? Why would we?
     - Would this make it easier to reason about what the goals are?
@@ -272,6 +273,29 @@ $$
 Thus, the
 eigenvalues of $A + HC$ must be less than or equal to 1 for $x_\infty$
 to be stable in expectation.
+
+### Critique
+
+> It should be emphasized, however, that these models are not intended to provide a mechanistic explanation of adaptation—they do not explain why adaptation has the properties it does. They explain neither why compensation for a perturbation decays, nor why people learn at the rate they do. However, these models do encapsulate a set of simple assumptions about how learning might occur on a single-trial timescale, and allow us to predict behavior in response to sustained or fluctuating perturbations over many trials. (Krakauer)
+
+> [Bayesian theories of learning] hold that adaptation is essentially a problem of estimating the properties of the imposed perturbation, given uncertainty about sensory feedback and the state of the world. Mathematically, under certain assumptions (that the noise/variability is Gaussian in both cases), this Bayesian estimation framework becomes equivalent to a Kalman filter (219)—a common algorithm for optimally tracking dynamic states under noisy observations— which is almost identical to a state-space model. (Krakauer)
+
+
+## Two-rate models
+
+$$
+\begin{align*}
+X_{t+1} &= X^{s}_{t} + X^f_t \\
+X^s_{t+1} &= L_s \cdot e_t + R_s \cdot X^s_{t} \\
+X^f_{t+1} &= L_f \cdot e_t + R_f \cdot X^f_{t} \\
+\end{align*}
+$$
+
+where we fit $L_i and R_i$, the learning rate and retention parameters. (shadmehr 2006)
+
+> Observations have revealed that there is far more to how participants compensate for an imposed perturbation than just implicit recalibration of a pre-existing motor controller. Instead, multiple, qualitatively different processes occur during adaptation tasks; for example, processes driven by explicit, cognitive strategies. When it comes to studying implicit recalibration, these other processes can be a contaminant. At the same time, however, these additional processes likely reflect the involvement of similar mechanisms to those responsible for more general motor skill learning. (Krakauer 2019 Motor Learning Review)
+
+> it is unlikely that the underlying components that contribute to learning in adaptation paradigms only differ in terms of their learning and retention rates, as the two- state model suggests. The multiple components of learning instead correspond to entirely distinct learning processes that are simultaneously brought to bear on the same problem. (Krakauer 2019 Motor Learning Review)
 
 ## Unsupervised Feature Extraction
 

@@ -41,25 +41,54 @@ a:active {
   color: purple;
 }
 
+.frontphoto{
+  width: 200px;
+}
+
+.spring{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.abouttext{
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 img{
-  width: 50%;
   display:block;
   margin:auto;
 }
 
-.header{
-  text-align: right;
+.column {
+  float: left;
 }
 
-.wrap{
-    max-width: 750px;
-    margin: 0 auto;
-    padding-left: 1em;
-    padding-right: 1em;
+.nav{
+  width: 15%;
+  min-width: 15%;
 }
 
-.main{
-    text-align: left;
+.right {
+  width: 15%;
+}
+
+.main {
+  width: 70%;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top: 50px
+}
+
+
+@media screen and (max-width: 750px) {
+  .column {
+    width: 90%;
+  }
+  .main{
+    padding-top: 0;
+  }
 }
 
 .footer{

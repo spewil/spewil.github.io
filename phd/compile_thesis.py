@@ -15,13 +15,13 @@ template = env.get_template('base.html')
 
 def main():
     pdoc_args = [
-        '--bibliography=bibliography.bib', '--csl=nature.csl', '--mathml'
+        '--toc', '--toc-depth=4', '-s', '--bibliography=bibliography.bib',
+        '--csl=nature.csl', '--mathml', "--css=pandoc.css", "-H", "header.html"
     ]
     filters = ['pandoc-citeproc']
     input_path = Path("thesis.md")
-    # TODO: add TOC (fix parsing so links are [link text](#lowercase_header))
-    # TODO: add support for level 4 headers
     output_path = input_path.parent / Path("index.html")
+    # processFile(input_path, "thesis_toc.md")
     html = pypandoc.convert_file(
         input_path.name,
         'html5',
@@ -75,24 +75,20 @@ def addSectionTag(line, secId):
 
 def buildToc(line, toc, levels):
     line = cleanLine(line)
-    secId = 's'
+    vspace = "   "
     if line[:4] == '####':
-        raise UserWarning('Header levels greater than 3 not supported')
+        link = line[5:].strip().lower().replace(" ", "-")
+        toc.append(vspace * 3 + '* [' + line[5:] + '](#' + link + ')\n')
     elif line[:3] == '###':
-        levels[3] += 1
-        secId += str(levels[1]) + '-' + str(levels[2]) + '-' + str(levels[3])
-        toc.append('      * [' + line[4:] + '](#' + secId + ')\n')
+        link = line[4:].strip().lower().replace(" ", "-")
+        toc.append(vspace * 2 + '* [' + line[4:] + '](#' + link + ')\n')
     elif line[:2] == '##':
-        levels[2] += 1
-        levels[3] = 0
-        secId += str(levels[1]) + '-' + str(levels[2])
-        toc.append('  * [' + line[3:] + '](#' + secId + ')\n')
+        link = line[3:].strip().lower().replace(" ", "-")
+        toc.append(vspace * 1 + '* [' + line[3:] + '](#' + link + ')\n')
     elif line[:1] == '#':
-        levels[1] += 1
-        levels[3] = levels[2] = 0
-        secId += str(levels[1])
-        toc.append('* [' + line[2:] + '](#' + secId + ')\n')
-    return secId
+        link = line[2:].strip().lower().replace(" ", "-")
+        toc.append('* [' + line[2:] + '](#' + link + ')\n')
+    return link
 
 
 def cleanLine(text):
