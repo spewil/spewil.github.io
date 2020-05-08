@@ -1,3 +1,17 @@
+<!--
+
+How does this document work?
+
+Here is general stuff about the page. Below that add "mdmerge" CLI links to transclude other markdown documents into this one, similar to latex chapters/includes.
+
+Then we run compile, a python script that invokes pypandoc, which adds a header and puts it all into a template which references pandoc.css
+
+TODO:
+	make the layout more small-screen friendly (rearrange the TOC)
+	think about how to include footnotes in the sidebar?
+
+ -->
+
 ## Where are you?
 
 This is an experiment in creating an open kind of thesis. I would like to work together using the nonprofit <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a> toolkit to annotate this living document, for which we'll track changes using [git](www.github.com/spewil/). In less than two years, this page will represent the culminated collective effort of a few people to better understand the organizing principles of human motor learning.
@@ -42,11 +56,6 @@ To do this, I'll use the literature of reinforcement learning and optimal contro
 
 # Test
 
-## Anatomy of the Hand and Forearm
-
-the deep flexor attaches to the distal phalanx
-the superficial flexor attaches to the middle phalanx
-
 A Citation:
 [@todorovCompositionalityOptimalControl2009@todorovParallelsSensoryMotor]
 
@@ -54,13 +63,22 @@ An inline Footnote:
 
 First Note ^[Hi I'm a note!]
 
-A longer note:
+Here's a simple footnote,[^somenote] and here's a longer one.[^anothernote]
 
-Long Note[^]
+[^anothernote]: Here's one with multiple paragraphs and code.
 
-[^]: This is a longer note that we've indented to make sure that it is formatted properly at the end of the document.
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+[^somenote]: This is the first footnote.
+
+
 
 Some more text, not in a footnote
+
 
 # Background
 

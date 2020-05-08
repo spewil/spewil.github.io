@@ -2,15 +2,6 @@
  * I add this to html files generated with pandoc.
  */
 
-@media screen and (max-width: 700px) {
-  .col{
-    width: 100%;
-  }
-  .main, .toc {
-    padding-left: 0
-  }
-}
-
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -43,8 +34,7 @@ body {
 }
 
 .main {
-  width: 50%;
-  max-width: 800px;
+  width: 55%;
   padding-left: 10%;
   padding-right: 10px;
 }

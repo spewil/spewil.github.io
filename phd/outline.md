@@ -8,7 +8,7 @@ Then we run compile, a python script that invokes pypandoc, which adds a header 
 
 TODO:
 	make the layout more small-screen friendly (rearrange the TOC)
-	think about how to include footnotes in the sidebar.
+	think about how to include footnotes in the sidebar?
 
  -->
 
@@ -56,7 +56,29 @@ To do this, I'll use the literature of reinforcement learning and optimal contro
 
 # Test
 
-<<[/Users/spencerw/Google Drive/motor_control/writing/sections/anatomy.md]
+A Citation:
+[@todorovCompositionalityOptimalControl2009@todorovParallelsSensoryMotor]
+
+An inline Footnote:
+
+First Note ^[Hi I'm a note!]
+
+Here's a simple footnote,[^somenote] and here's a longer one.[^anothernote]
+
+[^anothernote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+[^somenote]: This is the first footnote.
+
+
+
+Some more text, not in a footnote
+
 
 # Background
 
