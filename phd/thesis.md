@@ -40,6 +40,28 @@ We know surprisingly little about how this process unfolds in the brain. So litt
 
 To do this, I'll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions.
 
+# Test
+
+## Anatomy of the Hand and Forearm
+
+the deep flexor attaches to the distal phalanx
+the superficial flexor attaches to the middle phalanx
+
+A Citation:
+[@todorovCompositionalityOptimalControl2009@todorovParallelsSensoryMotor]
+
+An inline Footnote:
+
+First Note ^[Hi I'm a note!]
+
+A longer note:
+
+Long Note[^]
+
+[^]: This is a longer note that we've indented to make sure that it is formatted properly at the end of the document.
+
+Some more text, not in a footnote
+
 # Background
 
 ## What are muscles?

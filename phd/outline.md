@@ -1,3 +1,17 @@
+<!--
+
+How does this document work?
+
+Here is general stuff about the page. Below that add "mdmerge" CLI links to transclude other markdown documents into this one, similar to latex chapters/includes.
+
+Then we run compile, a python script that invokes pypandoc, which adds a header and puts it all into a template which references pandoc.css
+
+TODO:
+	make the layout more small-screen friendly (rearrange the TOC)
+	think about how to include footnotes in the sidebar.
+
+ -->
+
 ## Where are you?
 
 This is an experiment in creating an open kind of thesis. I would like to work together using the nonprofit <a href="https://web.hypothes.is/" target="_blank">Hypothes.is</a> toolkit to annotate this living document, for which we'll track changes using [git](www.github.com/spewil/). In less than two years, this page will represent the culminated collective effort of a few people to better understand the organizing principles of human motor learning.
@@ -39,6 +53,10 @@ I'm working on my PhD at the Sainsbury Wellcome Centre for Neural Circuits and B
 We know surprisingly little about how this process unfolds in the brain. So little, in fact, that we haven't quite figured out what the brain is actually doing. We know that it is involved in these muscle contractions, but what sort of strategy do you use to explore this space of possible mappings between what you experience when you move and what you expect to see and feel as a result? This is the question I hope to make headway on.
 
 To do this, I'll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions.
+
+# Test
+
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/anatomy.md]
 
 # Background
 

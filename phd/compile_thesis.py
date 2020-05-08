@@ -3,6 +3,11 @@
 # to compile from command line:
 # mdmerge -o thesis.md outline.md; p3 compile_thesis.py
 
+# pandoc templates
+# https://pandoc.org/MANUAL.html#templates
+# default templates
+#
+
 import pypandoc
 import jinja2
 from pathlib import Path
@@ -15,8 +20,19 @@ template = env.get_template('base.html')
 
 def main():
     pdoc_args = [
-        '--toc', '--toc-depth=4', '-s', '--bibliography=bibliography.bib',
-        '--csl=nature.csl', '--mathml', "--css=pandoc.css", "-H", "header.html"
+        '--toc',
+        '--toc-depth=4',
+        '-s',  # standalone?
+        '--bibliography=bibliography.bib',
+        '--metadata',
+        'link-citations=true',  # make citation links
+        '--csl=nature.csl',
+        '--mathml',  # this works in chrome and firefox
+        "--css=pandoc.css",  # custom css
+        "--include-in-header",  # custom header -- so I can add hypothesis, etc
+        "header.html",
+        "--template",
+        "template.html"
     ]
     filters = ['pandoc-citeproc']
     input_path = Path("thesis.md")
