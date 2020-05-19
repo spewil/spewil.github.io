@@ -54,48 +54,25 @@ We know surprisingly little about how this process unfolds in the brain. So litt
 
 To do this, I'll use the literature of reinforcement learning and optimal control theory to guide my theoretical understanding of what is happening when a subject begins to experience learning in this novel situation. I will model hypotheses of this learning process and compare these models to the large amounts of data my experimental setup will produce as we track learning of subjects over many sessions.
 
-# Test
 
-A Citation:
-[@todorovCompositionalityOptimalControl2009@todorovParallelsSensoryMotor]
-
-An inline Footnote:
-
-First Note ^[Hi I'm a note!]
-
-Here's a simple footnote,[^somenote] and here's a longer one.[^anothernote]
-
-[^anothernote]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
-
-[^somenote]: This is the first footnote.
-
-
-
-Some more text, not in a footnote
-
-
-# Background
-
-## What are muscles?
+# Biological Background
 
 Muscles are collections of fibers that contract when chemical gradients are produced at the neuromuscular junction by action potentials emanating from neurons in the ventral horn of the spinal cord.
 
-## What is electromyography?
-
 Electromyography is the detection of changes in chemical potential using electrodes. In my setup, we use a total 64 monopolar surface electrodes and monopolar needle electrodes to record chemical potentials from muscles in the forearm and hand.
 
-## What is our current understanding of how humans control their bodies?
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/anatomy.md]
+
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/cm_connections.md]
+
+# Theory Background
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/problem_formalization.md]
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/LDS_error_model.md]
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/unsupervised_features.md]
+
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/policy_gradient.md]
 
 ## Bibliography
