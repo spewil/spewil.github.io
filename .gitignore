@@ -1,9 +1,5 @@
+/wiki_src/
 /old
 .DS_Store
-/wiki/wiki
-/wiki/_templates
-/wiki/markdoc.yaml
-/wiki/_tmp
-/wiki/static
 /vendor/bootstrap/.DS_Store
 vendor/.DS_Store
