@@ -1,44 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-  <h1><code>ls /</code></h1>
-  <link rel="stylesheet" type="text/css" href="/style.css" />
-</head>
-<body>
-
-  <h1>Listing for /</h1>
-
-  
-    <h2>Sub-directories</h2>
-    <ul id="subdirs">
+<html>
+  <meta charset='utf-8'>
+  <head>
+    <link rel="stylesheet" href="/css/full.css">
+    <script src="https://hypothes.is/embed.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  </head>
+  <body>
+    <dir class="column nav">
+    <div class="spring">
+      <a href="/"><img align="left" src="/images/spring.png"></a><br>
+    </div>
+    <h3><a href="/about/">about</a></h3>
+    <h3><a href="/wiki/">wiki</a></h3>
+    <h3><a href="/phd/">phd</a></h3>
+    <h3><a href="/pictures/">photos</a></h3>
+    <h3><a href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading" target="_blank">bookshelf&nearr;</a></h3>
+    <h3><a href="https://github.com/spewil/" target="_blank">github&nearr;</a></h3>
+    <h3><a href="mailto:spencer.wilson@ucl.ac.uk" target="_blank">email me&nearr;</a></h3>
+    <h3>newsletter:</h3>
+    <form
+      action="https://tinyletter.com/spewil"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <p>
+        <input type="text" name="email" placeholder="your email here" id="email" style="text-align: center;" />
+      </p>
+      <input type="hidden" value="1" name="embed"/>
+      <input type="submit" value="subscribe" id="button"/>
+    </form>
+    </dir>
+    <div class="column main">
       
-        <li><a href="/folder1/">folder1</a></li>
-      
-    </ul>
-  
+
+  <h1>wiki</h1>
 
   
-    <h2>Pages</h2>
+    <h2>pages</h2>
     <ul id="pages">
       
-        <li><a href="/an_empty_file">An Empty File</a> <br></br>
-        <p></p></li>
-      
-        <li><a href="/file_blah">File Blah</a> <br></br>
-        <p></p></li>
-      
-        <li><a href="/file3">Foo</a> <br></br>
-        <p></p></li>
-      
-        <li><a href="/file1">Hello</a> <br></br>
-        <p></p></li>
-      
-        <li><a href="/file2">World</a> <br></br>
-        <p></p></li>
+        <li><a href="/wiki/the_experimental_town.html">the experimental town</a><br>
+        <!-- <p></p></li> -->
+      </li>
       
     </ul>
   
+
+  
+
+        
 
 <!--   
     <h2>Files</h2>
@@ -49,5 +60,8 @@
     </ul>
    -->
 
-</body>
+    </div>
+    <div class="column right">
+    </div>
+  </body>
 </html>
