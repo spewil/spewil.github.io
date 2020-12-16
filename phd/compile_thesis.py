@@ -2,11 +2,11 @@
 
 # to compile from command line:
 # mdmerge -o thesis.md outline.md; p3 compile_thesis.py
-
+# first command transcludes sections into main markdown file
+# second command converts thesis.md to thesis.html with all the bells
 # pandoc templates
 # https://pandoc.org/MANUAL.html#templates
 # default templates
-#
 
 import pypandoc
 import jinja2
@@ -38,12 +38,11 @@ def main():
     input_path = Path("thesis.md")
     output_path = input_path.parent / Path("index.html")
     # processFile(input_path, "thesis_toc.md")
-    html = pypandoc.convert_file(
-        input_path.name,
-        'html5',
-        format='md',
-        extra_args=pdoc_args,
-        filters=filters)
+    html = pypandoc.convert_file(input_path.name,
+                                 'html5',
+                                 format='md',
+                                 extra_args=pdoc_args,
+                                 filters=filters)
     doc = template.render(content=html)
     with open(output_path, 'w') as outfile:
         outfile.write(doc)

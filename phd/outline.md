@@ -61,18 +61,25 @@ Muscles are collections of fibers that contract when chemical gradients are prod
 
 Electromyography is the detection of changes in chemical potential using electrodes. In my setup, we use a total 64 monopolar surface electrodes and monopolar needle electrodes to record chemical potentials from muscles in the forearm and hand.
 
-<<[/Users/spencerw/Google Drive/motor_control/writing/sections/anatomy.md]
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/hand_anatomy.md]
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/cm_connections.md]
+
 
 # Theory Background
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/problem_formalization.md]
 
-<<[/Users/spencerw/Google Drive/motor_control/writing/sections/LDS_error_model.md]
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/motor_adaptation.md]
 
-<<[/Users/spencerw/Google Drive/motor_control/writing/sections/unsupervised_features.md]
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/feature_extraction.md]
 
 <<[/Users/spencerw/Google Drive/motor_control/writing/sections/policy_gradient.md]
+
+
+# Experimental Setup
+
+<<[/Users/spencerw/Google Drive/motor_control/writing/sections/hardware.md]
+
 
 ## Bibliography

@@ -115,13 +115,17 @@ Until recently, most studies looked at either flexion or extension, but when we 
 When multiple digits had to contract, the subjects were not able to reach their maximal force, thus showing a force ‘deﬁcit’. These deﬁcits may be comparable to those when trying to produce force with two hands or arms, a phenomenon known as the bilateral deﬁcit (Gandevia, 2001).
 
 
-### Cortex
+### Muscle Spindles
 
-The corticospinal outputs that can drive a particular arm muscle, even an intrinsic hand muscle, are located within overlapping regions of the motor cortex.
-
-Motor cortical cells (many of which have corticospinal projections) discharge with movement of more than one dig it and those associated with a particular movement are not tightly clustered. The corticospinal projection provides a further complication because the axons branch to supply more than one motor nucleus (Shinoda et al. 1981). These overlapping areas in the motor cortex may be optimal for daily usage of the hand, but also constrain the ability to control the digits independently.
+Arm  movements  are  sensed  via  distributed  and  individually  ambiguous  activity  patterns  of  muscle  spindles,which depend on relative joint configurations rather than the absolute hand position.  Interpreting this high dimensional  input  (around  50  muscles  for  a  human  arm)  of  distributed information at the relevant behavioral level poses a challenging  decoding  problem  for  the  central  nervous  system. Proprioceptive information from the receptors undergoes several  processing  steps  before  reaching  somatosensory  cortex (3,8) - from the spindles that synapse in Clarke’s nucleus, to cuneate nucleus, thalamus (3,9), and finally to somatosensory cortex (S1).   In cortex,  a number of tuning properties have been observed, such as responsiveness to varied combinations of joints and muscle lengths (10,11), sensitivity to different loads and angles (12), and broad and unimodal tuning for movement direction during arm movements (11,13).The proprioceptive information in S1 is then hypothesized to serve as the basis of a wide variety of tasks, via its connections to motor cortex and higher somatosensory processing regions. (Sandbrink & Mathis, 2020)
 
 ## Corticomotoneuronal Connections
+
+* Subdivisions of primary motor cortex based on cortico-motoneuronal cells (Rathelot, Strick PNAS 2008)
+https://www.pnas.org/content/106/3/918
+
+x Corticomotoneuronal cells are “functionally tuned”
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829105/
 
 Although CM synapses exert powerful excitatory effectsonα-motoneurons, the same motoneurons also receivemany other inputs (Fuglevand, 2011), including thosefrom Ia afferents, spinal interneurons, propriospinalneurons, reticulospinal neurons and rubrospinal neurons(Mewes & Cheney, 1991; Flamentet al.1992; Porter& Lemon, 1993; Perlmutteret al.1998; Riddleet al.2009). Any individualα-motoneuron receives thousandsofsynapticcontacts.Thehandfulofsynapticcontactsfroma given CM cell therefore does not consistently drive thedischarge of any particularα-motoneuron. (Schieber 2011)
 
@@ -226,6 +230,7 @@ The present changes in short-term synchronization were detected in the course of
 Statement of unknowns about how dynamics are shifted at the MU level in terms of spinal circuitry:
 
 Indirect control of MU synchronization might also be mediated by supraspinal modulation of the Renshaw decorrelating action (Gelfand et al. 1963; Adam et al. 1978), or by enhanced activity of spindle afferents via selective activation of gamma-motoneurons (Rudomin 1989). These possibilities suggest further experiments to resolve the neural mechanisms by which humans could rapidly alter short-term synchrony of MUs and, by implication, control the proportion of last-order common inputs to motoneurons. [Schmeid, 1993]
+
 
 # Theory Background
 
@@ -334,7 +339,25 @@ In the LQG setting, this might be called "adaptive LQG".
 - We might hypothesize that a subject will act as randomly as possible while minimizing cost, a maximum entropy solution that converges to an optimal controller? $\mathcal{H}(p(u_t|x_t))$
 - How does a subject penalize changes to their controllers? Do they follow a KL-divergence type of measurement when improving their policy?
 
-## Modeling Error-based Learning with Linear Dynamical Systems
+## Motor Adaptation
+
+Implicit / Explicit
+Model-based / Model-free
+Slow / Fast
+
+
+Krakauer et al.'s categorization of motor learning places prior work into the following classes:
+- Adaptation
+- Sequence Learning
+- De Novo Learning
+- Motor Acuity
+- Expertise
+
+work in reaching
+
+shadmehr, krakaur reviews
+
+### State-space Models of Motor Adaptation
 
 *Modeling Sensorimotor Learning with Linear Dynamical Systems* by Cheng and Sabes, 2006. The goal is to model trial-by-trial learning by fitting data to a linear dynamical system model. Here we'll call $F_t$ the **sensorimotor mapping** transforming inputs $w_t$ to $y_t$ outputs per trial:
 
@@ -596,6 +619,28 @@ $$
 
 
 Jan Peters (2010), Scholarpedia, 5(11):3698.
+
+
+
+# Experimental Setup
+
+## Hardware
+
+There are two streams in the setup's hardware:
+1. Electrode to Computer
+2. Everything else
+
+The first stream handles the motion of electrodes perturbed by the electric field created due to synapses at the muscle and captured by the sensor circuit. The second stream handles the mechanical constraints around the subject's arm and hand during data acquisition. This second stream fixes the arm and hand in place in order to limit data to isometric contractions.
+
+### Electrode Hardware
+
+<p align="center">
+  <img src="images/press_fit.jpg" width="250" />
+  <img src="images/hinge.jpg" width="250" />
+</p>
+
+
+### Fixture Hardware
 
 
 ## Bibliography

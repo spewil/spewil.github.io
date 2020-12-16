@@ -37,7 +37,7 @@
                     <li><a href="#thumb">Thumb</a></li>
                     <li><a href="#hand">Hand</a></li>
                     <li><a href="#forearm">Forearm</a></li>
-                    <li><a href="#cortex">Cortex</a></li>
+                    <li><a href="#muscle-spindles">Muscle Spindles</a></li>
                     </ul></li>
                     <li><a href="#corticomotoneuronal-connections">Corticomotoneuronal Connections</a>
                     <ul>
@@ -54,8 +54,9 @@
                     <li><a href="#questions-1">Questions</a></li>
                     </ul></li>
                     </ul></li>
-                    <li><a href="#modeling-error-based-learning-with-linear-dynamical-systems">Modeling Error-based Learning with Linear Dynamical Systems</a>
+                    <li><a href="#motor-adaptation">Motor Adaptation</a>
                     <ul>
+                    <li><a href="#state-space-models-of-motor-adaptation">State-space Models of Motor Adaptation</a></li>
                     <li><a href="#example-models">Example Models</a>
                     <ul>
                     <li><a href="#feedback-error-learning">Feedback Error Learning</a></li>
@@ -70,6 +71,14 @@
                     <li><a href="#policy-gradient">Policy Gradient</a>
                     <ul>
                     <li><a href="#problems-with-policy-gradient">Problems with Policy Gradient</a></li>
+                    </ul></li>
+                    </ul></li>
+                    <li><a href="#experimental-setup">Experimental Setup</a>
+                    <ul>
+                    <li><a href="#hardware">Hardware</a>
+                    <ul>
+                    <li><a href="#electrode-hardware">Electrode Hardware</a></li>
+                    <li><a href="#fixture-hardware">Fixture Hardware</a></li>
                     </ul></li>
                     <li><a href="#bibliography">Bibliography</a></li>
                     </ul></li>
@@ -163,10 +172,13 @@
         <p>One has to ask whether this spillover is functional. Is the frequent recruitment of motor units ac ting on the little finger when we extend the thumb part of a fixed pattern of muscle activation, perhaps to balance forces around the wrist? (Duinen &amp; Gandevia 2011)</p>
         <p>Until recently, most studies looked at either flexion or extension, but when we compare the amount of enslavement in flexion and extension, the enslaved forces in extension are higher than in flexion, when recorded in the same apparatus. We hypothesise that the level of enslavement might depend on the amount of individual daily usage (for data on usage see Ingram et al. 2008). (Duinen &amp; Gandevia 2011)</p>
         <p>When multiple digits had to contract, the subjects were not able to reach their maximal force, thus showing a force ‘deﬁcit’. These deﬁcits may be comparable to those when trying to produce force with two hands or arms, a phenomenon known as the bilateral deﬁcit (Gandevia, 2001).</p>
-        <h3 id="cortex">Cortex</h3>
-        <p>The corticospinal outputs that can drive a particular arm muscle, even an intrinsic hand muscle, are located within overlapping regions of the motor cortex.</p>
-        <p>Motor cortical cells (many of which have corticospinal projections) discharge with movement of more than one dig it and those associated with a particular movement are not tightly clustered. The corticospinal projection provides a further complication because the axons branch to supply more than one motor nucleus (Shinoda et al. 1981). These overlapping areas in the motor cortex may be optimal for daily usage of the hand, but also constrain the ability to control the digits independently.</p>
+        <h3 id="muscle-spindles">Muscle Spindles</h3>
+        <p>Arm movements are sensed via distributed and individually ambiguous activity patterns of muscle spindles,which depend on relative joint configurations rather than the absolute hand position. Interpreting this high dimensional input (around 50 muscles for a human arm) of distributed information at the relevant behavioral level poses a challenging decoding problem for the central nervous system. Proprioceptive information from the receptors undergoes several processing steps before reaching somatosensory cortex (3,8) - from the spindles that synapse in Clarke’s nucleus, to cuneate nucleus, thalamus (3,9), and finally to somatosensory cortex (S1). In cortex, a number of tuning properties have been observed, such as responsiveness to varied combinations of joints and muscle lengths (10,11), sensitivity to different loads and angles (12), and broad and unimodal tuning for movement direction during arm movements (11,13).The proprioceptive information in S1 is then hypothesized to serve as the basis of a wide variety of tasks, via its connections to motor cortex and higher somatosensory processing regions. (Sandbrink &amp; Mathis, 2020)</p>
         <h2 id="corticomotoneuronal-connections">Corticomotoneuronal Connections</h2>
+        <ul>
+        <li>Subdivisions of primary motor cortex based on cortico-motoneuronal cells (Rathelot, Strick PNAS 2008) https://www.pnas.org/content/106/3/918</li>
+        </ul>
+        <p>x Corticomotoneuronal cells are “functionally tuned” https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829105/</p>
         <p>Although CM synapses exert powerful excitatory effectsonα-motoneurons, the same motoneurons also receivemany other inputs (Fuglevand, 2011), including thosefrom Ia afferents, spinal interneurons, propriospinalneurons, reticulospinal neurons and rubrospinal neurons(Mewes &amp; Cheney, 1991; Flamentet al.1992; Porter&amp; Lemon, 1993; Perlmutteret al.1998; Riddleet al.2009). Any individualα-motoneuron receives thousandsofsynapticcontacts.Thehandfulofsynapticcontactsfroma given CM cell therefore does not consistently drive thedischarge of any particularα-motoneuron. (Schieber 2011)</p>
         <p>rathelot, strick?</p>
         <ul>
@@ -327,7 +339,12 @@
         <li>We might hypothesize that a subject will act as randomly as possible while minimizing cost, a maximum entropy solution that converges to an optimal controller? <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathvariant="script"><mi>ℋ</mi></mstyle><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>u</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">|</mo><msub><mi>x</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{H}(p(u_t|x_t))</annotation></semantics></math></li>
         <li>How does a subject penalize changes to their controllers? Do they follow a KL-divergence type of measurement when improving their policy?</li>
         </ul>
-        <h2 id="modeling-error-based-learning-with-linear-dynamical-systems">Modeling Error-based Learning with Linear Dynamical Systems</h2>
+        <h2 id="motor-adaptation">Motor Adaptation</h2>
+        <p>Implicit / Explicit Model-based / Model-free Slow / Fast</p>
+        <p>Krakauer et al.’s categorization of motor learning places prior work into the following classes: - Adaptation - Sequence Learning - De Novo Learning - Motor Acuity - Expertise</p>
+        <p>work in reaching</p>
+        <p>shadmehr, krakaur reviews</p>
+        <h3 id="state-space-models-of-motor-adaptation">State-space Models of Motor Adaptation</h3>
         <p><em>Modeling Sensorimotor Learning with Linear Dynamical Systems</em> by Cheng and Sabes, 2006. The goal is to model trial-by-trial learning by fitting data to a linear dynamical system model. Here we’ll call <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>t</mi></msub><annotation encoding="application/x-tex">F_t</annotation></semantics></math> the <strong>sensorimotor mapping</strong> transforming inputs <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>w</mi><mi>t</mi></msub><annotation encoding="application/x-tex">w_t</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>t</mi></msub><annotation encoding="application/x-tex">y_t</annotation></semantics></math> outputs per trial:</p>
         <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>t</mi></msub><mo>=</mo><msub><mi>F</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>w</mi><mi>t</mi></msub><mo>,</mo><msub><mi>γ</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
         y_t = F_t(w_t, \gamma_t).
@@ -532,6 +549,15 @@
         <li>always requires a free learning rate parameter</li>
         </ul>
         <p>Jan Peters (2010), Scholarpedia, 5(11):3698.</p>
+        <h1 id="experimental-setup">Experimental Setup</h1>
+        <h2 id="hardware">Hardware</h2>
+        <p>There are two streams in the setup’s hardware: 1. Electrode to Computer 2. Everything else</p>
+        <p>The first stream handles the motion of electrodes perturbed by the electric field created due to synapses at the muscle and captured by the sensor circuit. The second stream handles the mechanical constraints around the subject’s arm and hand during data acquisition. This second stream fixes the arm and hand in place in order to limit data to isometric contractions.</p>
+        <h3 id="electrode-hardware">Electrode Hardware</h3>
+        <p align="center">
+        <img src="images/press_fit.jpg" width="250" /> <img src="images/hinge.jpg" width="250" />
+        </p>
+        <h3 id="fixture-hardware">Fixture Hardware</h3>
         <h2 class="unnumbered" id="bibliography">Bibliography</h2>
         <div id="refs" class="references" role="doc-bibliography">
         <div id="ref-McNamee2019">
