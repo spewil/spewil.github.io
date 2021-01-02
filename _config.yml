@@ -24,7 +24,7 @@ author_display: true
 author_website: "http://www.spewil.com"
 twitter_username: its_me_spencer
 github_username:  spewil
-# linkedin_username: spewil
+linkedin_username: spewil
 
 nb_posts_page: 3
 
@@ -52,9 +52,7 @@ plugins:
   - jekyll-remote-theme
 
 google_analytics: true
-github:
-  private: false
-  license: MIT
+
 kramdown:
   parse_block_html: true
 
