@@ -51,6 +51,9 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+# https://github.com/mmistakes/minimal-mistakes/issues/1992
+# can't have github here for some reason...
+
 google_analytics: true
 
 kramdown:
