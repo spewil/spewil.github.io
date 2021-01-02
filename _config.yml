@@ -28,13 +28,15 @@ linkedin_username: spewil
 
 nb_posts_page: 3
 
-nav_ext_links:
+nav_links:
   - name: pictures 📸
     url: /pictures/
+    type: external
   - name: writing 🖋️
     url: /posts/
   - name: reading 📚
-    url: https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading"
+    url: https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading
+    type: external
   - name: about me 🤓
     url: /about/
 
