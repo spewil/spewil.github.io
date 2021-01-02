@@ -42,7 +42,7 @@ nav_links:
 
 # description: >- # this means to ignore newlines until "baseurl:"
 #   optimizing for interesting.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.spewil.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
@@ -63,8 +63,8 @@ kramdown:
 
 excerpt_separator: <!--below excerpt-->
 
-# source              : .
-# destination         : ./_site
+source              : .
+destination         : ./_site
 # collections_dir     : .
 # plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 # layouts_dir         : _layouts
@@ -103,7 +103,6 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 
