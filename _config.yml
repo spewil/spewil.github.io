@@ -38,17 +38,18 @@ nav_ext_links:
   - name: about me 🤓
     url: /about/
 
-description: >- # this means to ignore newlines until "baseurl:"
-  optimizing for interesting.
+# description: >- # this means to ignore newlines until "baseurl:"
+#   optimizing for interesting.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.spewil.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
+# https://github.com/benbalter/jekyll-remote-theme
 remote_theme: gaalcaras/academic
 plugins:
   - jekyll-feed
-
+  - jekyll-remote-theme
 
 google_analytics: true
 github:
@@ -59,15 +60,15 @@ kramdown:
 
 excerpt_separator: <!--below excerpt-->
 
-source              : .
-destination         : ./_site
-collections_dir     : .
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-sass:
-  sass_dir: _sass
+# source              : .
+# destination         : ./_site
+# collections_dir     : .
+# plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+# layouts_dir         : _layouts
+# data_dir            : _data
+# includes_dir        : _includes
+# sass:
+#   sass_dir: _sass
 
 # Handling Reading
 safe                : false

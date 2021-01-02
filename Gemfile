@@ -4,10 +4,10 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'jekyll-data'
 end
 
-# gem "academic"
+gem "jekyll-remote-theme"
+gem "academic"
 gem "webrick"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
