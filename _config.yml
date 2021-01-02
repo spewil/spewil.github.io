@@ -52,9 +52,9 @@ plugins:
   - jekyll-remote-theme
 
 google_analytics: true
-# github:
-#   private: false
-#   license: MIT
+github:
+  private: false
+  license: MIT
 kramdown:
   parse_block_html: true
 
