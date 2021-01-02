@@ -45,7 +45,7 @@ url: "http://www.spewil.com" # the base hostname & protocol for your site, e.g. 
 
 
 # Build settings
-theme: academic
+remote_theme: gaalcaras/academic
 plugins:
   - jekyll-feed
 
