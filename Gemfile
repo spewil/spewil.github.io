@@ -7,7 +7,7 @@ group :jekyll_plugins do
 end
 
 gem "jekyll-remote-theme"
-gem "academic"
+# gem "academic"
 gem "webrick"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
