@@ -22,7 +22,6 @@ curriculum:
   url: /resume.pdf
 author_display: true
 author_website: "http://www.spewil.com"
-shortbio: I'm a dude looking for some science
 twitter_username: its_me_spencer
 github_username:  spewil
 linkedin_username: spewil
@@ -36,13 +35,10 @@ nav_ext_links:
     url: /posts/
   - name: reading 📚
     url: https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading"
-  - name: about me 🙋
+  - name: about me 🤓
     url: /about/
-  - name: phd 🤓
-    url: /phd/
 
 description: >- # this means to ignore newlines until "baseurl:"
-  optimizing for interesting.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://www.spewil.com" # the base hostname & protocol for your site, e.g. http://example.com
 
