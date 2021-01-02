@@ -6,7 +6,7 @@ gem "github-pages", group: :jekyll_plugins
 #   gem "jekyll-feed", "~> 0.12"
 # end
 
-# gem "jekyll-remote-theme"
+gem "jekyll-remote-theme"
 # gem "academic"
 gem "webrick"
 
