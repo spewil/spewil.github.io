@@ -1,5 +1,12 @@
+# custom
 /wiki_src/
 /old
-.DS_Store
-/vendor/bootstrap/.DS_Store
-vendor/.DS_Store
+
+# jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# osx
+*.DS_Store

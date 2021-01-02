@@ -9,46 +9,41 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
+		function loadPosts () {
 
+		    var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+		    var api = "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
+		    var fetch_posts = function (offset) {
+		        $.getJSON(api + key + "&limit=20&offset=" + offset ,function(data) {
+		            $.each(data.response.posts, function(i, post) {
 
-function loadPosts () {
+				    	var a = document.createElement('a');
 
-    var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
-    var api = "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
-    var fetch_posts = function (offset) {
-        $.getJSON(api + key + "&limit=20&offset=" + offset ,function(data) {
-            $.each(data.response.posts, function(i, post) {
+				    	// strip html tags form string
+						var linkText = document.createTextNode(post.caption.replace(/<\/?[^>]+(>|$)/g, ""));
 
-		    	var a = document.createElement('a');
+						a.appendChild(linkText);
+						a.href = post.post_url;
+						a.target = "_blank"
+				    	$("#links").append(a);
+				    	$("#links").append("<br>");
+		            });
 
-		    	if (post.slug == '') {
-					var linkText = document.createTextNode(post.date);
-				}
-				else {
-					var linkText = document.createTextNode(post.slug);
-				}
+		            if (data.response.posts.length == 20) {
+		                fetch_posts(offset + 20);
+		            }
+		        }).fail(function(data){
+				    $("#links").append('data did not load! please refresh :)');
+		        });
+		    };
 
-				a.appendChild(linkText);
-				a.href = post.post_url;
-				a.target = "_blank"
-		    	$("#links").append(a);
-		    	$("#links").append("<br>");
-            });
+		    fetch_posts(0);
+		}
 
-            if (data.response.posts.length == 20) {
-                fetch_posts(offset + 20);
-            }
-        }).fail(function(data){
-		    $("#links").append('data did not load! please refresh:)');
-        });
-    };
-
-    fetch_posts(0);
-}
-
-loadPosts();
+		loadPosts();
 
 	</script>
+
 </head>
 
 <body>
@@ -79,17 +74,10 @@ loadPosts();
     <div class = "main">
     	<br>
 
-    	<p style="text-align: left; max-width: 16em;">"I want a History of Looking. For the Photograph is the advent of myself as other: a cunning dissociation of consciousness from identity." <br> (Barthes, Camera Lucida)</p>
+    	<p style="text-align: left; max-width: 30em;">"I want a History of Looking. For the Photograph is the advent of myself as other: a cunning dissociation of consciousness from identity." </p>
+    	<p style="text-align: right; max-width: 30em;">Roland Barthes, Camera Lucida</p>
 
-    	<br>
-    	<br>
-
-    	<div id = "links">
-
-	    </div>
-
-    	<br>
-    	<br>
+		<img src="./barthes.jpg">
 
 		<p> <a href="https://www.engadget.com/2014/05/14/sony-alpha-6000-review/" target="_blank">my camera</a> </p>
 
@@ -104,12 +92,10 @@ loadPosts();
 		<p>you may spend a while scrolling...</p>
 
 		<br>
-		<br>
 
-		<img src="./barthes.jpg">
+		<h2>posts</h2>
 
-		<br>
-		<br>
+    	<div id = "links"></div>
 
 	</div>
 

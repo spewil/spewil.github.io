@@ -1,55 +1,134 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+# Academic theme
+# https://jekyll-themes.com/academic/
+
+title: spencer wilson
+# title_html: <h1>spencer wilson</h1>
+# pitch: optimizing for interesting
+# cc:
+description: optimizing for interesting
+
+email: spencer@spewil.com
+
+repo: https://github.com/spewil/website
+
+curriculum:
+  name: Resume
+  url: /resume.pdf
+author_display: true
+author_website: "http://www.spewil.com"
+shortbio: I'm a dude looking for some science
+twitter_username: its_me_spencer
+github_username:  spewil
+linkedin_username: spewil
+
+nb_posts_page: 3
+
+nav_ext_links:
+  - name: pictures 📸
+    url: /pictures/
+  - name: writing 🖋️
+    url: /posts/
+  - name: reading 📚
+    url: https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading"
+  - name: about me 🙋
+    url: /about/
+  - name: phd 🤓
+    url: /phd/
+
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  optimizing for interesting.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://www.spewil.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 
 # Build settings
-theme: minima
+theme: academic
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# google_analytics: true
+# github:
+#   private: false
+#   license: MIT
+# kramdown:
+#   parse_block_html: true
+
+# excerpt_separator: <!--below excerpt-->
+
+# source              : .
+# destination         : ./_site
+# collections_dir     : .
+# plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+# layouts_dir         : _layouts
+# data_dir            : _data
+# includes_dir        : _includes
+# sass:
+#   sass_dir: _sass
+# collections:
+#   proposals:
+#     output          : true
+#   minutes:
+#     output          : true
+#   posts:
+#     output          : true
+
+# # Handling Reading
+# safe                : false
+# include             : [".htaccess"]
+# exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+# keep_files          : [".git", ".svn"]
+# encoding            : "utf-8"
+# markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+# strict_front_matter : false
+
+# # Filtering Content
+# show_drafts         : null
+# limit_posts         : 0
+# future              : false
+# unpublished         : false
+
+# # Plugins
+# whitelist           : []
+# plugins             : []
+
+# # Conversion
+# markdown            : kramdown
+# highlighter         : rouge
+# lsi                 : false
+# excerpt_separator   : "\n\n"
+# incremental         : false
+
+# # Serving
+# detach              : false
+# port                : 4000
+# host                : 127.0.0.1
+# baseurl             : "" # does not include hostname
+# show_dir_listing    : false
+
+
+# # Exclude from processing.
+# # The following items will not be processed, by default.
+# # Any item listed under the `exclude:` key here will be automatically added to
+# # the internal "default list".
+# #
+# # Excluded items can be processed by explicitly listing the directories or
+# # their entries' file path in the `include:` list.
+# #
+# # exclude:
+# #   - .sass-cache/
+# #   - .jekyll-cache/
+# #   - gemfiles/
+# #   - Gemfile
+# #   - Gemfile.lock
+# #   - node_modules/
+# #   - vendor/bundle/
+# #   - vendor/cache/
+# #   - vendor/gems/
+# #   - vendor/ruby/
