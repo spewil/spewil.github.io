@@ -2,6 +2,11 @@
   <h2>
     <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
   </h2>
+
+  {% if post.summary %}
+    {{ post.summary }}<br>
+  {% endif %}
+
     <span class="post-meta">
       <span class="date">
       {% include _i18n/date.html date=post.date_published %}

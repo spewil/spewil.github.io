@@ -16,17 +16,4 @@
   {% endif %}
 {% endfor %}
 
-{% if nblangs > 1 %}
-  {% assign pages = site.pages | where:"lang",plang %}
-{% else %}
-  {% assign pages = site.pages %}
-{% endif %}
-
-{% for my_page in pages %}
-{% unless my_page.invisible %}
-  {% if my_page.title %}
-  <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-  {% endif %}
-{% endunless %}
-{% endfor %}
 </ul>
