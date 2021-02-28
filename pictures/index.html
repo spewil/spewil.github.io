@@ -5,14 +5,14 @@
 	<link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>srw</title>
-	<link href="//spewil.github.io/css/full.css" rel="stylesheet" type="text/css" />
+	<link href="https://www.spewil.com/css/full.css" rel="stylesheet" type="text/css" />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
 		function loadPosts () {
 
 		    var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
-		    var api = "http://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
+		    var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
 		    var fetch_posts = function (offset) {
 		        $.getJSON(api + key + "&limit=20&offset=" + offset ,function(data) {
 		            $.each(data.response.posts, function(i, post) {
