@@ -1,5 +1,5 @@
 ---
-title:
+title: hello
 URL:
 save_as: index.html
 layout: page

@@ -1,6 +1,15 @@
 <head>
     {% block head %}
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>
+        {% block title %}
+        {% if page %}{{ SITENAME}} - {{page.title}}
+        {% elif article %}{{ SITENAME}} - {{article.title}}
+        <!-- only index page has page_name -->
+        {% elif page_name == 'writing' %}{{ SITENAME}} - writing
+        {% else %}{{ SITENAME }}
+        {% endif %}
+        {% endblock title %}
+    </title>
     <meta charset="utf-8" />
     <meta name="generator" content="Pelican" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />

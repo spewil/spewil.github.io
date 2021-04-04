@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 
-
 <section id="content">
-
   {% block content_title %}
   <span class="list_title">
     <h1>posts</h1>
@@ -19,7 +16,6 @@
         <header>
           <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
               title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-
           | <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} |</time>| tags:
           {% for tag in article.tags %}
           <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> |</span>

@@ -21,8 +21,8 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_CATEGORY = ''
 
-DIRECT_TEMPLATES = ['index', 'archives', 'tags']
-INDEX_SAVE_AS = 'writing.html'
+DIRECT_TEMPLATES = ['index']  #, 'archives', 'tags']
+INDEX_SAVE_AS = 'writing.html'  # redirect the index to a separate page
 
 ARTICLES_PATHS = ['posts']
 PAGE_PATHS = ['pages']
