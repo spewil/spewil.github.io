@@ -31,7 +31,7 @@
                 }
             }).fail(function (data) {
                 $("#links").append(
-                    'data did not load! you may need to disable security so my javascript will work... :)'
+                    'data did not load! you may need to disable security so my javascript will work... otherwise try refreshing. if nothing work, just click <a href="https://epicturious.tumblr.com">here</a> :)'
                 );
             });
         };
@@ -56,26 +56,27 @@
 <body>
 
 <nav id="top_row">
-    <ul>
-      <li id="title_link">
-        <a href="/">
-          <h2>spewil</h2>
-        </a>
-      </li>
-      <li id="page_link"><a href="/about">
-          <h2>about</h2>
-        </a></li>
-      <li id="page_link"><a href="writing">
-          <h2>writing</h2>
-        </a></li>
-      <li id="page_link"><a href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading">
-          <h2>reading</h2>
-        </a></li>
-      <li id="page_link"><a href="/pictures">
-          <h2>pictures</h2>
-        </a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li id="title_link">
+      <a href="/">
+        <h2>spewil</h2>
+      </a>
+    </li>
+    <li id="page_link"><a href="/pictures">
+        <h2>pictures</h2>
+      </a></li>
+    <li id="page_link"><a target="_blank"
+        href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading">
+        <h2>reading</h2>
+      </a></li>
+    <li id="page_link"><a href="/writing">
+        <h2>writing</h2>
+      </a></li>
+    <li id="page_link"><a href="/about">
+        <h2>about</h2>
+      </a></li>
+  </ul>
+</nav>
   <div class="flex-wrapper">
     <div class="content">
 <!--
