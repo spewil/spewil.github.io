@@ -2,11 +2,8 @@
 /wiki_src/
 /old
 
-# jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# pelican
+output/
 
 # osx
 *.DS_Store
