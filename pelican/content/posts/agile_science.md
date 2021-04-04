@@ -2,7 +2,6 @@
 template: post
 title: agile science
 date: 1/2/2020
-category: science
 tags: science, agile
 summary: can we do science better? what if we did science really really really great? like super duper...
 ---

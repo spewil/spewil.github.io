@@ -5,12 +5,29 @@ save_as: index.html
 layout: page
 ---
 
-Hi, I'm spencer.
+hi there, i'm spencer.
 
+<img style="border-radius:5%; height:200px;" src="images/malta.png">
 
+i'm an engineer and a scientist too.
 
-I'm an engineer and a scientist too.
+feel free to reach out.
 
-Currently a phd student at the <a href="http://ucl.ac.uk/swc" target="_new">sainsbury wellcome center</a>, I'm using reinforcement learning and human-computer interaction to understand how brains solve high-dimensional coordination problems. 
+<br>
+<br>
 
-Feel free to reach out.
+infrequent email updates here:
+
+<div style="height:100px;">
+<form
+	action="https://tinyletter.com/spewil"
+	method="post"
+	target="popupwindow"
+	onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+	<p>
+		<input type="text" name="email" placeholder="your email here" id="email" size=15 style="text-align: center; font-size: 14px;" />
+	</p>
+	<input type="hidden" value="1" name="embed"/>
+	<input type="submit" value="subscribe" id="button" height=12 style="text-align: center; font-size: 14px;"/>
+</form>
+</div>

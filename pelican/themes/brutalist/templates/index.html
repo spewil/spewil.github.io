@@ -20,12 +20,12 @@
           <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
               title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
 
-          | <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} |</time>
+          | <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} |</time>| tags:
           {% for tag in article.tags %}
-          <span>{{tag}} |</span>
+          <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> |</span>
           {% endfor %}
         </header>
-        <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        <div class="entry-content"><em>{{ article.summary }}</em></div><!-- /.entry-content -->
       </article>
     </li>
     {% endfor %}
@@ -33,6 +33,11 @@
   {% if articles_page.has_other_pages() %}
   {% include 'pagination.html' %}
   {% endif %}
+
+  all tags:
+  {% for tag, articles in tags %}
+  <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a></span>
+  {% endfor %}
 </section><!-- /#content -->
 
 
