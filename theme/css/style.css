@@ -76,6 +76,7 @@ ul {
 .post_content {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
     max-width: 800px;
     min-width: 200px;
     font-size: large;
