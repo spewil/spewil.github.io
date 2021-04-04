@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME }} - {{ tag }} tag{% endblock %}
+
+{% block content_title %}
+<span class="list_title">
+    <h1>posts tagged with "{{ tag }}"</h1>
+</span>
+{% endblock %}

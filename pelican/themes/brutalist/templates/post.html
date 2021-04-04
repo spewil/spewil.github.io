@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post_header">
+  <span class="post_title">
+    <b><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+        title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></b></span><br><br>
+  <time class="post_time" datetime="{{ article.date.isoformat() }}">
+    ({{ article.locale_date | lower}})
+  </time>
+</div>
+<div class="post_content">
+  {{ article.content }}
+</div><!-- /.entry-content -->
+</section>
+{% endblock %}

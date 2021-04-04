@@ -1,0 +1,14 @@
+<nav id="top_row">
+    <ul>
+      <li id="title_link">
+        <a href="{{ SITEURL }}/">
+          <h2>{{ SITENAME }}</h2>
+        </a>
+      </li>
+      {% for title, link in MENUITEMS %}
+      <li id="page_link"><a href="{{ link }}">
+          <h2>{{ title }}</h2>
+        </a></li>
+      {% endfor %}
+    </ul>
+  </nav>

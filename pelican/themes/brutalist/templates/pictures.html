@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+
+{% include 'includes/pictures_js.html' %}
+
+{% block content %}
+<!--
+	<div class = "header">
+		<div class="wrap">
+            <h2><a href="#">spencer wilson</a></h2>
+            <h3><a href="mailto:spencer.wilson@ucl.ac.uk" target="_blank">email me↗</a></h3>
+            <h3>newsletter:</h3>
+            <form
+            action="https://tinyletter.com/spewil"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <p>
+            <input type="text" name="email" placeholder="your email here" id="email"/>
+            </p>
+            <input type="hidden" value="1" name="embed"/>
+            <input type="submit" value="subscribe" id="button"/>
+            </form>
+            <br>
+            <br>
+      </div>
+	</div> -->
+
+<div class="post_header">
+	<h1>pictures</h1>
+</div>
+
+<div class="page_content">
+
+	<img src="images/barthes.jpg">
+
+	<p style="text-align: left; max-width: 30em;">"I want a History of Looking. For the Photograph is the advent
+		of myself as other: a cunning dissociation of consciousness from identity." </p>
+	<p style="text-align: right; max-width: 30em;">Roland Barthes, Camera Lucida</p>
+
+
+	<p> <a href="https://www.engadget.com/2014/05/14/sony-alpha-6000-review/" target="_blank">my camera</a> </p>
+
+	<p> i typically use a <a
+			href="https://www.amazon.com/dp/B0096W1P5W/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8oAAAAAAG-dVYAAAAAWgF2pw"
+			target="_blank">35mm</a> </p>
+
+	<p> or the <a
+			href="https://www.amazon.com/dp/B005IHAIKM/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8qAAAAAAG-dVYAAAAAWgF2pw"
+			target="_blank">55-210mm</a> </p>
+
+	<p> for editing, i use <a href="/extra/scripts/imageadjust.sh" target="_blank">a tiny shell script</a> that invokes
+		<a href="https://inkscape.org/en/release/0.92.2/mac-os-x/homebrew/dl/" target="_blank">inkscape's
+			CLI</a></p>
+
+	<p>check out more pictures <a href="http://www.epicturious.tumblr.com" target="_blank">here</a>&#9829;.</p>
+
+	<p>you may spend a while scrolling...</p>
+
+	<br>
+
+	<h2>posts</h2>
+
+	<div id="links"></div>
+
+</div>
+{% endblock content %}

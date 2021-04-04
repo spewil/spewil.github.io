@@ -1,0 +1,45 @@
+{% block head_js %}
+
+<link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>srw</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    function loadPosts() {
+
+        var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
+        var fetch_posts = function (offset) {
+            $.getJSON(api + key + "&limit=20&offset=" + offset, function (data) {
+                $.each(data.response.posts, function (i, post) {
+
+                    var a = document.createElement('a');
+
+                    // strip html tags form string
+                    var linkText = document.createTextNode(post.caption.replace(/<\/?[^>]+(>|$)/g,
+                        ""));
+
+                    a.appendChild(linkText);
+                    a.href = post.post_url;
+                    a.target = "_blank"
+                    $("#links").append(a);
+                    $("#links").append("<br>");
+                });
+
+                if (data.response.posts.length == 20) {
+                    fetch_posts(offset + 20);
+                }
+            }).fail(function (data) {
+                $("#links").append(
+                    'data did not load! you may need to disable security so my javascript will work... :)'
+                );
+            });
+        };
+
+        fetch_posts(0);
+    }
+
+    loadPosts();
+</script>
+{% endblock head_js %}

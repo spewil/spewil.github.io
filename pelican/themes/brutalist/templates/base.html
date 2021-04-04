@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+
+{% include 'includes/head.html' %}
+
+<body>
+
+  {% include 'includes/nav.html' %}
+
+  <div class="flex-wrapper">
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+
+  {% include 'includes/footer.html' %}
+
+</body>
+
+</html>
