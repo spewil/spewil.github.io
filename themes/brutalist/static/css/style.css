@@ -1,0 +1,127 @@
+body {
+    font-family: monospace;
+    font-size: 100%;
+    background-color: pink;
+    color: #111;
+    width: 80%;
+    min-width: 400px;
+    min-height: 100px;
+    padding: 1em;
+    margin: 0% 10%;
+    display: block;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#title_link a,
+#page_link a {
+    color: darkslateblue;
+}
+
+
+#title_link {
+    float: left;
+}
+
+#title_link :hover,
+#page_link :hover {
+    color: greenyellow;
+}
+
+#page_link {
+    display: inline;
+    float: right;
+    padding-left: 20px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 600px) {
+    #page_link {
+        display: block;
+        float: right;
+    }
+
+    #title_link {
+        float: initial;
+    }
+}
+
+#post-list {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    min-height: 100%;
+    border: thin solid gray;
+}
+
+.post_content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 200px;
+    font-size: large;
+    line-height: 1.2;
+    font-family: Georgia;
+}
+
+.page_content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 200px;
+    font-size: large;
+}
+
+.post_time {
+    font-size: large;
+    padding-top: 30px;
+}
+
+.post_title {
+    font-size: xx-large;
+    color: black;
+}
+
+.page_title {
+    font-size: xx-large;
+    color: black;
+}
+
+.post_header {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#social_links ul {
+    padding-left: 50px;
+}
+
+#social_links li {
+    display: inline;
+    float: right;
+    padding-left: 20px;
+}
+
+.list_title {
+    text-align: center;
+    font-size: x-large;
+}
