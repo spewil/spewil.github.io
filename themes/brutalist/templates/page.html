@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="page_content">
+<div class="page-title">
+  {{ page_name }}
+</div>
+<div class="page-content">
   {{ page.content }}
 </div>
 {% endblock %}

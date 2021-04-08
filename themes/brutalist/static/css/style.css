@@ -3,23 +3,57 @@ body {
     font-size: 100%;
     background-color: pink;
     color: #111;
-    width: 80%;
-    min-width: 400px;
-    min-height: 100px;
-    padding: 1em;
-    margin: 0% 10%;
     display: block;
+    padding-bottom: 60px;
+    /* Height of the footer */
 }
 
-.flex-wrapper {
-    display: flex;
-    min-height: 90vh;
-    flex-direction: column;
-    justify-content: space-between;
+/* CONTAINERS */
+
+.header {
+    width: 100%;
+    margin-left: 20px;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+.left,
+.right {
+    width: 20%;
+}
+
+.content {
+    width: 60%;
+}
+
+.nav-links ul {
+    margin: 20px;
+}
+
+.nav-links li {
+    font-size: large;
+}
+
+.contact-links li {
+    font-size: medium;
+}
+
+.sidenote {
+    margin-left: 20px
+}
+
+/* LINKS */
 
 a:link {
-    color: black;
+    color: darkslateblue;
 }
 
 a:hover {
@@ -33,47 +67,43 @@ ul {
     overflow: hidden;
 }
 
-#title_link a,
-#page_link a {
-    color: darkslateblue;
-}
+/* MOBILE */
 
+@media only screen and (max-width: 650px),
+only screen and (max-device-width: 650px) {
 
-#title_link {
-    float: left;
-}
-
-#title_link :hover,
-#page_link :hover {
-    color: greenyellow;
-}
-
-#page_link {
-    display: inline;
-    float: right;
-    padding-left: 20px;
-}
-
-/* Landscape phones and down */
-@media (max-width: 600px) {
-    #page_link {
-        display: block;
-        float: right;
+    body {
+        font-size: large;
     }
 
-    #title_link {
-        float: initial;
+    .content {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .right {
+        width: 0px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left li {
+        font-size: x-large;
     }
 }
+
+/* POSTS PAGES LISTS */
 
 #post-list {
     margin-bottom: 1em;
     margin-top: 1em;
     min-height: 100%;
-    border: thin solid gray;
+    border: medium solid;
 }
 
-.post_content {
+.post-content {
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
@@ -84,7 +114,7 @@ ul {
     font-family: Georgia;
 }
 
-.page_content {
+.page-content {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
@@ -92,17 +122,17 @@ ul {
     font-size: large;
 }
 
-.post_time {
+.post-time {
     font-size: large;
     padding-top: 30px;
 }
 
-.post_title {
+.post-title {
     font-size: xx-large;
     color: black;
 }
 
-.page_title {
+.page-title {
     font-size: xx-large;
     color: black;
 }
@@ -112,17 +142,7 @@ ul {
     padding-top: 10px;
 }
 
-#contact_links ul {
-    padding-left: 50px;
-}
-
-#contact_links li {
-    display: inline;
-    float: right;
-    padding-left: 20px;
-}
-
-.list_title {
+.list-title {
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
 }

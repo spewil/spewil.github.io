@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
+
+{% block content %}
+
+<section id="content">
+    {% block content_title %}
+    <div class="list-title">
+        {{ category }}
+    </div>
+    {% endblock %}
+
+    <ol id="post-list">
+        {% for article in articles_page.object_list %}
+        {% if article.category == category %}
+        <li>
+            <article class="hentry">
+                <header>
+                    <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                    [ <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}
+                        |</time>| tags:
+                    {% for tag in article.tags %}
+                    <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> </span>
+                    {% endfor %}]
+                </header>
+                <div class="entry-content"><em>{{ article.summary }}</em></div><!-- /.entry-content -->
+            </article>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ol><!-- /#posts-list -->
+    {% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+    {% endif %}
+
+</section><!-- /#content -->
+
+<p style="float:right"><a href="{{ SITEURL }}/writing">posts</a></p>
+
+{% endblock content %}

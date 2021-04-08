@@ -5,21 +5,30 @@
 
 <body>
 
-  {% include 'includes/nav.html' %}
+  <div class="row">
 
-  <div class="flex-wrapper">
-    <div class="content">
+    <div class="header">
+      {% include 'includes/header.html' %}
+    </div>
+  </div>
+  <div class="row">
 
-      {% if page %}
-      {{ page_name }}
-      {% endif %}
+    <div class="column left">
+      <ul class="nav-links">
+        <li>{% include 'includes/page_links.html' %}</li>
+        <li>{% include 'includes/contact_links.html' %}</li>
+      </ul>
+    </div>
 
+    <div class="column content">
       {% block content %}
       {% endblock %}
     </div>
-  </div>
 
-  {% include 'includes/footer.html' %}
+    <div class="column right">
+    </div>
+
+  </div>
 
 </body>
 

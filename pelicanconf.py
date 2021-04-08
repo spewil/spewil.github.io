@@ -10,19 +10,13 @@ THEME = 'themes/brutalist'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
-MENUITEMS = [
-    ("about", "/about"), ("writing", "writing"),
-    ("reading",
-     "https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading"
-     ), ("pictures", "/pictures")
-]
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_CATEGORY = ''
 
-DIRECT_TEMPLATES = ['index']  #, 'archives', 'tags']
-INDEX_SAVE_AS = 'writing.html'  # redirect the index to a separate page
+DIRECT_TEMPLATES = ['index', 'categories', 'tags']
+INDEX_SAVE_AS = 'writing.html'  # redirect the index (posts) to a separate page
 
 ARTICLES_PATHS = ['posts']
 PAGE_PATHS = ['pages']
