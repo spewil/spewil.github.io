@@ -3,7 +3,7 @@
 
 AUTHOR = 'spencer'
 SITENAME = 'spewil'
-SITEURL = ''
+SITEURL = 'https://www.spewil.com'
 
 PATH = 'content'
 THEME = 'themes/brutalist'
