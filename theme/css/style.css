@@ -4,15 +4,13 @@ body {
     background-color: pink;
     color: #111;
     display: block;
-    padding-bottom: 60px;
-    /* Height of the footer */
+    padding: 10px;
 }
 
 /* CONTAINERS */
 
 .header {
     width: 100%;
-    margin-left: 20px;
 }
 
 .row:after {
@@ -82,7 +80,7 @@ only screen and (max-device-width: 650px) {
     }
 
     .right {
-        width: 0px;
+        width: 0%;
     }
 
     .left {
@@ -145,4 +143,5 @@ only screen and (max-device-width: 650px) {
 .list-title {
     text-align: center;
     font-size: xx-large;
+    padding-top: 50px;
 }
