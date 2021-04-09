@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="content">
+
+  <!-- 
+
+    links:
+    all tags
+    all categories
+    all posts (index.html) -- style these by draft / non-draft, list category, tags, etc
+
+  -->
+
+  {% for category_name, articles in categories %}
+
+  <!-- article list of chosen category -->
+
+  {% include 'includes/article_list.html' %}
+
+  {% endfor %}
+
+  <br>
+  <br>
+  <br>
+  <span><a href="{{ SITEURL }}/archives/">all posts</a></span>
+  {% include 'includes/tag_list.html' %}
+
+  {% include 'includes/draft_list.html' %}
+
+</section>
+
+{% endblock content %}

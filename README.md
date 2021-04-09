@@ -14,13 +14,16 @@ $ git push
 
 `index.html` has to be there as the index of `articles` 
 
-## plan 
+## plan
 
 - front page
   - short intro
   - most recent N articles (click to see all-->paginated view)
   - favorite N article (click to see all-->paginated view)
   - most recent N book notes (click to see all-->paginated view)
+- posts page (builtin pagination)
+- favorites page (builtin pagination)
+- drafts page (builtin pagination)
 - about page
 - pictures page
 - phd page

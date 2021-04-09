@@ -1,0 +1,24 @@
+<div class="list-title">
+  recent in drafts
+</div>
+<ol id="post-list">
+  {% for article in drafts %}
+  {% if loop.index <= DEFAULT_PAGINATION %}
+  <li>
+    <article class="hentry">
+      <header>
+        <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        [ <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} |</time>| tags:
+        {% for tag in article.tags %}
+        <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> </span>
+        {% endfor %}]
+      </header>
+      <div class="entry-content"><em>{{ article.summary }}</em></div><!-- /.entry-content -->
+    </article>
+  </li>
+  {% else %}
+  {% endif %}
+  {% endfor %}
+</ol>
+<span style="float:right">all <a href="/drafts/">drafts</a></span>

@@ -3,14 +3,12 @@
 {% block content %}
 
 <section id="content">
-  {% block content_title %}
-  <div class="list-title">
-    archive
-  </div>
-  {% endblock %}
 
+  <div class="list-title">
+    drafts
+  </div>
   <ol id="post-list">
-    {% for article in articles_page.object_list %}
+    {% for article in drafts %}
     <li>
       <article class="hentry">
         <header>
@@ -21,13 +19,15 @@
           <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> </span>
           {% endfor %}]
         </header>
-        <div class="entry-content"><em>{{ article.summary }}</em></div>
+        <div class="entry-content"><em>{{ article.summary }}</em></div><!-- /.entry-content -->
       </article>
     </li>
+    {% else %}
     {% endfor %}
   </ol>
-  {% if articles_page.has_other_pages() %}
-  {% include 'pagination.html' %}
-  {% endif %}
 
-  {% endblock content %}
+  <span style="float:right"><a href="{{ SITEURL }}/writing">posts</a></span>
+
+</section>
+
+{% endblock content %}

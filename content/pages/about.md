@@ -1,7 +1,7 @@
 ---
 template: page
 title: about
-save_as: about.html
+URL: about
 ---
 
 <h2 style="text-align:center">who is this guy...?</h2>

@@ -1,0 +1,10 @@
+<br>
+<br>
+<div style="margin=50px display=inline">
+    all tags:
+    {% for category, articles in categories %}
+    <span><a href="{{ SITEURL }}/{{ category.url }}">{{category}}</a></span>
+    {% endfor %}
+</div>
+<br>
+<br>

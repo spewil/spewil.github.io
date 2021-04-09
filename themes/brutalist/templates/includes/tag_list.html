@@ -1,0 +1,11 @@
+<br>
+<br>
+<br>
+<div style="margin=50px display=inline">
+    tags:
+    {% for tag, articles in tags %}
+    <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a></span>
+    {% endfor %}
+</div>
+<br>
+<br>
