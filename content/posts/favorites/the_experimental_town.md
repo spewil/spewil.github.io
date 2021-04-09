@@ -4,7 +4,6 @@ title: the experimental town
 date: 7/3/2020
 summary: start small to go big
 tags: civics, government
-# category: favorites
 ---
 
 <p>A quarter of the US population lives in rural areas, yet 86% of persistently impoverished communities in America are rural. Can rural communities embrace experiments to test progressive technology, policy, and governance? I believe that rural communities are uniquely poised to do so.</p>
