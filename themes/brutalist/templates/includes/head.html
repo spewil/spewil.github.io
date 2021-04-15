@@ -4,7 +4,6 @@
         {% block title %}
         {% if page %}{{ SITENAME}} - {{page.title}}
         {% elif article %}{{ SITENAME}} - {{article.title}}
-        <!-- only index page has page_name -->
         {% elif page_name == 'writing' %}{{ SITENAME}} - writing
         {% else %}{{ SITENAME }}
         {% endif %}
