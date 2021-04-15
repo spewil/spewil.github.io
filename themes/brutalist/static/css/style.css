@@ -133,6 +133,8 @@ only screen and (max-device-width: 650px) {
 .page-title {
     font-size: xx-large;
     color: black;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .post_header {
