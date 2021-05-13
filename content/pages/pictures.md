@@ -1,5 +1,5 @@
 ---
-title: pictures
 template: pictures
+title: pictures
 URL: pictures
 ---

@@ -1,6 +1,10 @@
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: monospace;
-    font-size: 100%;
+    /* most likely 16pt */
     background-color: pink;
     color: #111;
     display: block;
@@ -26,6 +30,7 @@ body {
 .left,
 .right {
     width: 15%;
+    min-width: 120px;
 }
 
 .content {
@@ -36,12 +41,12 @@ body {
     margin: 20px;
 }
 
-.nav-links li {
-    font-size: large;
+.nav-links {
+    font-size: 1rem;
 }
 
-.contact-links li {
-    font-size: medium;
+.contact-links {
+    font-size: .75rem;
 }
 
 .sidenote {
@@ -70,13 +75,14 @@ ul {
 @media only screen and (max-width: 650px),
 only screen and (max-device-width: 650px) {
 
-    body {
-        font-size: large;
+    html {
+        font-size: 150%;
     }
 
     .content {
         width: 95%;
         margin-left: 2.5%;
+        font-size: 1rem;
     }
 
     .right {
@@ -87,9 +93,10 @@ only screen and (max-device-width: 650px) {
         width: 100%;
     }
 
-    .left li {
-        font-size: x-large;
+    #post-list li {
+        margin-left: 15px;
     }
+
 }
 
 /* POSTS PAGES LISTS */
@@ -110,6 +117,7 @@ only screen and (max-device-width: 650px) {
     font-size: large;
     line-height: 1.2;
     font-family: Georgia;
+    font-size: 1.2rem;
 }
 
 .page-content {
@@ -117,21 +125,34 @@ only screen and (max-device-width: 650px) {
     margin-right: auto;
     max-width: 800px;
     min-width: 200px;
-    font-size: large;
+    font-size: 1rem;
+}
+
+.entry-title {
+    font-size: 1rem;
+}
+
+.entry-time-tags {
+    font-size: .8rem;
+}
+
+.entry-content {
+    font-size: .9rem;
 }
 
 .post-time {
-    font-size: large;
+    font-size: 0.9rem;
     padding-top: 30px;
 }
 
 .post-title {
-    font-size: xx-large;
+    font-size: 1.2rem;
     color: black;
 }
 
 .page-title {
-    font-size: xx-large;
+    font-size: 1.5rem;
+    font-style: oblique;
     color: black;
     text-align: center;
     padding-bottom: 20px;
@@ -144,6 +165,6 @@ only screen and (max-device-width: 650px) {
 
 .list-title {
     text-align: center;
-    font-size: xx-large;
+    font-size: 1.2rem;
     padding-top: 50px;
 }

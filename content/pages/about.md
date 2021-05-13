@@ -4,8 +4,6 @@ title: about
 URL: about
 ---
 
-<h2 style="text-align:center">who is this guy...?</h2>
-
 I live in <a href="https://en.wikipedia.org/wiki/Islington" target="_new">islington, london</a> and go on lots of <a href="http://spewil.github.io/pictures/" target="_new">adventures</a>.
 
 I grew up in <a href="https://en.wikipedia.org/wiki/Moultrie,_Georgia" target="_new">moultrie, georgia</a> and worked on <a href="http://epicturious.tumblr.com/post/106929958473/gus-the-bus-moultrie" target="_new">cool cars</a>.
