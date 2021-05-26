@@ -3,6 +3,7 @@ template: post
 title: invest in your institution
 date: 4/15/2021
 summary: negative stasis helps no one
+status: draft
 ---
 
 We wonder why our insitutions are decaying. A case study of sorts is the difference that I've experienced in making a conscious effort to invest in my institution, however small it may be, rather than "doing my own thing".

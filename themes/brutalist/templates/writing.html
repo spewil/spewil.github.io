@@ -4,36 +4,54 @@
 
 <section id="content">
 
-  <!-- 
+  <div class="list-title">
+    posts
+  </div>
+  <ol id="post-list">
+    {% for article in articles %}
+    {% if loop.index <= DEFAULT_PAGINATION %}
+    <li>
+      <article class="hentry">
+        <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+            title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+        <div class="entry-time-tags">
+          [ <time class="published" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} |</time>| tags:
+          {% for tag in article.tags %}
+          <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> </span>
+          {% endfor %}]
+        </div>
+        <div class="entry-content"><em>{{ article.summary }}</em></div>
+      </article>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% if articles|length > DEFAULT_PAGINATION %}
+    <p style="float:right"><a href="/archive">older posts</a></p>
+    {% endif %}
+  </ol>
 
-    links:
-    all tags
-    all categories
-    all posts (index.html) -- style these by draft / non-draft, list category, tags, etc
-
-  -->
-
-  {% for category_name, articles in categories %}
-
-  <!-- article list of chosen category -->
-
-  {% include 'includes/article_list.html' %}
-
-  {% endfor %}
-
-  <br>
-  <br>
-  <br>
-  <span>all <a href="{{ SITEURL }}/archive">posts</a></span>
-
-  <br>
-  <br>
-  <br>
-  <span>all <a href="{{ SITEURL }}/drafts">drafts</a></span>
-
-  {% include 'includes/tag_list.html' %}
-
-
+  <div class="list-title">
+    drafts
+  </div>
+  <ol id="post-list">
+    {% for draft in drafts %}
+    <li>
+      <article class="hentry">
+        <h2 class="entry-title"><a href="{{ SITEURL }}/{{ draft.url }}" rel="bookmark"
+            title="Permalink to {{ draft.title|striptags }}">{{ draft.title }}</a></h2>
+        <div class="entry-time-tags">
+          [ <time class="published" datetime="{{ draft.date.isoformat() }}">{{ draft.locale_date }} |</time>| tags:
+          {% for tag in draft.tags %}
+          <span><a href="{{ SITEURL }}/{{ tag.url }}">{{tag}}</a> </span>
+          {% endfor %}]
+        </div>
+        <div class="entry-content"><em>{{ draft.summary }}</em></div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
 </section>
+
+{% include 'includes/tag_list.html' %}
 
 {% endblock %}

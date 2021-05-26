@@ -3,6 +3,7 @@ template: post
 title: something in between
 date: 7/5/2020
 summary: building kindergarten for technologists
+status: draft
 ---
 
 I'm from a family of tinkerers, builders, and imagineers.

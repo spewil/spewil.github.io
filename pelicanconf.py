@@ -47,7 +47,7 @@ AUTHOR_FEED_RSS = None
 # Social link and icon filepath
 # SOCIAL = (('/theme/icons/email.svg', 'mailto:spencer@spewil.com'), )
 
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

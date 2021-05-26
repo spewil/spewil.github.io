@@ -1,9 +1,10 @@
 ---
 template: post
 title: Haldane's Marxism
-date: 7/5/2021
-summary: Haldane's science/politics were politically/scientifically motivated
+date: 5/7/2021
+summary: Haldane's scientific/political thinking was politically/scientifically motivated
 tags: politics, history
+status: draft
 ---
 
 [Marxist Philosophy and the Sciences, 1939](https://www.marxists.org/archive/haldane/works/1930s/philosophy.htm)

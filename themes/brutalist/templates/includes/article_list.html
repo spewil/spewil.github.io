@@ -20,4 +20,7 @@
   {% endif %}
   {% endfor %}
 </ol>
-<span style="float:right">all posts in <a href="/category/{{category_name}}">{{ category_name }}</a></span>
+
+{% if articles|length > DEFAULT_PAGINATION %}
+<span style="float:right">more posts in <a href="/category/{{category_name}}">{{ category_name }}</a></span>
+{% endif %}
