@@ -25,7 +25,7 @@ PAGE_PATHS = ['pages']
 # URLs
 ARTICLE_URL = 'posts/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
-PAGE_URL = 'slug}/'
+PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 CATEGORY_SAVE_AS = "category/{slug}/index.html"
 CATEGORY_URL = "category/{slug}/"
@@ -46,6 +46,8 @@ AUTHOR_FEED_RSS = None
 
 # Social link and icon filepath
 # SOCIAL = (('/theme/icons/email.svg', 'mailto:spencer@spewil.com'), )
+
+PELICAN_COMMENT_SYSTEM_FEED = None
 
 DEFAULT_PAGINATION = 5
 
