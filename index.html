@@ -2,161 +2,102 @@
 <html lang="en">
 
 <head>
-    <title>
-        spewil - hello
-    </title>
+    <title>spewil</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content="Pelican" />
-    <link rel="stylesheet" type="text/css" href="./theme/css/style.css" />
-    <style>
-        @font-face {
-            font-family: "Berkeley Mono";
-            src: url("./BerkeleyMono-Regular.otf") format("opentype");
-            font-weight: 400;
-            font-style: normal;
-        }
+    <link rel="stylesheet" type="text/css" href="https://spewil.com/theme/css/style.css" />
 
-        @font-face {
-            font-family: "Berkeley Mono";
-            src: url("./BerkeleyMono-Oblique.otf") format("opentype");
-            font-weight: 400;
-            font-style: italic;
-        }
 
-        @font-face {
-            font-family: "Berkeley Mono";
-            src: url("./BerkeleyMono-Bold.otf") format("opentype");
-            font-weight: 700;
-            font-style: normal;
-        }
 
-        @font-face {
-            font-family: "Berkeley Mono";
-            src: url("./BerkeleyMono-Bold-Oblique.otf") format("opentype");
-            font-weight: 700;
-            font-style: italic;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Berkeley Mono", "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
-            line-height: 1.55;
-        }
-
-        .page {
-            width: min(100%, 42rem);
-            margin: 0 auto;
-            padding: 2.2rem 1rem 3rem;
-        }
-
-        h1,
-        h2,
-        p {
-            margin: 0;
-        }
-
-        .site-title {
-            margin-bottom: 1rem;
-            font-size: clamp(1.8rem, 5vw, 2.35rem);
-            font-style: italic;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
-        a {
-            color: inherit;
-            font-weight: 700;
-            text-underline-offset: 0.2em;
-        }
-
-        .link-row {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.25rem;
-            font-size: 0.95rem;
-        }
-
-        .page-content {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 1.2rem;
-            align-items: start;
-        }
-
-        .photo-wrap {
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .link-row {
-            grid-column: 1;
-            grid-row: 1;
-        }
-
-        .photo-wrap img {
-            width: 100%;
-            max-width: 13rem;
-            height: auto;
-            display: block;
-            margin: 0;
-        }
-
-        .subscribe-link {
-            font-weight: 700;
-        }
-
-        @media (max-width: 760px) {
-            .page {
-                padding: 1.4rem 0.9rem 2.4rem;
-            }
-
-            .page-content {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .photo-wrap,
-            .link-row {
-                grid-column: 1;
-                grid-row: auto;
-            }
-        }
-    </style>
 </head>
-
 <body>
-    <main class="page">
-        <header>
-            <h1 class="site-title">hello, i'm spencer</h1>
-        </header>
 
-        <section>
-            <div class="page-content">
-                <div class="photo-wrap">
-                    <img src="images/malta.png" alt="Spencer in Malta">
-                </div>
-                <nav class="link-row" aria-label="Site links">
-                    <a href="./right-now/">right now</a>
-                    <a href="./about/">about</a>
-                    <a href="./writing/">writing</a>
-                    <a href="./pictures/">pictures</a>
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://www.goodreads.com/user/show/66687559-spencer">reading</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/spewil">linkedin</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/spewil">github</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tweet_dispencer">twitter</a>
-                    <a class="subscribe-link"
-                        href="mailto:spencer@spewil.com?subject=hello">email</a>
-                </nav>
-            </div>
-        </section>
-    </main>
+
+  <div class="flex-wrapper">
+    <div class="content">
+<section class="home">
+    <h1 class="site_title">hello, i'm spencer</h1>
+    <div class="home_content">
+        <nav class="home_links" aria-label="site links">
+            <a class="home-link" data-blurb="what i'm up to" href="https://spewil.com/right-now/">right now</a>
+            <a class="home-link" data-blurb="how i got here" href="https://spewil.com/about/">about</a>
+            <a class="home-link" data-blurb="words, words, words" href="https://spewil.com/writing/">writing</a>
+            <a class="home-link" data-blurb="photos i've taken" href="https://spewil.com/pictures/">pictures</a>
+            <a class="home-link" data-blurb="how weird is that?" href="https://spewil.com/teeth/">teeth</a>
+            <a class="home-link" data-blurb="what i've read" target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/66687559-spencer">reading</a>
+            <a class="home-link" data-blurb="it had to be here" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/spewil">linkedin</a>
+            <a class="home-link" data-blurb="max(green squares)" target="_blank" rel="noopener noreferrer" href="https://www.github.com/spewil">github</a>
+            <a class="home-link" data-blurb="subsequently known as x" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tweet_dispencer">twitter</a>
+            <a class="home-link" data-blurb="send me a note!" href="mailto:spencer@spewil.com?subject=hello">email</a>
+        </nav>
+        <div class="photo_wrap">
+            <img src="https://spewil.com/images/malta.png" alt="Spencer in Malta">
+        </div>
+    </div>
+</section>
+<div id="home-blurb" class="home-blurb" aria-hidden="true">
+    <span class="home-blurb-arrow">↙</span>
+    <span id="home-blurb-text"></span>
+</div>
+<script>
+    (function () {
+        var blurb = document.getElementById("home-blurb");
+        var blurbText = document.getElementById("home-blurb-text");
+        var links = document.querySelectorAll(".home-link[data-blurb]");
+
+        function randomBetween(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function hideBlurb() {
+            blurb.classList.remove("is-visible");
+            blurb.setAttribute("aria-hidden", "true");
+        }
+
+        function showBlurb(link) {
+            var text = (link.getAttribute("data-blurb") || "").trim();
+            if (!text) {
+                hideBlurb();
+                return;
+            }
+
+            blurbText.textContent = text;
+            blurb.style.setProperty("--blurb-rotate", randomBetween(-12, 12).toFixed(2) + "deg");
+            blurb.classList.add("is-visible");
+            blurb.setAttribute("aria-hidden", "false");
+
+            var rect = link.getBoundingClientRect();
+            var viewportPadding = 12;
+            var x = rect.right;
+            var y = rect.top + randomBetween(-24, 16);
+
+            var width = blurb.offsetWidth;
+            var height = blurb.offsetHeight;
+
+            if (y + height > window.innerHeight - viewportPadding) {
+                y = window.innerHeight - height - viewportPadding;
+            }
+            if (y < viewportPadding) y = viewportPadding;
+
+            blurb.style.left = x + "px";
+            blurb.style.top = y + "px";
+        }
+
+        links.forEach(function (link) {
+            link.addEventListener("mouseenter", function () { showBlurb(link); });
+            link.addEventListener("focus", function () { showBlurb(link); });
+            link.addEventListener("mouseleave", hideBlurb);
+            link.addEventListener("blur", hideBlurb);
+        });
+
+        window.addEventListener("scroll", hideBlurb, { passive: true });
+        window.addEventListener("resize", hideBlurb);
+    })();
+</script>
+    </div>
+  </div>
+
 </body>
 
 </html>
