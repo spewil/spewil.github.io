@@ -1,51 +1,88 @@
-
 <link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <script type="text/javascript">
     function loadPosts() {
+        var key = "2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo";
+        var links = document.getElementById("links");
 
-        var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
-        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
-        var fetch_posts = function (offset) {
-            $.getJSON(api + key + "&limit=20&offset=" + offset, function (data) {
-                $.each(data.response.posts, function (i, post) {
+        function appendLine(node) {
+            links.appendChild(node);
+            links.appendChild(document.createElement("br"));
+        }
 
-                    var a = document.createElement('a');
+        function appendError(prefix) {
+            var span = document.createElement("span");
+            span.appendChild(document.createTextNode(prefix + " "));
+            var a = document.createElement("a");
+            a.href = "https://epicturious.tumblr.com/";
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = "here";
+            span.appendChild(a);
+            span.appendChild(document.createTextNode("."));
+            appendLine(span);
+        }
 
-                    // strip html tags form string
-                    var linkText = document.createTextNode(post.caption.replace(/<\/?[^>]+(>|$)/g,
-                        ""));
+        function requestTumblr(offset, callbackName) {
+            var script = document.createElement("script");
+            script.src = api +
+                "?api_key=" + encodeURIComponent(key) +
+                "&limit=20" +
+                "&offset=" + encodeURIComponent(offset) +
+                "&callback=" + encodeURIComponent(callbackName);
+            script.onerror = function () {
+                delete window[callbackName];
+                script.remove();
+                appendError("data did not load. if refreshing does not work, click");
+            };
+            document.body.appendChild(script);
+        }
 
-                    a.appendChild(linkText);
+        function fetchPosts(offset) {
+            var callbackName = "tumblrPostsCallback_" + offset + "_" + Date.now();
+            window[callbackName] = function (data) {
+                delete window[callbackName];
+
+                if (!data || !data.response || !data.response.posts) {
+                    appendError("could not parse posts. try tumblr directly");
+                    return;
+                }
+
+                var posts = data.response.posts;
+                if (!posts.length && offset === 0) {
+                    appendLine(document.createTextNode("no posts found."));
+                    return;
+                }
+
+                posts.forEach(function (post, i) {
+                    var a = document.createElement("a");
+                    var captionText = (post.caption || "").replace(/<\/?[^>]+(>|$)/g, "").trim();
+                    a.textContent = captionText || ("photo post " + (offset + i + 1));
                     a.href = post.post_url;
-                    a.target = "_blank"
-                    $("#links").append(a);
-                    $("#links").append("<br>");
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    appendLine(a);
                 });
 
-                if (data.response.posts.length == 20) {
-                    fetch_posts(offset + 20);
+                if (posts.length === 20) {
+                    fetchPosts(offset + 20);
                 }
-            }).fail(function (data) {
-                $("#links").append(
-                    'data did not load! you may need to disable security so my javascript will work... otherwise try refreshing. if nothing work, just click <a href="https://epicturious.tumblr.com">here</a> :)'
-                );
-            });
-        };
+            };
+            requestTumblr(offset, callbackName);
+        }
 
-        fetch_posts(0);
+        fetchPosts(0);
     }
 
-    loadPosts();
+    window.addEventListener("DOMContentLoaded", loadPosts);
 </script>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>
-spewil - pictures
+        spewil - pictures
     </title>
     <meta charset="utf-8" />
     <meta name="generator" content="Pelican" />
@@ -54,100 +91,96 @@ spewil - pictures
 
 
 </head>
+
 <body>
 
-  <div class="row">
+    <div class="row">
 
-    <div class="header">
-<div id="title_link">
-    <a href="../">
-        <h2>spewil</h2>
-    </a>
-</div>    </div>
-  </div>
-  <div class="row">
-
-    <div class="column left">
-      <ul class="nav-links">
-        <li><ul>
-    <li><a href="../about/">
-            about
-        </a></li>
-    <li><a href="../writing/">
-            writing
-        </a></li>
-    <li><a href="../pictures/">
-            pictures
-        </a></li>
-    <li><a target="_blank" href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading">
-            reading
-        </a></li>
-</ul></li>
-        <li><ul class="contact-links">
-    <li>
-        <!-- EMAIL -->
-        <a target="_blank" href="mailto:spencer@spewil.com">email</a>
-    </li>
-    <li>
-        <!-- GITHUB -->
-        <a target="_blank" href="https://www.github.com/spewil">github</a>
-    </li>
-    <li>
-        <!-- TWITTER -->
-        <a target="_blank" href="https://www.twitter.com/tweet_dispencer">twitter</a>
-    </li>
-</ul></li>
-      </ul>
+        <div class="header">
+            <div id="title_link">
+                <a href="../">
+                    <h2>spewil</h2>
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="row">
 
-    <div class="column content">
-<div class="page-title">
-  pictures
-</div>
-<div class="page-content">
-  
+        <div class="column left">
+            <ul class="nav-links">
+                <li>
+                    <ul>
+                        <li><a href="../about/">
+                                about
+                            </a></li>
+                        <li><a href="../writing/">
+                                writing
+                            </a></li>
+                        <li><a href="../pictures/">
+                                pictures
+                            </a></li>
+                        <li><a target="_blank"
+                                href="https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading">
+                                reading
+                            </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="contact-links">
+                        <li>
+                            <!-- EMAIL -->
+                            <a target="_blank" href="mailto:spencer@spewil.com">email</a>
+                        </li>
+                        <li>
+                            <!-- GITHUB -->
+                            <a target="_blank" href="https://www.github.com/spewil">github</a>
+                        </li>
+                        <li>
+                            <!-- TWITTER -->
+                            <a target="_blank" href="https://www.twitter.com/tweet_dispencer">twitter</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-<div class="page_content">
+        <div class="column content">
+            <div class="page-title">
+                pictures
+            </div>
+            <div class="page-content">
+
+
+                <div class="page_content">
 
 	<img src="../images/barthes.jpg">
 
-	<p style="text-align: left; max-width: 30em;">"I want a History of Looking. For the Photograph is the advent
-		of myself as other: a cunning dissociation of consciousness from identity." </p>
-	<p style="text-align: right; max-width: 30em;">Roland Barthes, Camera Lucida</p>
+                    <p style="text-align: left; max-width: 30em;"><em>"I want a History of Looking. For the Photograph
+                            is the advent
+                            of myself as other: a cunning dissociation of consciousness from identity."</em> </p>
+                    <p style="text-align: right; max-width: 30em;">Roland Barthes, <em>Camera Lucida</em></p>
 
+                    <br><br>
+                    <p>for editing i wrote <a href="/extra/scripts/imageadjust.sh" target="_blank">a tiny shell
+                            script</a></p>
 
-	<p> <a href="https://www.engadget.com/2014/05/14/sony-alpha-6000-review/" target="_blank">my camera</a> </p>
+                    <p>more pictures <a href="https://epicturious.tumblr.com/" target="_blank"
+                            rel="noopener noreferrer">here</a></p>
 
-	<p> i typically use a <a
-			href="https://www.amazon.com/dp/B0096W1P5W/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8oAAAAAAG-dVYAAAAAWgF2pw"
-			target="_blank">35mm</a> </p>
+                    <br>
 
-	<p> or the <a
-			href="https://www.amazon.com/dp/B005IHAIKM/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8qAAAAAAG-dVYAAAAAWgF2pw"
-			target="_blank">55-210mm</a> </p>
+                    <h2>posts</h2>
 
-	<p> for editing, i use <a href="/extra/scripts/imageadjust.sh" target="_blank">a tiny shell script</a> that invokes
-		<a href="https://inkscape.org/en/release/0.92.2/mac-os-x/homebrew/dl/" target="_blank">inkscape's
-			CLI</a></p>
+                    <div id="links"></div>
 
-	<p>check out more pictures <a href="http://www.epicturious.tumblr.com" target="_blank">here</a>&#9829;.</p>
+                </div>
+            </div>
+        </div>
 
-	<p>you may spend a while scrolling...</p>
+        <div class="column right">
+        </div>
 
-	<br>
-
-	<h2>posts</h2>
-
-	<div id="links"></div>
-
-</div>
-</div>
     </div>
-
-    <div class="column right">
-    </div>
-
-  </div>
 
 </body>
 

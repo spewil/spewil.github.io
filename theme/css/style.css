@@ -2,8 +2,36 @@ html {
     font-size: 100%;
 }
 
+@font-face {
+    font-family: "Berkeley Mono";
+    src: url("../../BerkeleyMono-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Berkeley Mono";
+    src: url("../../BerkeleyMono-Oblique.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Berkeley Mono";
+    src: url("../../BerkeleyMono-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Berkeley Mono";
+    src: url("../../BerkeleyMono-Bold-Oblique.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
 body {
-    font-family: monospace;
+    font-family: "Berkeley Mono", monospace;
     /* most likely 16pt */
     background-color: pink;
     color: #111;
@@ -15,6 +43,13 @@ body {
 
 .header {
     width: 100%;
+}
+
+.header,
+.content {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row:after {
@@ -34,7 +69,11 @@ body {
 }
 
 .content {
-    width: 70%;
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .nav-links ul {
@@ -47,6 +86,29 @@ body {
 
 .contact-links {
     font-size: .75rem;
+}
+
+.left,
+.right,
+.nav-links {
+    display: none;
+}
+
+#title_link a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#title_link h2 {
+    display: none;
+}
+
+#title_link a::before {
+    content: "⟵";
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
 }
 
 .sidenote {
@@ -105,19 +167,34 @@ only screen and (max-device-width: 650px) {
     margin-bottom: 1em;
     margin-top: 1em;
     min-height: 100%;
-    border: medium solid;
+    border: none;
 }
 
 .post-content {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
-    max-width: 800px;
-    min-width: 200px;
-    font-size: large;
-    line-height: 1.2;
-    font-family: Georgia;
-    font-size: 1.2rem;
+    padding-top: 1.6rem;
+    max-width: 72ch;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.05rem;
+    line-height: 1.72;
+    letter-spacing: 0.005em;
+    text-align: left;
+}
+
+.post-content p {
+    margin: 0 0 1rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin: 0 0 1rem 1.25rem;
+    padding: 0;
+}
+
+.post-content li {
+    margin-bottom: 0.45rem;
 }
 
 .page-content {
@@ -126,6 +203,7 @@ only screen and (max-device-width: 650px) {
     max-width: 800px;
     min-width: 200px;
     font-size: 1rem;
+    text-align: left;
 }
 
 .entry-title {
@@ -141,25 +219,28 @@ only screen and (max-device-width: 650px) {
 }
 
 .post-time {
-    font-size: 0.9rem;
-    padding-top: 30px;
+    font-size: 0.92rem;
+    padding-top: 0.75rem;
 }
 
 .post-title {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     color: black;
 }
 
 .page-title {
-    font-size: 1.5rem;
-    font-style: oblique;
+    font-size: clamp(1.8rem, 5vw, 2.35rem);
+    font-style: italic;
+    font-weight: 700;
     color: black;
     text-align: center;
     padding-bottom: 20px;
 }
 
 .post_header {
-    text-align: center;
+    text-align: left;
+    max-width: 72ch;
+    margin: 0 auto;
     padding-top: 10px;
 }
 
