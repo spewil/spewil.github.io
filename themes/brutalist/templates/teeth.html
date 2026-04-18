@@ -4,7 +4,7 @@
 
 {% block content %}
 <section class="teeth-page">
-    <h1 class="page_title">{{ page.title }}</h1>
+    <div class="page_title">{{ page.title }}</div>
     <div id="teeth-viewer" class="teeth-viewer" aria-label="3D teeth model viewer"></div>
     <p id="teeth-status" class="teeth-status">loading model...</p>
 </section>
@@ -15,11 +15,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .teeth-page .page_title {
-        width: min(100%, 28rem);
-        text-align: left;
     }
 
     .teeth-viewer {
