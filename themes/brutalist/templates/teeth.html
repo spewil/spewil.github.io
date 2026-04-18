@@ -40,7 +40,8 @@
 <script type="module">
     import * as THREE from "three";
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-    import { STLLoader } from "three/addons/loaders/STLLoader.js";
+    import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+    import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 
     const container = document.getElementById("teeth-viewer");
     const status = document.getElementById("teeth-status");
@@ -86,34 +87,43 @@
     window.addEventListener("resize", resize);
     resize();
 
-    const loader = new STLLoader();
-    loader.load(
-        "/extra/teeth.stl",
-        (geometry) => {
-            geometry.computeVertexNormals();
-            geometry.computeBoundingBox();
-            const geometryCenter = geometry.boundingBox.getCenter(new THREE.Vector3());
-            geometry.translate(-geometryCenter.x, -geometryCenter.y, -geometryCenter.z);
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.7/");
 
-            const material = new THREE.MeshStandardMaterial({
-                color: 0xefe9df,
-                metalness: 0.05,
-                roughness: 0.55
+    const loader = new GLTFLoader();
+    loader.setDRACOLoader(dracoLoader);
+
+    loader.load(
+        "/extra/teeth-optimized.glb",
+        (gltf) => {
+            const model = gltf.scene;
+            scene.add(model);
+
+            model.traverse((node) => {
+                if (node.isMesh) {
+                    node.material = new THREE.MeshStandardMaterial({
+                        color: 0xefe9df,
+                        metalness: 0.05,
+                        roughness: 0.55
+                    });
+                    node.castShadow = false;
+                    node.receiveShadow = false;
+                }
             });
 
-            const mesh = new THREE.Mesh(geometry, material);
-            scene.add(mesh);
+            const box = new THREE.Box3().setFromObject(model);
+            const center = box.getCenter(new THREE.Vector3());
+            model.position.sub(center);
 
-            const box = new THREE.Box3().setFromObject(mesh);
-            const sizeVec = box.getSize(new THREE.Vector3());
+            const centeredBox = new THREE.Box3().setFromObject(model);
+            const sizeVec = centeredBox.getSize(new THREE.Vector3());
             const maxDim = Math.max(sizeVec.x, sizeVec.y, sizeVec.z);
             if (maxDim > 0) {
                 const scale = 80 / maxDim;
-                mesh.scale.setScalar(scale);
+                model.scale.setScalar(scale);
             }
 
-            // Recompute bounds after scaling and fit camera directly to the model.
-            const scaledBox = new THREE.Box3().setFromObject(mesh);
+            const scaledBox = new THREE.Box3().setFromObject(model);
             const scaledSize = scaledBox.getSize(new THREE.Vector3());
             const scaledMaxDim = Math.max(scaledSize.x, scaledSize.y, scaledSize.z);
             const fov = camera.fov * (Math.PI / 180);
@@ -127,7 +137,7 @@
         },
         undefined,
         () => {
-            status.textContent = "model not found. add your file at content/extra/teeth.stl";
+            status.textContent = "model not found. add content/extra/teeth-optimized.glb";
         }
     );
 
