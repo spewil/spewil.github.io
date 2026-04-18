@@ -12,12 +12,17 @@ Source branch for the site built with Pelican.
   - `uv run -- make html`
 - Publish to `gh-pages` with one command:
   - `uv run -- make publish-live`
+- Publish to `gh-pages` and also update `master`:
+  - `uv run -- make publish-all`
 
 Generated output is written to `output/`.
 
 Recommended flow:
 1. `uv run -- make devserver` and test locally
 2. `uv run -- make publish-live` to regenerate, update `gh-pages`, and push
+
+If you also want `master` updated from your current branch tip:
+- `uv run -- make publish-all`
 
 ## Content Layout
 
