@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block nav %}{% endblock nav %}
+
+{% block content %}
+<section class="home">
+    <h1 class="site_title">hello, i'm spencer</h1>
+    <div class="home_content">
+        <nav class="home_links" aria-label="site links">
+            <a href="{{ SITEURL }}/right-now/">right now</a>
+            <a href="{{ SITEURL }}/about/">about</a>
+            <a href="{{ SITEURL }}/writing/">writing</a>
+            <a href="{{ SITEURL }}/pictures/">pictures</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/66687559-spencer">reading</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/spewil">linkedin</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/spewil">github</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tweet_dispencer">twitter</a>
+            <a href="mailto:spencer@spewil.com?subject=hello">email</a>
+        </nav>
+        <div class="photo_wrap">
+            <img src="{{ SITEURL }}/images/malta.png" alt="Spencer in Malta">
+        </div>
+    </div>
+</section>
+{% endblock content %}

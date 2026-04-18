@@ -5,7 +5,9 @@
 
 <body>
 
+  {% block nav %}
   {% include 'includes/nav.html' %}
+  {% endblock nav %}
 
   <div class="flex-wrapper">
     <div class="content">
@@ -13,8 +15,6 @@
       {% endblock %}
     </div>
   </div>
-
-  {% include 'includes/footer.html' %}
 
 </body>
 

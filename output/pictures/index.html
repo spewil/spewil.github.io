@@ -1,0 +1,164 @@
+
+<link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+    function loadPosts() {
+        var key = "2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo";
+        var links = document.getElementById("links");
+
+        function appendLine(node) {
+            links.appendChild(node);
+            links.appendChild(document.createElement("br"));
+        }
+
+        function appendError(prefix) {
+            var span = document.createElement("span");
+            span.appendChild(document.createTextNode(prefix + " "));
+            var a = document.createElement("a");
+            a.href = "https://epicturious.tumblr.com/";
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = "here";
+            span.appendChild(a);
+            span.appendChild(document.createTextNode("."));
+            appendLine(span);
+        }
+
+        function requestTumblr(offset, callbackName) {
+            var script = document.createElement("script");
+            script.src = api +
+                "?api_key=" + encodeURIComponent(key) +
+                "&limit=20" +
+                "&offset=" + encodeURIComponent(offset) +
+                "&callback=" + encodeURIComponent(callbackName);
+            script.onerror = function () {
+                delete window[callbackName];
+                script.remove();
+                appendError("data did not load. if refreshing does not work, click");
+            };
+            document.body.appendChild(script);
+        }
+
+        function fetchPosts(offset) {
+            var callbackName = "tumblrPostsCallback_" + offset + "_" + Date.now();
+            window[callbackName] = function (data) {
+                delete window[callbackName];
+
+                if (!data || !data.response || !data.response.posts) {
+                    appendError("could not parse posts. try tumblr directly");
+                    return;
+                }
+
+                var posts = data.response.posts;
+                if (!posts.length && offset === 0) {
+                    appendLine(document.createTextNode("no posts found."));
+                    return;
+                }
+
+                posts.forEach(function (post, i) {
+                    var a = document.createElement("a");
+                    var captionText = (post.caption || "").replace(/<\/?[^>]+(>|$)/g, "").trim();
+                    a.textContent = captionText || ("photo post " + (offset + i + 1));
+                    a.href = post.post_url;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    appendLine(a);
+                });
+
+                if (posts.length === 20) {
+                    fetchPosts(offset + 20);
+                }
+            };
+            requestTumblr(offset, callbackName);
+        }
+
+        fetchPosts(0);
+    }
+
+    window.addEventListener("DOMContentLoaded", loadPosts);
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>spewil</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Pelican" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+
+
+
+</head>
+<body>
+
+<nav class="top-nav" aria-label="back to home">
+  <a class="back-arrow" href="/">⟵</a>
+</nav>
+  <div class="flex-wrapper">
+    <div class="content">
+<!--
+	<div class = "header">
+		<div class="wrap">
+            <h2><a href="#">spencer wilson</a></h2>
+            <h3><a href="mailto:spencer.wilson@ucl.ac.uk" target="_blank">email me↗</a></h3>
+            <h3>newsletter:</h3>
+            <form
+            action="https://tinyletter.com/spewil"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/spewil', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            <p>
+            <input type="text" name="email" placeholder="your email here" id="email"/>
+            </p>
+            <input type="hidden" value="1" name="embed"/>
+            <input type="submit" value="subscribe" id="button"/>
+            </form>
+            <br>
+            <br>
+      </div>
+	</div> -->
+
+<div class="post_header">
+	<h1 class="page_title">pictures</h1>
+</div>
+
+<div class="page_content">
+
+	<img src="images/barthes.jpg">
+
+	<p style="text-align: left; max-width: 30em;"><em>"I want a History of Looking. For the Photograph is the advent
+		of myself as other: a cunning dissociation of consciousness from identity."</em> </p>
+	<p style="text-align: right; max-width: 30em;">Roland Barthes, <em>Camera Lucida</em></p>
+
+
+	<p> <a href="https://www.engadget.com/2014/05/14/sony-alpha-6000-review/" target="_blank">my camera</a> </p>
+
+	<p> i typically use a <a
+			href="https://www.amazon.com/dp/B0096W1P5W/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8oAAAAAAG-dVYAAAAAWgF2pw"
+			target="_blank">35mm</a> </p>
+
+	<p> or the <a
+			href="https://www.amazon.com/dp/B005IHAIKM/?tag=thewire06-20&linkCode=xm2&ascsubtag=AgEAAAAAAAAAAI8qAAAAAAG-dVYAAAAAWgF2pw"
+			target="_blank">55-210mm</a> </p>
+
+	<p>for editing i use <a href="/extra/scripts/imageadjust.sh" target="_blank">a tiny shell script</a>.</p>
+
+	<p>more pictures <a href="https://epicturious.tumblr.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+	<p>you may spend a while scrolling...</p>
+
+	<br>
+
+	<h2>posts</h2>
+
+	<div id="links"></div>
+
+</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,37 +1,40 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'spencer'
-SITENAME = 'spewil'
-SITEURL = ''
+AUTHOR = "spencer"
+SITENAME = "spewil"
+SITEURL = ""
 
-PATH = 'content'
-THEME = 'themes/brutalist'
-TIMEZONE = 'Europe/Paris'
+PATH = "content"
+THEME = "themes/brutalist"
+TIMEZONE = "Europe/Paris"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 MENUITEMS = [
-    ("about", "/about"), ("writing", "writing"),
-    ("reading",
-     "https://www.goodreads.com/review/list/66687559-spencer?shelf=currently-reading"
-     ), ("pictures", "/pictures")
+    ("about", "/about"),
+    ("writing", "writing"),
+    (
+        "reading",
+        "https://www.goodreads.com/user/show/66687559-spencer",
+    ),
+    ("pictures", "/pictures"),
 ]
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-DEFAULT_CATEGORY = ''
+DEFAULT_CATEGORY = ""
 
-DIRECT_TEMPLATES = ['index', 'archives', 'tags']
-INDEX_SAVE_AS = 'writing.html'
+DIRECT_TEMPLATES = ["index", "archives", "tags"]
+INDEX_SAVE_AS = "writing/index.html"
 
-ARTICLES_PATHS = ['posts']
-PAGE_PATHS = ['pages']
+ARTICLES_PATHS = ["posts"]
+PAGE_PATHS = ["pages"]
 
 # URLs
-ARTICLE_URL = 'posts/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
-PAGE_URL = 'pages/{slug}/'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
+ARTICLE_URL = "posts/{slug}/"
+ARTICLE_SAVE_AS = "posts/{slug}/index.html"
+PAGE_URL = "{slug}/"
+PAGE_SAVE_AS = "{slug}/index.html"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -49,14 +52,10 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
-STATIC_PATHS = ['images', 'extra']
+STATIC_PATHS = ["images", "extra"]
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {
-        'path': 'CNAME'
-    },
-    'extra/favicon.ico': {
-        'path': 'favicon.ico'
-    }
+    "extra/CNAME": {"path": "CNAME"},
+    "extra/favicon.ico": {"path": "favicon.ico"},
 }

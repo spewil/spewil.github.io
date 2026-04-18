@@ -2,44 +2,81 @@
 
 <link rel="shortcut icon" href="http://spewil.github.io/inf.ico" type="image/x-icon" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>srw</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <script type="text/javascript">
     function loadPosts() {
+        var key = "2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
+        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo";
+        var links = document.getElementById("links");
 
-        var key = "api_key=2MasfJqU3XjCldZHmgR1M0XLPFFwT0YzZwKsn8KZmEsESgy4qC";
-        var api = "https://api.tumblr.com/v2/blog/epicturious.tumblr.com/posts/photo?";
-        var fetch_posts = function (offset) {
-            $.getJSON(api + key + "&limit=20&offset=" + offset, function (data) {
-                $.each(data.response.posts, function (i, post) {
+        function appendLine(node) {
+            links.appendChild(node);
+            links.appendChild(document.createElement("br"));
+        }
 
-                    var a = document.createElement('a');
+        function appendError(prefix) {
+            var span = document.createElement("span");
+            span.appendChild(document.createTextNode(prefix + " "));
+            var a = document.createElement("a");
+            a.href = "https://epicturious.tumblr.com/";
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = "here";
+            span.appendChild(a);
+            span.appendChild(document.createTextNode("."));
+            appendLine(span);
+        }
 
-                    // strip html tags form string
-                    var linkText = document.createTextNode(post.caption.replace(/<\/?[^>]+(>|$)/g,
-                        ""));
+        function requestTumblr(offset, callbackName) {
+            var script = document.createElement("script");
+            script.src = api +
+                "?api_key=" + encodeURIComponent(key) +
+                "&limit=20" +
+                "&offset=" + encodeURIComponent(offset) +
+                "&callback=" + encodeURIComponent(callbackName);
+            script.onerror = function () {
+                delete window[callbackName];
+                script.remove();
+                appendError("data did not load. if refreshing does not work, click");
+            };
+            document.body.appendChild(script);
+        }
 
-                    a.appendChild(linkText);
+        function fetchPosts(offset) {
+            var callbackName = "tumblrPostsCallback_" + offset + "_" + Date.now();
+            window[callbackName] = function (data) {
+                delete window[callbackName];
+
+                if (!data || !data.response || !data.response.posts) {
+                    appendError("could not parse posts. try tumblr directly");
+                    return;
+                }
+
+                var posts = data.response.posts;
+                if (!posts.length && offset === 0) {
+                    appendLine(document.createTextNode("no posts found."));
+                    return;
+                }
+
+                posts.forEach(function (post, i) {
+                    var a = document.createElement("a");
+                    var captionText = (post.caption || "").replace(/<\/?[^>]+(>|$)/g, "").trim();
+                    a.textContent = captionText || ("photo post " + (offset + i + 1));
                     a.href = post.post_url;
-                    a.target = "_blank"
-                    $("#links").append(a);
-                    $("#links").append("<br>");
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                    appendLine(a);
                 });
 
-                if (data.response.posts.length == 20) {
-                    fetch_posts(offset + 20);
+                if (posts.length === 20) {
+                    fetchPosts(offset + 20);
                 }
-            }).fail(function (data) {
-                $("#links").append(
-                    'data did not load! you may need to disable security so my javascript will work... otherwise try refreshing. if nothing work, just click <a href="https://epicturious.tumblr.com">here</a> :)'
-                );
-            });
-        };
+            };
+            requestTumblr(offset, callbackName);
+        }
 
-        fetch_posts(0);
+        fetchPosts(0);
     }
 
-    loadPosts();
+    window.addEventListener("DOMContentLoaded", loadPosts);
 </script>
 {% endblock head_js %}

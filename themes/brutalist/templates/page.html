@@ -3,7 +3,10 @@
 {% block title %}{{ SITENAME }} - {{ page.title|striptags }}{%endblock%}
 
 {% block content %}
+{% if page.title %}
+<div class="page_title">{{ page.title }}</div>
+{% endif %}
 <div class="page_content">
-  {{ page.content }}
+    {{ page.content }}
 </div>
 {% endblock %}
