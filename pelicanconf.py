@@ -58,4 +58,8 @@ STATIC_PATHS = ["images", "extra"]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
     "extra/favicon.ico": {"path": "favicon.ico"},
+    "extra/BerkeleyMono-Regular.otf": {"path": "BerkeleyMono-Regular.otf"},
+    "extra/BerkeleyMono-Oblique.otf": {"path": "BerkeleyMono-Oblique.otf"},
+    "extra/BerkeleyMono-Bold.otf": {"path": "BerkeleyMono-Bold.otf"},
+    "extra/BerkeleyMono-Bold-Oblique.otf": {"path": "BerkeleyMono-Bold-Oblique.otf"},
 }

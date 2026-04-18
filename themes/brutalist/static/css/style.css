@@ -39,7 +39,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: darkslateblue;
     font-weight: 700;
     text-underline-offset: 0.2em;
 }
@@ -57,7 +57,7 @@ a:hover {
 .back-arrow {
     display: inline-block;
     font-size: 1.35rem;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .flex-wrapper {
@@ -92,6 +92,42 @@ a:hover {
     align-items: flex-start;
     gap: 0.25rem;
     font-size: 0.95rem;
+}
+
+.home-link {
+    position: relative;
+}
+
+.home-blurb {
+    position: fixed;
+    z-index: 1200;
+    display: none;
+    max-width: min(24rem, 70vw);
+    padding: 0.2rem 0.5rem;
+    font-size: clamp(1rem, 2.6vw, 1.55rem);
+    line-height: 1.05;
+    font-style: italic;
+    font-weight: 700;
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+    pointer-events: none;
+    transform-origin: left center;
+    transform: rotate(var(--blurb-rotate, 0deg));
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.home-blurb.is-visible {
+    display: block;
+}
+
+.home-blurb-arrow {
+    position: absolute;
+    left: -1.1rem;
+    top: 0.45rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-shadow: none;
 }
 
 .photo_wrap {
@@ -190,6 +226,24 @@ a:hover {
     margin-bottom: 0.45rem;
 }
 
+.post_content blockquote {
+    margin: 0 0 1rem 1.25rem;
+    padding-left: 0.9rem;
+    border-left: 2px solid currentColor;
+    font-style: italic;
+}
+
+.post_content .marginalia,
+.post_content aside.marginalia {
+    float: right;
+    width: min(15.5rem, 38%);
+    margin: 0.2rem 0 1rem 1rem;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    font-style: italic;
+    opacity: 0.9;
+}
+
 @media (max-width: 760px) {
     .top-nav {
         padding: 0.6rem 0.9rem 0;
@@ -208,5 +262,25 @@ a:hover {
     .home_links {
         grid-column: 1;
         grid-row: auto;
+    }
+
+    .home-blurb {
+        max-width: 82vw;
+        font-size: clamp(0.95rem, 4.8vw, 1.35rem);
+    }
+
+    .home-blurb-arrow {
+        left: -0.9rem;
+        top: 0.42rem;
+        font-size: 1.05rem;
+    }
+
+    .post_content .marginalia,
+    .post_content aside.marginalia {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem;
+        padding-left: 0.8rem;
+        border-left: 2px solid currentColor;
     }
 }

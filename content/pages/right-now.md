@@ -7,3 +7,5 @@ url: right-now/
 ---
 
 building [cypress labs](https://www.workwithcypress.com)
+
+reading [these books](https://www.goodreads.com/user/show/66687559-spencer)

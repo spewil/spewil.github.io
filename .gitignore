@@ -1,6 +1,7 @@
 # custom
 /wiki_src/
 /old
+/output/
 
 # jekyll
 _site/

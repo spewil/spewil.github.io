@@ -7,19 +7,79 @@
     <h1 class="site_title">hello, i'm spencer</h1>
     <div class="home_content">
         <nav class="home_links" aria-label="site links">
-            <a href="{{ SITEURL }}/right-now/">right now</a>
-            <a href="{{ SITEURL }}/about/">about</a>
-            <a href="{{ SITEURL }}/writing/">writing</a>
-            <a href="{{ SITEURL }}/pictures/">pictures</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/66687559-spencer">reading</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/spewil">linkedin</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/spewil">github</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tweet_dispencer">twitter</a>
-            <a href="mailto:spencer@spewil.com?subject=hello">email</a>
+            <a class="home-link" data-blurb="what i'm up to" href="{{ SITEURL }}/right-now/">right now</a>
+            <a class="home-link" data-blurb="how i got here" href="{{ SITEURL }}/about/">about</a>
+            <a class="home-link" data-blurb="words, words, words" href="{{ SITEURL }}/writing/">writing</a>
+            <a class="home-link" data-blurb="photos i've taken" href="{{ SITEURL }}/pictures/">pictures</a>
+            <a class="home-link" data-blurb="how weird is that?" href="{{ SITEURL }}/teeth/">teeth</a>
+            <a class="home-link" data-blurb="what i've read" target="_blank" rel="noopener noreferrer" href="https://www.goodreads.com/user/show/66687559-spencer">reading</a>
+            <a class="home-link" data-blurb="it had to be here" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/spewil">linkedin</a>
+            <a class="home-link" data-blurb="max(green squares)" target="_blank" rel="noopener noreferrer" href="https://www.github.com/spewil">github</a>
+            <a class="home-link" data-blurb="subsequently known as x" target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tweet_dispencer">twitter</a>
+            <a class="home-link" data-blurb="send me a note!" href="mailto:spencer@spewil.com?subject=hello">email</a>
         </nav>
         <div class="photo_wrap">
             <img src="{{ SITEURL }}/images/malta.png" alt="Spencer in Malta">
         </div>
     </div>
 </section>
+<div id="home-blurb" class="home-blurb" aria-hidden="true">
+    <span class="home-blurb-arrow">↙</span>
+    <span id="home-blurb-text"></span>
+</div>
+<script>
+    (function () {
+        var blurb = document.getElementById("home-blurb");
+        var blurbText = document.getElementById("home-blurb-text");
+        var links = document.querySelectorAll(".home-link[data-blurb]");
+
+        function randomBetween(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function hideBlurb() {
+            blurb.classList.remove("is-visible");
+            blurb.setAttribute("aria-hidden", "true");
+        }
+
+        function showBlurb(link) {
+            var text = (link.getAttribute("data-blurb") || "").trim();
+            if (!text) {
+                hideBlurb();
+                return;
+            }
+
+            blurbText.textContent = text;
+            blurb.style.setProperty("--blurb-rotate", randomBetween(-12, 12).toFixed(2) + "deg");
+            blurb.classList.add("is-visible");
+            blurb.setAttribute("aria-hidden", "false");
+
+            var rect = link.getBoundingClientRect();
+            var viewportPadding = 12;
+            var x = rect.right;
+            var y = rect.top + randomBetween(-24, 16);
+
+            var width = blurb.offsetWidth;
+            var height = blurb.offsetHeight;
+
+            if (y + height > window.innerHeight - viewportPadding) {
+                y = window.innerHeight - height - viewportPadding;
+            }
+            if (y < viewportPadding) y = viewportPadding;
+
+            blurb.style.left = x + "px";
+            blurb.style.top = y + "px";
+        }
+
+        links.forEach(function (link) {
+            link.addEventListener("mouseenter", function () { showBlurb(link); });
+            link.addEventListener("focus", function () { showBlurb(link); });
+            link.addEventListener("mouseleave", hideBlurb);
+            link.addEventListener("blur", hideBlurb);
+        });
+
+        window.addEventListener("scroll", hideBlurb, { passive: true });
+        window.addEventListener("resize", hideBlurb);
+    })();
+</script>
 {% endblock content %}
